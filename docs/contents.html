@@ -10,23 +10,53 @@
 <div class="container">
     <h1>Contents</h1>
 
-    <div class="flex flex-row flex-wrap">
-        <div class="w-100 w-50-m w-25-l pa1" id="general"></div>
-    </div>
-    <h2 class="w-100">Core CSS</h2>
-    <div class="flex flex-row flex-wrap">
-        <div class="w-100 w-50-m w-25-l pa1" id="typography"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="layout"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="theming"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="utilities"></div>
-    </div>
-    <h2 class="w-100">Atomic components</h2>
-    <div class="flex flex-row flex-wrap">
-        <div class="w-100 w-50-m w-25-l pa1" id="core-css-atoms"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="atoms"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="molecules"></div>
-        <div class="w-100 w-50-m w-25-l pa1" id="organisms"></div>
-    </div>
+    <h2 class="pt3">About the Component API</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">General</td>
+            <td id="general"></td>
+        </tr>
+    </table>
+
+    <h2 class="pt3">Core particles (core CSS)</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">Typography</td>
+            <td id="typography"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Layout</td>
+            <td id="layout"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Theming</td>
+            <td id="theming"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Utilities</td>
+            <td id="utilities"></td>
+        </tr>
+    </table>
+
+    <h2 class="pt3">Atomic components</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">Particles</td>
+            <td id="particles"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Atoms</td>
+            <td id="atoms"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Molecules</td>
+            <td id="molecules"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Organisms</td>
+            <td id="organisms"></td>
+        </tr>
+    </table>
 </div>
 
 <div id="footer"></div>
@@ -36,28 +66,16 @@
     parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
     parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
 
-    // Card intro
-    data = {
-        "name": "card-fixed",
-        "vars": {
-            "title": "What are list cards?",
-            "description": "Simple lists on a card. You can add small images (or icons) and links to a list card.",
-            "class": "f-card--primary f-card__title--secondary",
-            "short?": true
-        }
-    };
-    parseComponentHTML("#card_intro", data);
-
     /**
-     * CONTENTS
+     * CONTENTS MOLECULES
      */
+
     // General
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "General",
-            "description": "General information about the API and its implementation.",
-            "items": [
+            "color": "secondary",
+            "tags": [
                 {"name": "Architecture", "url": "general/architecture.html"},
                 {"name": "JS implementation", "url": "general/js.html"},
                 {"name": "Docs generation", "url": "general/doc-generation.html"}
@@ -68,15 +86,14 @@
     parseComponentHTML("#general", data);
 
     /**
-     * CORE CSS
+     * PARTICLES (CORE CSS)
      */
     // Typography
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Typography",
-            "description": "All you need to style text.",
-            "items": [
+            "color": "secondary",
+            "tags": [
                 {"name": "Font families", "url": "core-css/typography/font-families.html"},
                 {"name": "Font style", "url": "core-css/typography/font-style.html"},
                 {"name": "Font weight", "url": "core-css/typography/font-weight.html"},
@@ -99,11 +116,10 @@
 
     // Layout
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Layout",
-            "description": "Single purpose classes.",
-            "items": [
+            "color": "accent1",
+            "tags": [
                 {"name": "Box-sizing", "url": "core-css/layout/box-sizing.html"},
                 {"name": "Clearfix", "url": "core-css/layout/clearfix.html"},
                 {"name": "Debug", "url": "core-css/layout/debug.html"},
@@ -128,16 +144,17 @@
 
     // Theming
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Theming",
-            "description": "Single purpose classes for rapid development and verbose html. Inspired by Tachyons.",
-            "items": [
+            "color": "accent2",
+            "tags": [
+                {"name": "Colors and branding", "url": "core-css/theming/colors.html"},
                 {"name": "Borders", "url": "core-css/theming/borders.html"},
                 {"name": "Border radius", "url": "core-css/theming/border-radius.html"},
                 {"name": "Background size", "url": "core-css/theming/background-size.html"},
                 {"name": "Box shadow", "url": "core-css/theming/box-shadow.html"},
-                {"name": "Opacity", "url": "core-css/theming/opacity.html"}
+                {"name": "Opacity", "url": "core-css/theming/opacity.html"},
+                {"name": "Hovers", "url": "core-css/theming/hovers.html"}
             ],
             "striped?": true
         }
@@ -146,11 +163,10 @@
 
     // Utilities
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Utilities",
-            "description": "Little helpers to speed up development.",
-            "items": [
+            "color": "accent3",
+            "tags": [
                 {"name": "Variables", "url": "core-css/variables.html"},
                 {"name": "CSS helpers", "url": "core-css/css-helpers.html"},
                 {"name": "HTML Elements", "url": "core-css/elements.html"},
@@ -165,30 +181,25 @@
     /**
      * ATOMIC COMPONENTS
      */
-    // Core CSS Atoms
+    // Particles
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Core Atoms",
-            "description": "Core atoms to include in every project.",
-            "items": [
-                {"name": "Colors and branding", "url": "core-css/theming/colors.html"},
-                {"name": "Hovers", "url": "core-css/theming/hovers.html"},
-                {"name": "todo Button", "url": "atoms/button.html"},
-                {"name": "todo Tag", "url": "atoms/tag.html"}
+            "color": "secondary",
+            "tags": [
+                {"name": "Dummy", "url": "#"}
             ],
             "striped?": true
         }
     };
-    parseComponentHTML("#core-css-atoms", data);
+    parseComponentHTML("#particles", data);
 
     // Atoms
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Atoms",
-            "description": "Use UI components for data-driven HTML generation throughout your projects. Not all components require the API, as that adds useless complexity.",
-            "items": [
+            "color": "accent1",
+            "tags": [
                 {"name": "todo Button", "url": "atoms/button.html"},
                 {"name": "todo Tag", "url": "atoms/tag.html"}
             ],
@@ -199,14 +210,13 @@
 
     // Molecules
     data = {
-        "name": "card-list",
+        "name": "tag-list",
         "vars": {
-            "title": "Molecules",
-            "description": "Use UI components for data-driven HTML generation throughout your projects. Not all components require the API, as that adds useless complexity.",
-            "items": [
+            "color": "accent2",
+            "tags": [
                 {"name": "Fixed cards", "url": "molecules/card-fixed.html"},
                 {"name": "List cards", "url": "molecules/card-list.html"},
-                {"name": "todo Link tags", "url": "molecules/link-tags.html"},
+                {"name": "Tag list", "url": "molecules/tag-list.html"},
                 {"name": "todo Breadcrumbs", "url": "molecules/breadcrumbs.html"},
                 {"name": "todo Wave", "url": "https://codepen.io/csspoints/pen/WNeOEqd"}
             ],
@@ -214,5 +224,18 @@
         }
     };
     parseComponentHTML("#molecules", data);
+
+    // Organisms
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent3",
+            "tags": [
+                {"name": "Dummy", "url": "#"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#organisms", data);
 </script>
 </body>

@@ -4,6 +4,7 @@ header("Access-Control-Allow-Origin: *");
 static $components = [
     "card-fixed",
     "card-list",
+    "tag-list",
     "docs-header",
     "docs-footer"
 ];

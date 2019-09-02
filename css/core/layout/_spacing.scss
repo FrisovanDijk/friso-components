@@ -84,8 +84,8 @@ $spacing: (
   .mr#{$key} { margin-right: $value; }
   .mb#{$key} { margin-bottom: $value; }
   .mt#{$key} { margin-top: $value; }
-  .mv#{$key} { margin-top: $value; padding-bottom: $value; }
-  .mh#{$key} { margin-left: $value; padding-right: $value; }
+  .mv#{$key} { margin-top: $value; margin-bottom: $value; }
+  .mh#{$key} { margin-left: $value; margin-right: $value; }
 
   // Negative margin
   .na#{key}  { margin: $value; }
@@ -112,8 +112,8 @@ $spacing: (
     .mr#{$key}-ns { margin-right: $value; }
     .mb#{$key}-ns { margin-bottom: $value; }
     .mt#{$key}-ns { margin-top: $value; }
-    .mv#{$key}-ns { margin-top: $value; padding-bottom: $value; }
-    .mh#{$key}-ns { margin-left: $value; padding-right: $value; }
+    .mv#{$key}-ns { margin-top: $value; margin-bottom: $value; }
+    .mh#{$key}-ns { margin-left: $value; margin-right: $value; }
 
     // Negative margin
     .na#{key}-ns  { margin: $value; }
@@ -141,8 +141,8 @@ $spacing: (
     .mr#{$key}-m { margin-right: $value; }
     .mb#{$key}-m { margin-bottom: $value; }
     .mt#{$key}-m { margin-top: $value; }
-    .mv#{$key}-m { margin-top: $value; padding-bottom: $value; }
-    .mh#{$key}-m { margin-left: $value; padding-right: $value; }
+    .mv#{$key}-m { margin-top: $value; margin-bottom: $value; }
+    .mh#{$key}-m { margin-left: $value; margin-right: $value; }
 
     // Negative margin
     .na#{key}-m  { margin: $value; }
@@ -170,8 +170,8 @@ $spacing: (
     .mr#{$key}-l { margin-right: $value; }
     .mb#{$key}-l { margin-bottom: $value; }
     .mt#{$key}-l { margin-top: $value; }
-    .mv#{$key}-l { margin-top: $value; padding-bottom: $value; }
-    .mh#{$key}-l { margin-left: $value; padding-right: $value; }
+    .mv#{$key}-l { margin-top: $value; margin-bottom: $value; }
+    .mh#{$key}-l { margin-left: $value; margin-right: $value; }
 
     // Negative margin
     .na#{key}-l  { margin: $value; }

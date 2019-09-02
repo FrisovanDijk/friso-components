@@ -1,4 +1,4 @@
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, q, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, hgroup, nav, section, time, mark, audio, video, input, textarea {
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, q, strong, sub, sup, dl, dt, dd, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, nav, section, time, mark, audio, video, input, textarea {
   margin: 0;
   padding: 0;
 }
@@ -13,6 +13,6 @@ html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, ab
 @import "template";
 
 // Component styles
-@import "components/_card";
-@import "components/_card-fixed";
-@import "components/_card-list";
+@import "molecules/_card";
+@import "molecules/_card-fixed";
+@import "molecules/_card-list";

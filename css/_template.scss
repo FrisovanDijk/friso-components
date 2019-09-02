@@ -1,6 +1,6 @@
 body {
   font-family: Calibri, sans-serif;
-  background-color: color(grey, light-med);
+  background-color: color(grays, light4);
 }
 
 p {
@@ -9,7 +9,11 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  @extend .bb, .b-secondary-dark-med, .pb1, .mb2;
+  @extend .bb, .b-secondary-dark1, .pb1, .mv2;
+}
+
+#header {
+  height: 60px;
 }
 
 .container {
@@ -22,16 +26,15 @@ h1, h2, h3, h4, h5 {
   box-sizing: border-box;
 
   &>h1 {
-    border-bottom: 2px solid color(secondary, dark-med);
+    border-bottom: 2px solid color(secondary, dark1);
     padding-left: 10px;
     padding-right: 10px;
-    margin-top: 10px;
   }
 }
 
 pre {
-  @extend .bg-gray-light-med;
-  border: 1px solid color(primary, lighten);
+  @extend .bg-grays-light3;
+  border: 1px solid color(grays, light1);
   padding: 10px;
   border-radius: 4px;
   overflow-x: auto;
@@ -58,10 +61,6 @@ code {
   li {
     padding: 0.2rem 0.25rem;
   }
-}
-
-a {
-  color: color(primary);
 }
 
 a:hover, a:visited {

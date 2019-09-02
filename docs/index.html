@@ -7,42 +7,47 @@
 </head>
 <body>
 <div id="header" class="w-100 h2"></div>
-<div class="container">
-    <h1>Friso's Component API Docs</h1>
+<div class="container flex flex-wrap">
+    <h1 class="w-100">Friso's Component API Docs</h1>
 
-    <div class="row">
-        <div class="col-3 flex flex-column">
-            <div id="card_intro"></div>
-            <div id="card_intro2"></div>
-        </div>
-        <article class="col-9">
-            <section class="f-card f-card--rich">
+    <div class="w-100 w-40-m w-25-l flex flex-column items-center items-end-ns pr3-ns">
+        <div id="card_intro"></div>
+        <div id="card_intro2"></div>
+    </div>
+    <article class="w-100 w-60-m w-75-l flex flex-column pa3 bg-grays-white br2">
+        <section>
             <h2>Why a component API?</h2>
             <p>I enjoy using new technologies with every project, but that renders a lot of front-end work useless because it's heavily embedded
-                in different templating languages and CMSes. You end up refactoring and rewriting.</p>
-            <p>A Component API decouples small, reusable components from their projects. Small, standardised components that are the building
-                blocks of something bigger.</p>
-            <p>The idea is very simple: you make a request with the component name and JSON, you will receive its semantic component.
-                Here are my reasons for building this API:</p>
+                in different templating languages and CMSes. The rest takes time and effort to reuse, because it needs to be refactored. The workflow
+                works bad coding practices in hand.</p>
+            <p>My answer to this problem consists of 3 parts:</p>
             <ol>
-                <li><strong>Agnostic.</strong> The implementation before you is lightweight and doesn't require a JS framework, but nothing stops you from using one.</li>
-                <li><strong>Reduced complexity.</strong> Managing a single API makes changes to components easy.</li>
-                <li><strong>Reuse.</strong> All components come from a single source. It's easy to grab your best semantic, accessible HTML. Class names are
-                    the same across projects.</li>
-                <li><strong>Discoverable.</strong> Browse the docs with examples of components to see what would work for you.</li>
-                <li><strong>Readable.</strong> Your project code become extremely readable by replacing more complex HTML with clear JSON.</li>
-                <li><strong>Simple.</strong> It takes 5 minutes to set up and improves readability.</li>
-                <li><strong>Portable.</strong> The API uses <a href="https://mustache.github.io/" target="_blank">Mustache</a> as its sole dependency,
-                    which has an implementation in most popular programming languages. This and its small implementation size (1 file)
-                    make it extremely portable between languages if so desired.</li>
+                <li>Use <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a> as a philosophy for reusable components.</li>
+                <li>Extend Atomic Design with <a href="http://tachyons.io/" target="_blank">Tachyons</a> as particles.</li>
+                <li>Serve the style guide through an API.</li>
             </ol>
-            <p>Take a look around. The project is open source and available on Github, or get inspired and make your own.</p>
+            <p>Don't worry if you don't know some of these terms. You can read more about this architecture <a href="general/architecture.html">here</a>.</p>
+            <p>The workflow of this API is very simple: you make a request with the component name and JSON to receive a semantic component.
+            So why do I think this design philosophy is a good idea?</p>
+            <ol>
+                <li><strong>Agnostic.</strong> Use any framework or language you want. This API implementation uses SASS and
+                    <a href="https://mustache.github.io/" target="_blank">Mustache</a> as PHP templating library, but those are
+                    arbitrary dependencies. You can use whatever you want in your projects.</li>
+                <li><strong>Reusable.</strong> All components come from a single source. It's easy to grab your best semantic, accessible HTML. Class names are
+                    the same across projects.</li>
+                <li><strong>Documentable.</strong> Document new components with a single Javascript function call.</li>
+                <li><strong>Discoverable.</strong> Browse the documentation with examples of components to see what would work for you.</li>
+                <li><strong>Usable.</strong> A CSS call and an API wrapper is all you need to get started. The Jacascript wrapper for the documentation
+                    is a whopping 36 lines.</li>
+                <li><strong>Stateless.</strong> Separate concerns by using data to generate components. No mixing of HTML and data involved.</li>
+            </ol>
+            <p>Take a look around. The project is open source and available on Github, or get inspired and implement your own.</p>
         </section>
-        <section class="flex justify-around">
+        <section class="flex justify-around pv3">
             <div id="explore_docs"></div>
             <div id="explore_docs2"></div>
         </section>
-        <section class="f-card f-card--rich">
+        <section>
             <h2>Installing Friso's Component API</h2>
             <p>Get it from Github and run <code class="hgl-secondary">composer install</code>. You will see 5 items:</p>
             <ul>
@@ -59,7 +64,7 @@
                 <code class="hgl-secondary">static $components</code> at the top of <code class="hgl-secondary">index.php</code></p>
             <p></p>
         </section>
-        <section class="f-card f-card--rich">
+        <section>
             <h2>Using the Component API</h2>
             <p>Using it in a project is extremely simple. This documentation site uses a very light
                 <a href="res/components.js" target="_blank">Javascript implementation</a> (although it doesn't support IE).</p>
@@ -78,31 +83,15 @@
                 is the food for your component.</p>
         </section>
 
-            <section class="f-card f-card--rich">
-                <h2>About these docs</h2>
-                <p>The docs are my personal templates with my branding applied. They specify my template variables and show the json behind the components on the page.</p>
-                <p>Feel free to reuse or change everything as preferred. </p>
-                <p>Switching the branding on the default template is easy to do. Open <span class="hgl-secondary">_variables.scss</span> and change the relevant colours. Compile
-                    the stylesheet and you're good to go (or check out <a href="http://koala-app.com/" target="_blank">Koala</a> if you don't know how)</p>
-            </section>
-        </article>
-    </div>
-
-    <div id="docs"></div>
-
+        <section>
+            <h2>About these docs</h2>
+            <p>The docs are my personal templates with my branding applied. They specify my template variables and show the json behind the components on the page.</p>
+            <p>Feel free to reuse or change everything as preferred. </p>
+            <p>Switching the branding on the default template is easy to do. Open <span class="hgl-secondary">_variables.scss</span> and change the relevant colours. Compile
+                the stylesheet and you're good to go (or check out <a href="http://koala-app.com/" target="_blank">Koala</a> if you don't know how)</p>
+        </section>
+    </article>
 </div>
-
-<template id="docs-row">
-    <div class="row">
-        <div class="col-3 docs-row--1"></div>
-        <div class="col-9 docs-row--2">
-            <div class="f-card f-card--rich">
-                <h2></h2>
-                <pre><code></code></pre>
-            </div>
-        </div>
-    </div>
-</template>
 </body>
 <div id="footer"></div>
 <script>
@@ -154,7 +143,7 @@
         "name": "card-fixed",
         "vars": {
             "url": "general/architecture.html",
-            "title": "About the architecture",
+            "title": "Architecture",
             "class": "f-card--primary",
             "short?": true,
             "img_url": "general/architecture.jpg",

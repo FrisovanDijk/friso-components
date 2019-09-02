@@ -1,4 +1,4 @@
-html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, q, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, hgroup, nav, section, time, mark, audio, video, input, textarea { margin: 0; padding: 0; }
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, em, img, q, strong, sub, sup, dl, dt, dd, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, figure, figcaption, footer, header, nav, section, time, mark, audio, video, input, textarea { margin: 0; padding: 0; }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document ========================================================================== */
@@ -923,9 +923,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt0 { margin-top: 0; }
 
-.mv0 { margin-top: 0; padding-bottom: 0; }
+.mv0 { margin-top: 0; margin-bottom: 0; }
 
-.mh0 { margin-left: 0; padding-right: 0; }
+.mh0 { margin-left: 0; margin-right: 0; }
 
 .nakey { margin: 0; }
 
@@ -961,9 +961,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt1 { margin-top: 0.25rem; }
 
-.mv1 { margin-top: 0.25rem; padding-bottom: 0.25rem; }
+.mv1 { margin-top: 0.25rem; margin-bottom: 0.25rem; }
 
-.mh1 { margin-left: 0.25rem; padding-right: 0.25rem; }
+.mh1 { margin-left: 0.25rem; margin-right: 0.25rem; }
 
 .nakey { margin: 0.25rem; }
 
@@ -995,13 +995,13 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mr2 { margin-right: 0.5rem; }
 
-.mb2, h1, h2, h3, h4, h5 { margin-bottom: 0.5rem; }
+.mb2 { margin-bottom: 0.5rem; }
 
 .mt2 { margin-top: 0.5rem; }
 
-.mv2 { margin-top: 0.5rem; padding-bottom: 0.5rem; }
+.mv2, h1, h2, h3, h4, h5 { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 
-.mh2 { margin-left: 0.5rem; padding-right: 0.5rem; }
+.mh2 { margin-left: 0.5rem; margin-right: 0.5rem; }
 
 .nakey { margin: 0.5rem; }
 
@@ -1037,9 +1037,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt3 { margin-top: 1rem; }
 
-.mv3 { margin-top: 1rem; padding-bottom: 1rem; }
+.mv3 { margin-top: 1rem; margin-bottom: 1rem; }
 
-.mh3 { margin-left: 1rem; padding-right: 1rem; }
+.mh3 { margin-left: 1rem; margin-right: 1rem; }
 
 .nakey { margin: 1rem; }
 
@@ -1075,9 +1075,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt4 { margin-top: 2rem; }
 
-.mv4 { margin-top: 2rem; padding-bottom: 2rem; }
+.mv4 { margin-top: 2rem; margin-bottom: 2rem; }
 
-.mh4 { margin-left: 2rem; padding-right: 2rem; }
+.mh4 { margin-left: 2rem; margin-right: 2rem; }
 
 .nakey { margin: 2rem; }
 
@@ -1113,9 +1113,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt5 { margin-top: 4rem; }
 
-.mv5 { margin-top: 4rem; padding-bottom: 4rem; }
+.mv5 { margin-top: 4rem; margin-bottom: 4rem; }
 
-.mh5 { margin-left: 4rem; padding-right: 4rem; }
+.mh5 { margin-left: 4rem; margin-right: 4rem; }
 
 .nakey { margin: 4rem; }
 
@@ -1151,9 +1151,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt6 { margin-top: 8rem; }
 
-.mv6 { margin-top: 8rem; padding-bottom: 8rem; }
+.mv6 { margin-top: 8rem; margin-bottom: 8rem; }
 
-.mh6 { margin-left: 8rem; padding-right: 8rem; }
+.mh6 { margin-left: 8rem; margin-right: 8rem; }
 
 .nakey { margin: 8rem; }
 
@@ -1189,9 +1189,9 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
 
 .mt7 { margin-top: 16rem; }
 
-.mv7 { margin-top: 16rem; padding-bottom: 16rem; }
+.mv7 { margin-top: 16rem; margin-bottom: 16rem; }
 
-.mh7 { margin-left: 16rem; padding-right: 16rem; }
+.mh7 { margin-left: 16rem; margin-right: 16rem; }
 
 .nakey { margin: 16rem; }
 
@@ -1215,8 +1215,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr0-ns { margin-right: 0; }
   .mb0-ns { margin-bottom: 0; }
   .mt0-ns { margin-top: 0; }
-  .mv0-ns { margin-top: 0; padding-bottom: 0; }
-  .mh0-ns { margin-left: 0; padding-right: 0; }
+  .mv0-ns { margin-top: 0; margin-bottom: 0; }
+  .mh0-ns { margin-left: 0; margin-right: 0; }
   .nakey-ns { margin: 0; }
   .nlkey-ns { margin-left: 0; }
   .nrkey-ns { margin-right: 0; }
@@ -1234,8 +1234,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr1-ns { margin-right: 0.25rem; }
   .mb1-ns { margin-bottom: 0.25rem; }
   .mt1-ns { margin-top: 0.25rem; }
-  .mv1-ns { margin-top: 0.25rem; padding-bottom: 0.25rem; }
-  .mh1-ns { margin-left: 0.25rem; padding-right: 0.25rem; }
+  .mv1-ns { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+  .mh1-ns { margin-left: 0.25rem; margin-right: 0.25rem; }
   .nakey-ns { margin: 0.25rem; }
   .nlkey-ns { margin-left: 0.25rem; }
   .nrkey-ns { margin-right: 0.25rem; }
@@ -1253,8 +1253,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr2-ns { margin-right: 0.5rem; }
   .mb2-ns { margin-bottom: 0.5rem; }
   .mt2-ns { margin-top: 0.5rem; }
-  .mv2-ns { margin-top: 0.5rem; padding-bottom: 0.5rem; }
-  .mh2-ns { margin-left: 0.5rem; padding-right: 0.5rem; }
+  .mv2-ns { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+  .mh2-ns { margin-left: 0.5rem; margin-right: 0.5rem; }
   .nakey-ns { margin: 0.5rem; }
   .nlkey-ns { margin-left: 0.5rem; }
   .nrkey-ns { margin-right: 0.5rem; }
@@ -1272,8 +1272,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr3-ns { margin-right: 1rem; }
   .mb3-ns { margin-bottom: 1rem; }
   .mt3-ns { margin-top: 1rem; }
-  .mv3-ns { margin-top: 1rem; padding-bottom: 1rem; }
-  .mh3-ns { margin-left: 1rem; padding-right: 1rem; }
+  .mv3-ns { margin-top: 1rem; margin-bottom: 1rem; }
+  .mh3-ns { margin-left: 1rem; margin-right: 1rem; }
   .nakey-ns { margin: 1rem; }
   .nlkey-ns { margin-left: 1rem; }
   .nrkey-ns { margin-right: 1rem; }
@@ -1291,8 +1291,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr4-ns { margin-right: 2rem; }
   .mb4-ns { margin-bottom: 2rem; }
   .mt4-ns { margin-top: 2rem; }
-  .mv4-ns { margin-top: 2rem; padding-bottom: 2rem; }
-  .mh4-ns { margin-left: 2rem; padding-right: 2rem; }
+  .mv4-ns { margin-top: 2rem; margin-bottom: 2rem; }
+  .mh4-ns { margin-left: 2rem; margin-right: 2rem; }
   .nakey-ns { margin: 2rem; }
   .nlkey-ns { margin-left: 2rem; }
   .nrkey-ns { margin-right: 2rem; }
@@ -1310,8 +1310,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr5-ns { margin-right: 4rem; }
   .mb5-ns { margin-bottom: 4rem; }
   .mt5-ns { margin-top: 4rem; }
-  .mv5-ns { margin-top: 4rem; padding-bottom: 4rem; }
-  .mh5-ns { margin-left: 4rem; padding-right: 4rem; }
+  .mv5-ns { margin-top: 4rem; margin-bottom: 4rem; }
+  .mh5-ns { margin-left: 4rem; margin-right: 4rem; }
   .nakey-ns { margin: 4rem; }
   .nlkey-ns { margin-left: 4rem; }
   .nrkey-ns { margin-right: 4rem; }
@@ -1329,8 +1329,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr6-ns { margin-right: 8rem; }
   .mb6-ns { margin-bottom: 8rem; }
   .mt6-ns { margin-top: 8rem; }
-  .mv6-ns { margin-top: 8rem; padding-bottom: 8rem; }
-  .mh6-ns { margin-left: 8rem; padding-right: 8rem; }
+  .mv6-ns { margin-top: 8rem; margin-bottom: 8rem; }
+  .mh6-ns { margin-left: 8rem; margin-right: 8rem; }
   .nakey-ns { margin: 8rem; }
   .nlkey-ns { margin-left: 8rem; }
   .nrkey-ns { margin-right: 8rem; }
@@ -1348,8 +1348,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr7-ns { margin-right: 16rem; }
   .mb7-ns { margin-bottom: 16rem; }
   .mt7-ns { margin-top: 16rem; }
-  .mv7-ns { margin-top: 16rem; padding-bottom: 16rem; }
-  .mh7-ns { margin-left: 16rem; padding-right: 16rem; }
+  .mv7-ns { margin-top: 16rem; margin-bottom: 16rem; }
+  .mh7-ns { margin-left: 16rem; margin-right: 16rem; }
   .nakey-ns { margin: 16rem; }
   .nlkey-ns { margin-left: 16rem; }
   .nrkey-ns { margin-right: 16rem; }
@@ -1367,8 +1367,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr0-m { margin-right: 0; }
   .mb0-m { margin-bottom: 0; }
   .mt0-m { margin-top: 0; }
-  .mv0-m { margin-top: 0; padding-bottom: 0; }
-  .mh0-m { margin-left: 0; padding-right: 0; }
+  .mv0-m { margin-top: 0; margin-bottom: 0; }
+  .mh0-m { margin-left: 0; margin-right: 0; }
   .nakey-m { margin: 0; }
   .nlkey-m { margin-left: 0; }
   .nrkey-m { margin-right: 0; }
@@ -1386,8 +1386,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr1-m { margin-right: 0.25rem; }
   .mb1-m { margin-bottom: 0.25rem; }
   .mt1-m { margin-top: 0.25rem; }
-  .mv1-m { margin-top: 0.25rem; padding-bottom: 0.25rem; }
-  .mh1-m { margin-left: 0.25rem; padding-right: 0.25rem; }
+  .mv1-m { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+  .mh1-m { margin-left: 0.25rem; margin-right: 0.25rem; }
   .nakey-m { margin: 0.25rem; }
   .nlkey-m { margin-left: 0.25rem; }
   .nrkey-m { margin-right: 0.25rem; }
@@ -1405,8 +1405,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr2-m { margin-right: 0.5rem; }
   .mb2-m { margin-bottom: 0.5rem; }
   .mt2-m { margin-top: 0.5rem; }
-  .mv2-m { margin-top: 0.5rem; padding-bottom: 0.5rem; }
-  .mh2-m { margin-left: 0.5rem; padding-right: 0.5rem; }
+  .mv2-m { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+  .mh2-m { margin-left: 0.5rem; margin-right: 0.5rem; }
   .nakey-m { margin: 0.5rem; }
   .nlkey-m { margin-left: 0.5rem; }
   .nrkey-m { margin-right: 0.5rem; }
@@ -1424,8 +1424,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr3-m { margin-right: 1rem; }
   .mb3-m { margin-bottom: 1rem; }
   .mt3-m { margin-top: 1rem; }
-  .mv3-m { margin-top: 1rem; padding-bottom: 1rem; }
-  .mh3-m { margin-left: 1rem; padding-right: 1rem; }
+  .mv3-m { margin-top: 1rem; margin-bottom: 1rem; }
+  .mh3-m { margin-left: 1rem; margin-right: 1rem; }
   .nakey-m { margin: 1rem; }
   .nlkey-m { margin-left: 1rem; }
   .nrkey-m { margin-right: 1rem; }
@@ -1443,8 +1443,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr4-m { margin-right: 2rem; }
   .mb4-m { margin-bottom: 2rem; }
   .mt4-m { margin-top: 2rem; }
-  .mv4-m { margin-top: 2rem; padding-bottom: 2rem; }
-  .mh4-m { margin-left: 2rem; padding-right: 2rem; }
+  .mv4-m { margin-top: 2rem; margin-bottom: 2rem; }
+  .mh4-m { margin-left: 2rem; margin-right: 2rem; }
   .nakey-m { margin: 2rem; }
   .nlkey-m { margin-left: 2rem; }
   .nrkey-m { margin-right: 2rem; }
@@ -1462,8 +1462,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr5-m { margin-right: 4rem; }
   .mb5-m { margin-bottom: 4rem; }
   .mt5-m { margin-top: 4rem; }
-  .mv5-m { margin-top: 4rem; padding-bottom: 4rem; }
-  .mh5-m { margin-left: 4rem; padding-right: 4rem; }
+  .mv5-m { margin-top: 4rem; margin-bottom: 4rem; }
+  .mh5-m { margin-left: 4rem; margin-right: 4rem; }
   .nakey-m { margin: 4rem; }
   .nlkey-m { margin-left: 4rem; }
   .nrkey-m { margin-right: 4rem; }
@@ -1481,8 +1481,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr6-m { margin-right: 8rem; }
   .mb6-m { margin-bottom: 8rem; }
   .mt6-m { margin-top: 8rem; }
-  .mv6-m { margin-top: 8rem; padding-bottom: 8rem; }
-  .mh6-m { margin-left: 8rem; padding-right: 8rem; }
+  .mv6-m { margin-top: 8rem; margin-bottom: 8rem; }
+  .mh6-m { margin-left: 8rem; margin-right: 8rem; }
   .nakey-m { margin: 8rem; }
   .nlkey-m { margin-left: 8rem; }
   .nrkey-m { margin-right: 8rem; }
@@ -1500,8 +1500,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr7-m { margin-right: 16rem; }
   .mb7-m { margin-bottom: 16rem; }
   .mt7-m { margin-top: 16rem; }
-  .mv7-m { margin-top: 16rem; padding-bottom: 16rem; }
-  .mh7-m { margin-left: 16rem; padding-right: 16rem; }
+  .mv7-m { margin-top: 16rem; margin-bottom: 16rem; }
+  .mh7-m { margin-left: 16rem; margin-right: 16rem; }
   .nakey-m { margin: 16rem; }
   .nlkey-m { margin-left: 16rem; }
   .nrkey-m { margin-right: 16rem; }
@@ -1519,8 +1519,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr0-l { margin-right: 0; }
   .mb0-l { margin-bottom: 0; }
   .mt0-l { margin-top: 0; }
-  .mv0-l { margin-top: 0; padding-bottom: 0; }
-  .mh0-l { margin-left: 0; padding-right: 0; }
+  .mv0-l { margin-top: 0; margin-bottom: 0; }
+  .mh0-l { margin-left: 0; margin-right: 0; }
   .nakey-l { margin: 0; }
   .nlkey-l { margin-left: 0; }
   .nrkey-l { margin-right: 0; }
@@ -1538,8 +1538,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr1-l { margin-right: 0.25rem; }
   .mb1-l { margin-bottom: 0.25rem; }
   .mt1-l { margin-top: 0.25rem; }
-  .mv1-l { margin-top: 0.25rem; padding-bottom: 0.25rem; }
-  .mh1-l { margin-left: 0.25rem; padding-right: 0.25rem; }
+  .mv1-l { margin-top: 0.25rem; margin-bottom: 0.25rem; }
+  .mh1-l { margin-left: 0.25rem; margin-right: 0.25rem; }
   .nakey-l { margin: 0.25rem; }
   .nlkey-l { margin-left: 0.25rem; }
   .nrkey-l { margin-right: 0.25rem; }
@@ -1557,8 +1557,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr2-l { margin-right: 0.5rem; }
   .mb2-l { margin-bottom: 0.5rem; }
   .mt2-l { margin-top: 0.5rem; }
-  .mv2-l { margin-top: 0.5rem; padding-bottom: 0.5rem; }
-  .mh2-l { margin-left: 0.5rem; padding-right: 0.5rem; }
+  .mv2-l { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+  .mh2-l { margin-left: 0.5rem; margin-right: 0.5rem; }
   .nakey-l { margin: 0.5rem; }
   .nlkey-l { margin-left: 0.5rem; }
   .nrkey-l { margin-right: 0.5rem; }
@@ -1576,8 +1576,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr3-l { margin-right: 1rem; }
   .mb3-l { margin-bottom: 1rem; }
   .mt3-l { margin-top: 1rem; }
-  .mv3-l { margin-top: 1rem; padding-bottom: 1rem; }
-  .mh3-l { margin-left: 1rem; padding-right: 1rem; }
+  .mv3-l { margin-top: 1rem; margin-bottom: 1rem; }
+  .mh3-l { margin-left: 1rem; margin-right: 1rem; }
   .nakey-l { margin: 1rem; }
   .nlkey-l { margin-left: 1rem; }
   .nrkey-l { margin-right: 1rem; }
@@ -1595,8 +1595,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr4-l { margin-right: 2rem; }
   .mb4-l { margin-bottom: 2rem; }
   .mt4-l { margin-top: 2rem; }
-  .mv4-l { margin-top: 2rem; padding-bottom: 2rem; }
-  .mh4-l { margin-left: 2rem; padding-right: 2rem; }
+  .mv4-l { margin-top: 2rem; margin-bottom: 2rem; }
+  .mh4-l { margin-left: 2rem; margin-right: 2rem; }
   .nakey-l { margin: 2rem; }
   .nlkey-l { margin-left: 2rem; }
   .nrkey-l { margin-right: 2rem; }
@@ -1614,8 +1614,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr5-l { margin-right: 4rem; }
   .mb5-l { margin-bottom: 4rem; }
   .mt5-l { margin-top: 4rem; }
-  .mv5-l { margin-top: 4rem; padding-bottom: 4rem; }
-  .mh5-l { margin-left: 4rem; padding-right: 4rem; }
+  .mv5-l { margin-top: 4rem; margin-bottom: 4rem; }
+  .mh5-l { margin-left: 4rem; margin-right: 4rem; }
   .nakey-l { margin: 4rem; }
   .nlkey-l { margin-left: 4rem; }
   .nrkey-l { margin-right: 4rem; }
@@ -1633,8 +1633,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr6-l { margin-right: 8rem; }
   .mb6-l { margin-bottom: 8rem; }
   .mt6-l { margin-top: 8rem; }
-  .mv6-l { margin-top: 8rem; padding-bottom: 8rem; }
-  .mh6-l { margin-left: 8rem; padding-right: 8rem; }
+  .mv6-l { margin-top: 8rem; margin-bottom: 8rem; }
+  .mh6-l { margin-left: 8rem; margin-right: 8rem; }
   .nakey-l { margin: 8rem; }
   .nlkey-l { margin-left: 8rem; }
   .nrkey-l { margin-right: 8rem; }
@@ -1652,8 +1652,8 @@ html, body, div, article, aside, section, main, nav, footer, header, form, field
   .mr7-l { margin-right: 16rem; }
   .mb7-l { margin-bottom: 16rem; }
   .mt7-l { margin-top: 16rem; }
-  .mv7-l { margin-top: 16rem; padding-bottom: 16rem; }
-  .mh7-l { margin-left: 16rem; padding-right: 16rem; }
+  .mv7-l { margin-top: 16rem; margin-bottom: 16rem; }
+  .mh7-l { margin-left: 16rem; margin-right: 16rem; }
   .nakey-l { margin: 16rem; }
   .nlkey-l { margin-left: 16rem; }
   .nrkey-l { margin-right: 16rem; }
@@ -1838,6 +1838,8 @@ a { color: #000011; }
 
 */
 .list { list-style-type: none; }
+
+.list-clear, .list-clear li { margin: 0; padding: 0; }
 
 /*
  TABLES Docs: http://tachyons.io/docs/elements/tables/
@@ -2327,77 +2329,133 @@ code, .code { font-family: Consolas, monaco, monospace; }
  Modifiers: -[color]-[tone] = each color variable name-tone pair is also a border color name
 
 */
-.b-primary-lighten { border-color: #747373; }
+.b-primary-light3 { border-color: #BEBDBD; }
+
+.b-primary-light2 { border-color: #939192; }
+
+.b-primary-light1 { border-color: #514F50; }
 
 .b-primary { border-color: #262324; }
 
-.b-primary-darken { border-color: #1c1a1b; }
+.b-primary-dark1 { border-color: #1B1919; }
 
-.b-secondary-lighten { border-color: #d5ec15; }
+.b-secondary-light4 { border-color: #F2F6CC; }
+
+.b-secondary-light3 { border-color: #E5EC99; }
+
+.b-secondary-light2 { border-color: #D8E366; }
+
+.b-secondary-light1 { border-color: #CBD933; }
 
 .b-secondary { border-color: #bed000; }
 
-.b-secondary-dark-med, h1, h2, h3, h4, h5 { border-color: #c8d168; }
+.b-secondary-dark1, h1, h2, h3, h4, h5 { border-color: #ABBB00; }
 
-.b-secondary-darken { border-color: #8b9800; }
+.b-secondary-dark2 { border-color: #859200; }
 
-.b-secondary-faded { border-color: #e4ebd7; }
+.b-secondary-dark3 { border-color: #5F6800; }
 
-.b-accent1-lighten { border-color: #5cd5e1; }
+.b-secondary-dark4 { border-color: #393E00; }
+
+.b-accent1-light4 { border-color: #E6F9FA; }
+
+.b-accent1-light3 { border-color: #B3ECF1; }
+
+.b-accent1-light2 { border-color: #80DFE8; }
+
+.b-accent1-light1 { border-color: #4DD2DE; }
 
 .b-accent1 { border-color: #00bed0; }
 
-.b-accent1-darken { border-color: #007985; }
+.b-accent1-dark1 { border-color: #0098A6; }
 
-.b-accent2-lighten { border-color: #d668d4; }
+.b-accent1-dark2 { border-color: #00727D; }
+
+.b-accent1-dark3 { border-color: #004C53; }
+
+.b-accent1-dark4 { border-color: #00262A; }
+
+.b-accent2-light4 { border-color: #F9E7F8; }
+
+.b-accent2-light3 { border-color: #ECB8EB; }
+
+.b-accent2-light2 { border-color: #DF89DE; }
+
+.b-accent2-light1 { border-color: #D25AD0; }
 
 .b-accent2 { border-color: #bf13bc; }
 
-.b-accent2-darken { border-color: #8b0e89; }
+.b-accent2-dark1 { border-color: #990F96; }
 
-.b-accent3-lighten { border-color: #8a87bb; }
+.b-accent2-dark2 { border-color: #730B71; }
+
+.b-accent2-dark3 { border-color: #4C084B; }
+
+.b-accent2-dark4 { border-color: #260426; }
+
+.b-accent3-light4 { border-color: #DFDEEC; }
+
+.b-accent3-light3 { border-color: #BFBDDA; }
+
+.b-accent3-light2 { border-color: #9F9CC7; }
+
+.b-accent3-light1 { border-color: #7F7BB5; }
 
 .b-accent3 { border-color: #5f5aa2; }
 
-.b-accent3-darken { border-color: #4e4a85; }
+.b-accent3-dark1 { border-color: #433F71; }
 
-.b-error-lighten { border-color: #fb8987; }
+.b-accent3-dark2 { border-color: #302D51; }
+
+.b-accent3-dark3 { border-color: #1C1B31; }
+
+.b-accent3-dark4 { border-color: #090910; }
+
+.b-grays-white { border-color: #FFFFFF; }
+
+.b-grays-light4 { border-color: #F5F5F5; }
+
+.b-grays-light3 { border-color: #EBEBEB; }
+
+.b-grays-light2 { border-color: #E0E0E0; }
+
+.b-grays-light1 { border-color: #D6D6D6; }
+
+.b-grays { border-color: #CCCCCC; }
+
+.b-grays-dark1 { border-color: #A3A3A3; }
+
+.b-grays-dark2 { border-color: #7A7A7A; }
+
+.b-grays-dark3 { border-color: #525252; }
+
+.b-grays-dark4 { border-color: #292929; }
+
+.b-grays-black { border-color: #000000; }
+
+.b-error-light { border-color: #fb8987; }
 
 .b-error { border-color: #e55552; }
 
-.b-error-darken { border-color: #b64543; }
+.b-error-dark { border-color: #b64543; }
 
-.b-success-lighten { border-color: #3cc093; }
+.b-success-light { border-color: #3cc093; }
 
 .b-success { border-color: #28cc95; }
 
-.b-success-darken { border-color: #0e9266; }
+.b-success-dark { border-color: #0e9266; }
 
-.b-warning-lighten { border-color: #fef394; }
+.b-warning-light { border-color: #fef394; }
 
 .b-warning { border-color: #feef6d; }
 
-.b-warning-darken { border-color: #d0c45a; }
+.b-warning-dark { border-color: #d0c45a; }
 
-.b-info-lighten { border-color: #71acd9; }
+.b-info-light { border-color: #71acd9; }
 
 .b-info { border-color: #3d8ecc; }
 
-.b-info-darken { border-color: #3275a7; }
-
-.b-gray-white { border-color: #FFFFFF; }
-
-.b-gray-lighten { border-color: #FAFAFA; }
-
-.b-gray-light-med { border-color: #f5f5f5; }
-
-.b-gray { border-color: #CCCCCC; }
-
-.b-gray-darken { border-color: #AAAAAA; }
-
-.b-black { border-color: #000000; }
-
-.b-white { border-color: #ffffff; }
+.b-info-dark { border-color: #3275a7; }
 
 /* BORDER WIDTHS Docs: http://tachyons.io/docs/themes/borders/ Base: bw = border-width Modifiers: 0 = 0 width border 1 = 1st step in border-width scale 2 = 2nd step in border-width scale 3 = 3rd step in border-width scale 4 = 4th step in border-width scale 5 = 5th step in border-width scale Media Query Extensions: -ns = not-small -m  = medium -l  = large
 */
@@ -2452,77 +2510,133 @@ code, .code { font-family: Consolas, monaco, monospace; }
   .br-0-l { border-right-width: 0; }
   .bb-0-l { border-bottom-width: 0; }
   .bl-0-l { border-left-width: 0; } }
-.hover-b-primary-lighten:hover { border-color: #747373; }
+.hover-b-primary-light3:hover { border-color: #BEBDBD; }
+
+.hover-b-primary-light2:hover { border-color: #939192; }
+
+.hover-b-primary-light1:hover { border-color: #514F50; }
 
 .hover-b-primary:hover { border-color: #262324; }
 
-.hover-b-primary-darken:hover { border-color: #1c1a1b; }
+.hover-b-primary-dark1:hover { border-color: #1B1919; }
 
-.hover-b-secondary-lighten:hover { border-color: #d5ec15; }
+.hover-b-secondary-light4:hover { border-color: #F2F6CC; }
+
+.hover-b-secondary-light3:hover { border-color: #E5EC99; }
+
+.hover-b-secondary-light2:hover { border-color: #D8E366; }
+
+.hover-b-secondary-light1:hover { border-color: #CBD933; }
 
 .hover-b-secondary:hover { border-color: #bed000; }
 
-.hover-b-secondary-dark-med:hover { border-color: #c8d168; }
+.hover-b-secondary-dark1:hover { border-color: #ABBB00; }
 
-.hover-b-secondary-darken:hover { border-color: #8b9800; }
+.hover-b-secondary-dark2:hover { border-color: #859200; }
 
-.hover-b-secondary-faded:hover { border-color: #e4ebd7; }
+.hover-b-secondary-dark3:hover { border-color: #5F6800; }
 
-.hover-b-accent1-lighten:hover { border-color: #5cd5e1; }
+.hover-b-secondary-dark4:hover { border-color: #393E00; }
+
+.hover-b-accent1-light4:hover { border-color: #E6F9FA; }
+
+.hover-b-accent1-light3:hover { border-color: #B3ECF1; }
+
+.hover-b-accent1-light2:hover { border-color: #80DFE8; }
+
+.hover-b-accent1-light1:hover { border-color: #4DD2DE; }
 
 .hover-b-accent1:hover { border-color: #00bed0; }
 
-.hover-b-accent1-darken:hover { border-color: #007985; }
+.hover-b-accent1-dark1:hover { border-color: #0098A6; }
 
-.hover-b-accent2-lighten:hover { border-color: #d668d4; }
+.hover-b-accent1-dark2:hover { border-color: #00727D; }
+
+.hover-b-accent1-dark3:hover { border-color: #004C53; }
+
+.hover-b-accent1-dark4:hover { border-color: #00262A; }
+
+.hover-b-accent2-light4:hover { border-color: #F9E7F8; }
+
+.hover-b-accent2-light3:hover { border-color: #ECB8EB; }
+
+.hover-b-accent2-light2:hover { border-color: #DF89DE; }
+
+.hover-b-accent2-light1:hover { border-color: #D25AD0; }
 
 .hover-b-accent2:hover { border-color: #bf13bc; }
 
-.hover-b-accent2-darken:hover { border-color: #8b0e89; }
+.hover-b-accent2-dark1:hover { border-color: #990F96; }
 
-.hover-b-accent3-lighten:hover { border-color: #8a87bb; }
+.hover-b-accent2-dark2:hover { border-color: #730B71; }
+
+.hover-b-accent2-dark3:hover { border-color: #4C084B; }
+
+.hover-b-accent2-dark4:hover { border-color: #260426; }
+
+.hover-b-accent3-light4:hover { border-color: #DFDEEC; }
+
+.hover-b-accent3-light3:hover { border-color: #BFBDDA; }
+
+.hover-b-accent3-light2:hover { border-color: #9F9CC7; }
+
+.hover-b-accent3-light1:hover { border-color: #7F7BB5; }
 
 .hover-b-accent3:hover { border-color: #5f5aa2; }
 
-.hover-b-accent3-darken:hover { border-color: #4e4a85; }
+.hover-b-accent3-dark1:hover { border-color: #433F71; }
 
-.hover-b-error-lighten:hover { border-color: #fb8987; }
+.hover-b-accent3-dark2:hover { border-color: #302D51; }
+
+.hover-b-accent3-dark3:hover { border-color: #1C1B31; }
+
+.hover-b-accent3-dark4:hover { border-color: #090910; }
+
+.hover-b-grays-white:hover { border-color: #FFFFFF; }
+
+.hover-b-grays-light4:hover { border-color: #F5F5F5; }
+
+.hover-b-grays-light3:hover { border-color: #EBEBEB; }
+
+.hover-b-grays-light2:hover { border-color: #E0E0E0; }
+
+.hover-b-grays-light1:hover { border-color: #D6D6D6; }
+
+.hover-b-grays:hover { border-color: #CCCCCC; }
+
+.hover-b-grays-dark1:hover { border-color: #A3A3A3; }
+
+.hover-b-grays-dark2:hover { border-color: #7A7A7A; }
+
+.hover-b-grays-dark3:hover { border-color: #525252; }
+
+.hover-b-grays-dark4:hover { border-color: #292929; }
+
+.hover-b-grays-black:hover { border-color: #000000; }
+
+.hover-b-error-light:hover { border-color: #fb8987; }
 
 .hover-b-error:hover { border-color: #e55552; }
 
-.hover-b-error-darken:hover { border-color: #b64543; }
+.hover-b-error-dark:hover { border-color: #b64543; }
 
-.hover-b-success-lighten:hover { border-color: #3cc093; }
+.hover-b-success-light:hover { border-color: #3cc093; }
 
 .hover-b-success:hover { border-color: #28cc95; }
 
-.hover-b-success-darken:hover { border-color: #0e9266; }
+.hover-b-success-dark:hover { border-color: #0e9266; }
 
-.hover-b-warning-lighten:hover { border-color: #fef394; }
+.hover-b-warning-light:hover { border-color: #fef394; }
 
 .hover-b-warning:hover { border-color: #feef6d; }
 
-.hover-b-warning-darken:hover { border-color: #d0c45a; }
+.hover-b-warning-dark:hover { border-color: #d0c45a; }
 
-.hover-b-info-lighten:hover { border-color: #71acd9; }
+.hover-b-info-light:hover { border-color: #71acd9; }
 
 .hover-b-info:hover { border-color: #3d8ecc; }
 
-.hover-b-info-darken:hover { border-color: #3275a7; }
-
-.hover-b-gray-white:hover { border-color: #FFFFFF; }
-
-.hover-b-gray-lighten:hover { border-color: #FAFAFA; }
-
-.hover-b-gray-light-med:hover { border-color: #f5f5f5; }
-
-.hover-b-gray:hover { border-color: #CCCCCC; }
-
-.hover-b-gray-darken:hover { border-color: #AAAAAA; }
-
-.hover-b-black:hover { border-color: #000000; }
-
-.hover-b-white:hover { border-color: #ffffff; }
+.hover-b-info-dark:hover { border-color: #3275a7; }
 
 /*
  BORDER RADIUS Docs: http://tachyons.io/docs/themes/border-radius/
@@ -2707,11 +2821,23 @@ code, .code { font-family: Consolas, monaco, monospace; }
  hover      = Hover text color -[color] -[color]-[tone]
  c-inherit  = inherit text color from parent
 */
-.bg-primary-lighten { background-color: #747373; }
+.bg-primary-light3 { background-color: #BEBDBD; }
 
-.bg-wcag-primary-lighten { background-color: #747373; color: #fffffe; }
+.bg-wcag-primary-light3 { background-color: #BEBDBD; }
 
-.hover-bg-primary-lighten:hover { background-color: #747373; }
+.hover-bg-primary-light3:hover { background-color: #BEBDBD; }
+
+.bg-primary-light2 { background-color: #939192; }
+
+.bg-wcag-primary-light2 { background-color: #939192; color: #fffffe; }
+
+.hover-bg-primary-light2:hover { background-color: #939192; }
+
+.bg-primary-light1 { background-color: #514F50; }
+
+.bg-wcag-primary-light1 { background-color: #514F50; color: #fffffe; }
+
+.hover-bg-primary-light1:hover { background-color: #514F50; }
 
 .bg-primary { background-color: #262324; }
 
@@ -2719,17 +2845,35 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-primary { background-color: #262324; color: #fffffe; }
 
-.bg-primary-darken { background-color: #1c1a1b; }
+.bg-primary-dark1 { background-color: #1B1919; }
 
-.bg-wcag-primary-darken { background-color: #1c1a1b; color: #fffffe; }
+.bg-wcag-primary-dark1 { background-color: #1B1919; color: #fffffe; }
 
-.hover-bg-primary-darken:hover { background-color: #1c1a1b; }
+.hover-bg-primary-dark1:hover { background-color: #1B1919; }
 
-.bg-secondary-lighten { background-color: #d5ec15; }
+.bg-secondary-light4 { background-color: #F2F6CC; }
 
-.bg-wcag-secondary-lighten { background-color: #d5ec15; }
+.bg-wcag-secondary-light4 { background-color: #F2F6CC; }
 
-.hover-bg-secondary-lighten:hover { background-color: #d5ec15; }
+.hover-bg-secondary-light4:hover { background-color: #F2F6CC; }
+
+.bg-secondary-light3 { background-color: #E5EC99; }
+
+.bg-wcag-secondary-light3 { background-color: #E5EC99; }
+
+.hover-bg-secondary-light3:hover { background-color: #E5EC99; }
+
+.bg-secondary-light2 { background-color: #D8E366; }
+
+.bg-wcag-secondary-light2 { background-color: #D8E366; }
+
+.hover-bg-secondary-light2:hover { background-color: #D8E366; }
+
+.bg-secondary-light1 { background-color: #CBD933; }
+
+.bg-wcag-secondary-light1 { background-color: #CBD933; }
+
+.hover-bg-secondary-light1:hover { background-color: #CBD933; }
 
 .bg-secondary { background-color: #bed000; }
 
@@ -2737,29 +2881,53 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-secondary { background-color: #bed000; }
 
-.bg-secondary-dark-med { background-color: #c8d168; }
+.bg-secondary-dark1 { background-color: #ABBB00; }
 
-.bg-wcag-secondary-dark-med { background-color: #c8d168; }
+.bg-wcag-secondary-dark1 { background-color: #ABBB00; }
 
-.hover-bg-secondary-dark-med:hover { background-color: #c8d168; }
+.hover-bg-secondary-dark1:hover { background-color: #ABBB00; }
 
-.bg-secondary-darken { background-color: #8b9800; }
+.bg-secondary-dark2 { background-color: #859200; }
 
-.bg-wcag-secondary-darken { background-color: #8b9800; color: #fffffe; }
+.bg-wcag-secondary-dark2 { background-color: #859200; color: #fffffe; }
 
-.hover-bg-secondary-darken:hover { background-color: #8b9800; }
+.hover-bg-secondary-dark2:hover { background-color: #859200; }
 
-.bg-secondary-faded { background-color: #e4ebd7; }
+.bg-secondary-dark3 { background-color: #5F6800; }
 
-.bg-wcag-secondary-faded { background-color: #e4ebd7; }
+.bg-wcag-secondary-dark3 { background-color: #5F6800; color: #fffffe; }
 
-.hover-bg-secondary-faded:hover { background-color: #e4ebd7; }
+.hover-bg-secondary-dark3:hover { background-color: #5F6800; }
 
-.bg-accent1-lighten { background-color: #5cd5e1; }
+.bg-secondary-dark4 { background-color: #393E00; }
 
-.bg-wcag-accent1-lighten { background-color: #5cd5e1; }
+.bg-wcag-secondary-dark4 { background-color: #393E00; color: #fffffe; }
 
-.hover-bg-accent1-lighten:hover { background-color: #5cd5e1; }
+.hover-bg-secondary-dark4:hover { background-color: #393E00; }
+
+.bg-accent1-light4 { background-color: #E6F9FA; }
+
+.bg-wcag-accent1-light4 { background-color: #E6F9FA; }
+
+.hover-bg-accent1-light4:hover { background-color: #E6F9FA; }
+
+.bg-accent1-light3 { background-color: #B3ECF1; }
+
+.bg-wcag-accent1-light3 { background-color: #B3ECF1; }
+
+.hover-bg-accent1-light3:hover { background-color: #B3ECF1; }
+
+.bg-accent1-light2 { background-color: #80DFE8; }
+
+.bg-wcag-accent1-light2 { background-color: #80DFE8; }
+
+.hover-bg-accent1-light2:hover { background-color: #80DFE8; }
+
+.bg-accent1-light1 { background-color: #4DD2DE; }
+
+.bg-wcag-accent1-light1 { background-color: #4DD2DE; }
+
+.hover-bg-accent1-light1:hover { background-color: #4DD2DE; }
 
 .bg-accent1 { background-color: #00bed0; }
 
@@ -2767,17 +2935,53 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-accent1 { background-color: #00bed0; }
 
-.bg-accent1-darken { background-color: #007985; }
+.bg-accent1-dark1 { background-color: #0098A6; }
 
-.bg-wcag-accent1-darken { background-color: #007985; color: #fffffe; }
+.bg-wcag-accent1-dark1 { background-color: #0098A6; color: #fffffe; }
 
-.hover-bg-accent1-darken:hover { background-color: #007985; }
+.hover-bg-accent1-dark1:hover { background-color: #0098A6; }
 
-.bg-accent2-lighten { background-color: #d668d4; }
+.bg-accent1-dark2 { background-color: #00727D; }
 
-.bg-wcag-accent2-lighten { background-color: #d668d4; color: #fffffe; }
+.bg-wcag-accent1-dark2 { background-color: #00727D; color: #fffffe; }
 
-.hover-bg-accent2-lighten:hover { background-color: #d668d4; }
+.hover-bg-accent1-dark2:hover { background-color: #00727D; }
+
+.bg-accent1-dark3 { background-color: #004C53; }
+
+.bg-wcag-accent1-dark3 { background-color: #004C53; color: #fffffe; }
+
+.hover-bg-accent1-dark3:hover { background-color: #004C53; }
+
+.bg-accent1-dark4 { background-color: #00262A; }
+
+.bg-wcag-accent1-dark4 { background-color: #00262A; color: #fffffe; }
+
+.hover-bg-accent1-dark4:hover { background-color: #00262A; }
+
+.bg-accent2-light4 { background-color: #F9E7F8; }
+
+.bg-wcag-accent2-light4 { background-color: #F9E7F8; }
+
+.hover-bg-accent2-light4:hover { background-color: #F9E7F8; }
+
+.bg-accent2-light3 { background-color: #ECB8EB; }
+
+.bg-wcag-accent2-light3 { background-color: #ECB8EB; }
+
+.hover-bg-accent2-light3:hover { background-color: #ECB8EB; }
+
+.bg-accent2-light2 { background-color: #DF89DE; }
+
+.bg-wcag-accent2-light2 { background-color: #DF89DE; }
+
+.hover-bg-accent2-light2:hover { background-color: #DF89DE; }
+
+.bg-accent2-light1 { background-color: #D25AD0; }
+
+.bg-wcag-accent2-light1 { background-color: #D25AD0; color: #fffffe; }
+
+.hover-bg-accent2-light1:hover { background-color: #D25AD0; }
 
 .bg-accent2 { background-color: #bf13bc; }
 
@@ -2785,17 +2989,53 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-accent2 { background-color: #bf13bc; color: #fffffe; }
 
-.bg-accent2-darken { background-color: #8b0e89; }
+.bg-accent2-dark1 { background-color: #990F96; }
 
-.bg-wcag-accent2-darken { background-color: #8b0e89; color: #fffffe; }
+.bg-wcag-accent2-dark1 { background-color: #990F96; color: #fffffe; }
 
-.hover-bg-accent2-darken:hover { background-color: #8b0e89; }
+.hover-bg-accent2-dark1:hover { background-color: #990F96; }
 
-.bg-accent3-lighten { background-color: #8a87bb; }
+.bg-accent2-dark2 { background-color: #730B71; }
 
-.bg-wcag-accent3-lighten { background-color: #8a87bb; color: #fffffe; }
+.bg-wcag-accent2-dark2 { background-color: #730B71; color: #fffffe; }
 
-.hover-bg-accent3-lighten:hover { background-color: #8a87bb; }
+.hover-bg-accent2-dark2:hover { background-color: #730B71; }
+
+.bg-accent2-dark3 { background-color: #4C084B; }
+
+.bg-wcag-accent2-dark3 { background-color: #4C084B; color: #fffffe; }
+
+.hover-bg-accent2-dark3:hover { background-color: #4C084B; }
+
+.bg-accent2-dark4 { background-color: #260426; }
+
+.bg-wcag-accent2-dark4 { background-color: #260426; color: #fffffe; }
+
+.hover-bg-accent2-dark4:hover { background-color: #260426; }
+
+.bg-accent3-light4 { background-color: #DFDEEC; }
+
+.bg-wcag-accent3-light4 { background-color: #DFDEEC; }
+
+.hover-bg-accent3-light4:hover { background-color: #DFDEEC; }
+
+.bg-accent3-light3 { background-color: #BFBDDA; }
+
+.bg-wcag-accent3-light3 { background-color: #BFBDDA; }
+
+.hover-bg-accent3-light3:hover { background-color: #BFBDDA; }
+
+.bg-accent3-light2 { background-color: #9F9CC7; }
+
+.bg-wcag-accent3-light2 { background-color: #9F9CC7; color: #fffffe; }
+
+.hover-bg-accent3-light2:hover { background-color: #9F9CC7; }
+
+.bg-accent3-light1 { background-color: #7F7BB5; }
+
+.bg-wcag-accent3-light1 { background-color: #7F7BB5; color: #fffffe; }
+
+.hover-bg-accent3-light1:hover { background-color: #7F7BB5; }
 
 .bg-accent3 { background-color: #5f5aa2; }
 
@@ -2803,17 +3043,101 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-accent3 { background-color: #5f5aa2; color: #fffffe; }
 
-.bg-accent3-darken { background-color: #4e4a85; }
+.bg-accent3-dark1 { background-color: #433F71; }
 
-.bg-wcag-accent3-darken { background-color: #4e4a85; color: #fffffe; }
+.bg-wcag-accent3-dark1 { background-color: #433F71; color: #fffffe; }
 
-.hover-bg-accent3-darken:hover { background-color: #4e4a85; }
+.hover-bg-accent3-dark1:hover { background-color: #433F71; }
 
-.bg-error-lighten { background-color: #fb8987; }
+.bg-accent3-dark2 { background-color: #302D51; }
 
-.bg-wcag-error-lighten { background-color: #fb8987; }
+.bg-wcag-accent3-dark2 { background-color: #302D51; color: #fffffe; }
 
-.hover-bg-error-lighten:hover { background-color: #fb8987; }
+.hover-bg-accent3-dark2:hover { background-color: #302D51; }
+
+.bg-accent3-dark3 { background-color: #1C1B31; }
+
+.bg-wcag-accent3-dark3 { background-color: #1C1B31; color: #fffffe; }
+
+.hover-bg-accent3-dark3:hover { background-color: #1C1B31; }
+
+.bg-accent3-dark4 { background-color: #090910; }
+
+.bg-wcag-accent3-dark4 { background-color: #090910; color: #fffffe; }
+
+.hover-bg-accent3-dark4:hover { background-color: #090910; }
+
+.bg-grays-white { background-color: #FFFFFF; }
+
+.bg-wcag-grays-white { background-color: #FFFFFF; }
+
+.hover-bg-grays-white:hover { background-color: #FFFFFF; }
+
+.bg-grays-light4 { background-color: #F5F5F5; }
+
+.bg-wcag-grays-light4 { background-color: #F5F5F5; }
+
+.hover-bg-grays-light4:hover { background-color: #F5F5F5; }
+
+.bg-grays-light3, pre { background-color: #EBEBEB; }
+
+.bg-wcag-grays-light3 { background-color: #EBEBEB; }
+
+.hover-bg-grays-light3:hover { background-color: #EBEBEB; }
+
+.bg-grays-light2 { background-color: #E0E0E0; }
+
+.bg-wcag-grays-light2 { background-color: #E0E0E0; }
+
+.hover-bg-grays-light2:hover { background-color: #E0E0E0; }
+
+.bg-grays-light1 { background-color: #D6D6D6; }
+
+.bg-wcag-grays-light1 { background-color: #D6D6D6; }
+
+.hover-bg-grays-light1:hover { background-color: #D6D6D6; }
+
+.bg-grays { background-color: #CCCCCC; }
+
+.hover-bg-grays:hover { background-color: #CCCCCC; }
+
+.bg-wcag-grays { background-color: #CCCCCC; }
+
+.bg-grays-dark1 { background-color: #A3A3A3; }
+
+.bg-wcag-grays-dark1 { background-color: #A3A3A3; color: #fffffe; }
+
+.hover-bg-grays-dark1:hover { background-color: #A3A3A3; }
+
+.bg-grays-dark2 { background-color: #7A7A7A; }
+
+.bg-wcag-grays-dark2 { background-color: #7A7A7A; color: #fffffe; }
+
+.hover-bg-grays-dark2:hover { background-color: #7A7A7A; }
+
+.bg-grays-dark3 { background-color: #525252; }
+
+.bg-wcag-grays-dark3 { background-color: #525252; color: #fffffe; }
+
+.hover-bg-grays-dark3:hover { background-color: #525252; }
+
+.bg-grays-dark4 { background-color: #292929; }
+
+.bg-wcag-grays-dark4 { background-color: #292929; color: #fffffe; }
+
+.hover-bg-grays-dark4:hover { background-color: #292929; }
+
+.bg-grays-black { background-color: #000000; }
+
+.bg-wcag-grays-black { background-color: #000000; color: #fffffe; }
+
+.hover-bg-grays-black:hover { background-color: #000000; }
+
+.bg-error-light { background-color: #fb8987; }
+
+.bg-wcag-error-light { background-color: #fb8987; }
+
+.hover-bg-error-light:hover { background-color: #fb8987; }
 
 .bg-error { background-color: #e55552; }
 
@@ -2821,17 +3145,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-error { background-color: #e55552; color: #fffffe; }
 
-.bg-error-darken { background-color: #b64543; }
+.bg-error-dark { background-color: #b64543; }
 
-.bg-wcag-error-darken { background-color: #b64543; color: #fffffe; }
+.bg-wcag-error-dark { background-color: #b64543; color: #fffffe; }
 
-.hover-bg-error-darken:hover { background-color: #b64543; }
+.hover-bg-error-dark:hover { background-color: #b64543; }
 
-.bg-success-lighten { background-color: #3cc093; }
+.bg-success-light { background-color: #3cc093; }
 
-.bg-wcag-success-lighten { background-color: #3cc093; }
+.bg-wcag-success-light { background-color: #3cc093; }
 
-.hover-bg-success-lighten:hover { background-color: #3cc093; }
+.hover-bg-success-light:hover { background-color: #3cc093; }
 
 .bg-success { background-color: #28cc95; }
 
@@ -2839,17 +3163,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-success { background-color: #28cc95; }
 
-.bg-success-darken { background-color: #0e9266; }
+.bg-success-dark { background-color: #0e9266; }
 
-.bg-wcag-success-darken { background-color: #0e9266; color: #fffffe; }
+.bg-wcag-success-dark { background-color: #0e9266; color: #fffffe; }
 
-.hover-bg-success-darken:hover { background-color: #0e9266; }
+.hover-bg-success-dark:hover { background-color: #0e9266; }
 
-.bg-warning-lighten { background-color: #fef394; }
+.bg-warning-light { background-color: #fef394; }
 
-.bg-wcag-warning-lighten { background-color: #fef394; }
+.bg-wcag-warning-light { background-color: #fef394; }
 
-.hover-bg-warning-lighten:hover { background-color: #fef394; }
+.hover-bg-warning-light:hover { background-color: #fef394; }
 
 .bg-warning { background-color: #feef6d; }
 
@@ -2857,17 +3181,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-warning { background-color: #feef6d; }
 
-.bg-warning-darken { background-color: #d0c45a; }
+.bg-warning-dark { background-color: #d0c45a; }
 
-.bg-wcag-warning-darken { background-color: #d0c45a; }
+.bg-wcag-warning-dark { background-color: #d0c45a; }
 
-.hover-bg-warning-darken:hover { background-color: #d0c45a; }
+.hover-bg-warning-dark:hover { background-color: #d0c45a; }
 
-.bg-info-lighten { background-color: #71acd9; }
+.bg-info-light { background-color: #71acd9; }
 
-.bg-wcag-info-lighten { background-color: #71acd9; color: #fffffe; }
+.bg-wcag-info-light { background-color: #71acd9; color: #fffffe; }
 
-.hover-bg-info-lighten:hover { background-color: #71acd9; }
+.hover-bg-info-light:hover { background-color: #71acd9; }
 
 .bg-info { background-color: #3d8ecc; }
 
@@ -2875,53 +3199,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .bg-wcag-info { background-color: #3d8ecc; color: #fffffe; }
 
-.bg-info-darken { background-color: #3275a7; }
+.bg-info-dark { background-color: #3275a7; }
 
-.bg-wcag-info-darken { background-color: #3275a7; color: #fffffe; }
+.bg-wcag-info-dark { background-color: #3275a7; color: #fffffe; }
 
-.hover-bg-info-darken:hover { background-color: #3275a7; }
-
-.bg-gray-white { background-color: #FFFFFF; }
-
-.bg-wcag-gray-white { background-color: #FFFFFF; }
-
-.hover-bg-gray-white:hover { background-color: #FFFFFF; }
-
-.bg-gray-lighten { background-color: #FAFAFA; }
-
-.bg-wcag-gray-lighten { background-color: #FAFAFA; }
-
-.hover-bg-gray-lighten:hover { background-color: #FAFAFA; }
-
-.bg-gray-light-med, pre { background-color: #f5f5f5; }
-
-.bg-wcag-gray-light-med { background-color: #f5f5f5; }
-
-.hover-bg-gray-light-med:hover { background-color: #f5f5f5; }
-
-.bg-gray { background-color: #CCCCCC; }
-
-.hover-bg-gray:hover { background-color: #CCCCCC; }
-
-.bg-wcag-gray { background-color: #CCCCCC; }
-
-.bg-gray-darken { background-color: #AAAAAA; }
-
-.bg-wcag-gray-darken { background-color: #AAAAAA; }
-
-.hover-bg-gray-darken:hover { background-color: #AAAAAA; }
-
-.bg-black { background-color: #000000; }
-
-.hover-bg-black:hover { background-color: #000000; }
-
-.bg-wcag-black { background-color: #000000; color: #fffffe; }
-
-.bg-white { background-color: #ffffff; }
-
-.hover-bg-white:hover { background-color: #ffffff; }
-
-.bg-wcag-white { background-color: #ffffff; }
+.hover-bg-info-dark:hover { background-color: #3275a7; }
 
 .c-copy, .f-card__title, .f-card__list__title { color: #000011; }
 
@@ -2929,173 +3211,281 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .c-light, .f-card--cover .f-card__title, .f-card--cover .f-card__list__title { color: #fffffe; }
 
-.c-primary-lighten { color: #747373; }
+.c-primary-light3 { color: #BEBDBD; }
 
-.hover-primary-lighten:hover { color: #262324; }
+.hover-primary-light3:hover { color: #262324; }
+
+.c-primary-light2 { color: #939192; }
+
+.hover-primary-light2:hover { color: #262324; }
+
+.c-primary-light1 { color: #514F50; }
+
+.hover-primary-light1:hover { color: #262324; }
 
 .c-primary { color: #262324; }
 
 .hover-primary:hover { color: #262324; }
 
-.c-primary-darken { color: #1c1a1b; }
+.c-primary-dark1 { color: #1B1919; }
 
-.hover-primary-darken:hover { color: #262324; }
+.hover-primary-dark1:hover { color: #262324; }
 
 .hgl-primary { background-color: rgba(38, 35, 36, 0.4); }
 
-.c-secondary-lighten { color: #d5ec15; }
+.c-secondary-light4 { color: #F2F6CC; }
 
-.hover-secondary-lighten:hover { color: #bed000; }
+.hover-secondary-light4:hover { color: #bed000; }
+
+.c-secondary-light3 { color: #E5EC99; }
+
+.hover-secondary-light3:hover { color: #bed000; }
+
+.c-secondary-light2 { color: #D8E366; }
+
+.hover-secondary-light2:hover { color: #bed000; }
+
+.c-secondary-light1 { color: #CBD933; }
+
+.hover-secondary-light1:hover { color: #bed000; }
 
 .c-secondary { color: #bed000; }
 
 .hover-secondary:hover { color: #bed000; }
 
-.c-secondary-dark-med { color: #c8d168; }
+.c-secondary-dark1 { color: #ABBB00; }
 
-.hover-secondary-dark-med:hover { color: #bed000; }
+.hover-secondary-dark1:hover { color: #bed000; }
 
-.c-secondary-darken { color: #8b9800; }
+.c-secondary-dark2 { color: #859200; }
 
-.hover-secondary-darken:hover { color: #bed000; }
+.hover-secondary-dark2:hover { color: #bed000; }
 
-.c-secondary-faded { color: #e4ebd7; }
+.c-secondary-dark3 { color: #5F6800; }
 
-.hover-secondary-faded:hover { color: #bed000; }
+.hover-secondary-dark3:hover { color: #bed000; }
+
+.c-secondary-dark4 { color: #393E00; }
+
+.hover-secondary-dark4:hover { color: #bed000; }
 
 .hgl-secondary { background-color: rgba(190, 208, 0, 0.4); }
 
-.c-accent1-lighten { color: #5cd5e1; }
+.c-accent1-light4 { color: #E6F9FA; }
 
-.hover-accent1-lighten:hover { color: #00bed0; }
+.hover-accent1-light4:hover { color: #00bed0; }
+
+.c-accent1-light3 { color: #B3ECF1; }
+
+.hover-accent1-light3:hover { color: #00bed0; }
+
+.c-accent1-light2 { color: #80DFE8; }
+
+.hover-accent1-light2:hover { color: #00bed0; }
+
+.c-accent1-light1 { color: #4DD2DE; }
+
+.hover-accent1-light1:hover { color: #00bed0; }
 
 .c-accent1 { color: #00bed0; }
 
 .hover-accent1:hover { color: #00bed0; }
 
-.c-accent1-darken { color: #007985; }
+.c-accent1-dark1 { color: #0098A6; }
 
-.hover-accent1-darken:hover { color: #00bed0; }
+.hover-accent1-dark1:hover { color: #00bed0; }
+
+.c-accent1-dark2 { color: #00727D; }
+
+.hover-accent1-dark2:hover { color: #00bed0; }
+
+.c-accent1-dark3 { color: #004C53; }
+
+.hover-accent1-dark3:hover { color: #00bed0; }
+
+.c-accent1-dark4 { color: #00262A; }
+
+.hover-accent1-dark4:hover { color: #00bed0; }
 
 .hgl-accent1 { background-color: rgba(0, 190, 208, 0.4); }
 
-.c-accent2-lighten { color: #d668d4; }
+.c-accent2-light4 { color: #F9E7F8; }
 
-.hover-accent2-lighten:hover { color: #bf13bc; }
+.hover-accent2-light4:hover { color: #bf13bc; }
+
+.c-accent2-light3 { color: #ECB8EB; }
+
+.hover-accent2-light3:hover { color: #bf13bc; }
+
+.c-accent2-light2 { color: #DF89DE; }
+
+.hover-accent2-light2:hover { color: #bf13bc; }
+
+.c-accent2-light1 { color: #D25AD0; }
+
+.hover-accent2-light1:hover { color: #bf13bc; }
 
 .c-accent2 { color: #bf13bc; }
 
 .hover-accent2:hover { color: #bf13bc; }
 
-.c-accent2-darken { color: #8b0e89; }
+.c-accent2-dark1 { color: #990F96; }
 
-.hover-accent2-darken:hover { color: #bf13bc; }
+.hover-accent2-dark1:hover { color: #bf13bc; }
+
+.c-accent2-dark2 { color: #730B71; }
+
+.hover-accent2-dark2:hover { color: #bf13bc; }
+
+.c-accent2-dark3 { color: #4C084B; }
+
+.hover-accent2-dark3:hover { color: #bf13bc; }
+
+.c-accent2-dark4 { color: #260426; }
+
+.hover-accent2-dark4:hover { color: #bf13bc; }
 
 .hgl-accent2 { background-color: rgba(191, 19, 188, 0.4); }
 
-.c-accent3-lighten { color: #8a87bb; }
+.c-accent3-light4 { color: #DFDEEC; }
 
-.hover-accent3-lighten:hover { color: #5f5aa2; }
+.hover-accent3-light4:hover { color: #5f5aa2; }
+
+.c-accent3-light3 { color: #BFBDDA; }
+
+.hover-accent3-light3:hover { color: #5f5aa2; }
+
+.c-accent3-light2 { color: #9F9CC7; }
+
+.hover-accent3-light2:hover { color: #5f5aa2; }
+
+.c-accent3-light1 { color: #7F7BB5; }
+
+.hover-accent3-light1:hover { color: #5f5aa2; }
 
 .c-accent3 { color: #5f5aa2; }
 
 .hover-accent3:hover { color: #5f5aa2; }
 
-.c-accent3-darken { color: #4e4a85; }
+.c-accent3-dark1 { color: #433F71; }
 
-.hover-accent3-darken:hover { color: #5f5aa2; }
+.hover-accent3-dark1:hover { color: #5f5aa2; }
+
+.c-accent3-dark2 { color: #302D51; }
+
+.hover-accent3-dark2:hover { color: #5f5aa2; }
+
+.c-accent3-dark3 { color: #1C1B31; }
+
+.hover-accent3-dark3:hover { color: #5f5aa2; }
+
+.c-accent3-dark4 { color: #090910; }
+
+.hover-accent3-dark4:hover { color: #5f5aa2; }
 
 .hgl-accent3 { background-color: rgba(95, 90, 162, 0.4); }
 
-.c-error-lighten { color: #fb8987; }
+.c-grays-white { color: #FFFFFF; }
 
-.hover-error-lighten:hover { color: #e55552; }
+.hover-grays-white:hover { color: #CCCCCC; }
+
+.c-grays-light4 { color: #F5F5F5; }
+
+.hover-grays-light4:hover { color: #CCCCCC; }
+
+.c-grays-light3 { color: #EBEBEB; }
+
+.hover-grays-light3:hover { color: #CCCCCC; }
+
+.c-grays-light2 { color: #E0E0E0; }
+
+.hover-grays-light2:hover { color: #CCCCCC; }
+
+.c-grays-light1 { color: #D6D6D6; }
+
+.hover-grays-light1:hover { color: #CCCCCC; }
+
+.c-grays { color: #CCCCCC; }
+
+.hover-grays:hover { color: #CCCCCC; }
+
+.c-grays-dark1 { color: #A3A3A3; }
+
+.hover-grays-dark1:hover { color: #CCCCCC; }
+
+.c-grays-dark2 { color: #7A7A7A; }
+
+.hover-grays-dark2:hover { color: #CCCCCC; }
+
+.c-grays-dark3 { color: #525252; }
+
+.hover-grays-dark3:hover { color: #CCCCCC; }
+
+.c-grays-dark4 { color: #292929; }
+
+.hover-grays-dark4:hover { color: #CCCCCC; }
+
+.c-grays-black { color: #000000; }
+
+.hover-grays-black:hover { color: #CCCCCC; }
+
+.hgl-grays { background-color: rgba(204, 204, 204, 0.4); }
+
+.c-error-light { color: #fb8987; }
+
+.hover-error-light:hover { color: #e55552; }
 
 .c-error { color: #e55552; }
 
 .hover-error:hover { color: #e55552; }
 
-.c-error-darken { color: #b64543; }
+.c-error-dark { color: #b64543; }
 
-.hover-error-darken:hover { color: #e55552; }
+.hover-error-dark:hover { color: #e55552; }
 
 .hgl-error { background-color: rgba(229, 85, 82, 0.4); }
 
-.c-success-lighten { color: #3cc093; }
+.c-success-light { color: #3cc093; }
 
-.hover-success-lighten:hover { color: #28cc95; }
+.hover-success-light:hover { color: #28cc95; }
 
 .c-success { color: #28cc95; }
 
 .hover-success:hover { color: #28cc95; }
 
-.c-success-darken { color: #0e9266; }
+.c-success-dark { color: #0e9266; }
 
-.hover-success-darken:hover { color: #28cc95; }
+.hover-success-dark:hover { color: #28cc95; }
 
 .hgl-success { background-color: rgba(40, 204, 149, 0.4); }
 
-.c-warning-lighten { color: #fef394; }
+.c-warning-light { color: #fef394; }
 
-.hover-warning-lighten:hover { color: #feef6d; }
+.hover-warning-light:hover { color: #feef6d; }
 
 .c-warning { color: #feef6d; }
 
 .hover-warning:hover { color: #feef6d; }
 
-.c-warning-darken { color: #d0c45a; }
+.c-warning-dark { color: #d0c45a; }
 
-.hover-warning-darken:hover { color: #feef6d; }
+.hover-warning-dark:hover { color: #feef6d; }
 
 .hgl-warning { background-color: rgba(254, 239, 109, 0.4); }
 
-.c-info-lighten { color: #71acd9; }
+.c-info-light { color: #71acd9; }
 
-.hover-info-lighten:hover { color: #3d8ecc; }
+.hover-info-light:hover { color: #3d8ecc; }
 
 .c-info { color: #3d8ecc; }
 
 .hover-info:hover { color: #3d8ecc; }
 
-.c-info-darken { color: #3275a7; }
+.c-info-dark { color: #3275a7; }
 
-.hover-info-darken:hover { color: #3d8ecc; }
+.hover-info-dark:hover { color: #3d8ecc; }
 
 .hgl-info { background-color: rgba(61, 142, 204, 0.4); }
-
-.c-gray-white { color: #FFFFFF; }
-
-.hover-gray-white:hover { color: #CCCCCC; }
-
-.c-gray-lighten { color: #FAFAFA; }
-
-.hover-gray-lighten:hover { color: #CCCCCC; }
-
-.c-gray-light-med { color: #f5f5f5; }
-
-.hover-gray-light-med:hover { color: #CCCCCC; }
-
-.c-gray { color: #CCCCCC; }
-
-.hover-gray:hover { color: #CCCCCC; }
-
-.c-gray-darken { color: #AAAAAA; }
-
-.hover-gray-darken:hover { color: #CCCCCC; }
-
-.hgl-gray { background-color: rgba(204, 204, 204, 0.4); }
-
-.c-black { color: #000000; }
-
-.hover-black:hover { color: #000000; }
-
-.hgl-black { background-color: rgba(0, 0, 0, 0.4); }
-
-.c-white { color: #ffffff; }
-
-.hover-white:hover { color: #ffffff; }
-
-.hgl-white { background-color: rgba(255, 255, 255, 0.4); }
 
 .c-inherit { color: inherit; }
 
@@ -3139,14 +3529,16 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .row > div { display: flex; justify-content: center; }
 
 @media (max-width: 740px) { .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 { width: 100%; } }
-body { font-family: Calibri, sans-serif; background-color: #f5f5f5; }
+body { font-family: Calibri, sans-serif; background-color: #F5F5F5; }
 
 p { margin-top: 0.5rem; margin-bottom: 0.5rem; }
 
-.container { width: 100%; max-width: 780px; min-height: calc(100vh - 92px); margin: 0 auto 10px; padding: 10px; box-sizing: border-box; }
-.container > h1 { border-bottom: 2px solid #c8d168; padding-left: 10px; padding-right: 10px; margin-top: 10px; }
+#header { height: 60px; }
 
-pre { border: 1px solid #747373; padding: 10px; border-radius: 4px; overflow-x: auto; }
+.container { width: 100%; max-width: 780px; min-height: calc(100vh - 92px); margin: 0 auto 10px; padding: 10px; box-sizing: border-box; }
+.container > h1 { border-bottom: 2px solid #ABBB00; padding-left: 10px; padding-right: 10px; }
+
+pre { border: 1px solid #D6D6D6; padding: 10px; border-radius: 4px; overflow-x: auto; }
 
 code { overflow-x: auto; }
 
@@ -3155,13 +3547,11 @@ code { overflow-x: auto; }
 .f-card--rich ul, .f-card--rich ol { padding-left: 1.5rem; padding-bottom: 0.5rem; }
 .f-card--rich li { padding: 0.2rem 0.25rem; }
 
-a { color: #262324; }
-
 a:hover, a:visited { color: inherit; }
 
 .f-card--rich { padding: 14px; }
 
-.f-card { display: inline-block; box-sizing: border-box; position: relative; width: 100%; height: 100%; margin-bottom: 10px; background-color: #ffffff; border-radius: 4px; overflow: hidden; }
+.f-card { display: inline-block; box-sizing: border-box; position: relative; width: 100%; height: 100%; margin-bottom: 10px; background-color: #FFFFFF; border-radius: 4px; overflow: hidden; }
 
 .f-card__title, .f-card__list__title { border: none; font-size: 1.25rem; font-weight: normal; padding: 0; }
 
@@ -3191,6 +3581,10 @@ a:hover, a:visited { color: inherit; }
 
 .f-card__title--accent3 .f-card__title, .f-card__title--accent3 .f-card__list__title { color: #5f5aa2; }
 
+.f-card--grays, .f-card--grays .f-card__content { background-color: #CCCCCC; }
+
+.f-card__title--grays .f-card__title, .f-card__title--grays .f-card__list__title { color: #CCCCCC; }
+
 .f-card--error, .f-card--error .f-card__content { background-color: #e55552; color: #fffffe; }
 
 .f-card--error .f-card__title, .f-card--error .f-card__list__title { color: #fffffe; }
@@ -3211,25 +3605,11 @@ a:hover, a:visited { color: inherit; }
 
 .f-card__title--info .f-card__title, .f-card__title--info .f-card__list__title { color: #3d8ecc; }
 
-.f-card--gray, .f-card--gray .f-card__content { background-color: #CCCCCC; }
-
-.f-card__title--gray .f-card__title, .f-card__title--gray .f-card__list__title { color: #CCCCCC; }
-
-.f-card--black, .f-card--black .f-card__content { background-color: #000000; color: #fffffe; }
-
-.f-card--black .f-card__title, .f-card--black .f-card__list__title { color: #fffffe; }
-
-.f-card__title--black .f-card__title, .f-card__title--black .f-card__list__title { color: #000000; }
-
-.f-card--white, .f-card--white .f-card__content { background-color: #ffffff; }
-
-.f-card__title--white .f-card__title, .f-card__title--white .f-card__list__title { color: #ffffff; }
-
 .f-card__mask, .f-card__figure, .f-card__content { position: relative; overflow: hidden; transition: 0.2s ease-out; }
 
 .f-card--clear a { text-decoration: none; color: inherit; }
 
-.f-card__content { padding: 0.8rem; background-color: #ffffff; }
+.f-card__content { padding: 0.8rem; background-color: #FFFFFF; }
 
 .f-card__title, .f-card__list__title { margin-top: 0; }
 
@@ -3268,12 +3648,12 @@ a:hover, a:visited { color: inherit; }
 
 .f-card__list__ul li { padding: 8px 14px; transition: 0.15s ease-out; }
 
-.f-card__list--striped li:nth-child(odd) { background-color: #e4ebd7; }
+.f-card__list--striped li:nth-child(odd) { background-color: #BEBDBD; }
 
-.f-card__list--striped a:nth-child(even) li { background-color: #ffffff; }
+.f-card__list--striped a:nth-child(even) li { background-color: #FFFFFF; }
 
-.f-card__list__ul a li:hover { background-color: #9fb871; }
+.f-card__list__ul a li:hover { background-color: #727070; }
 
-.f-card__list--bordered li { border-top: 1px solid #747373; }
+.f-card__list--bordered li { border-top: 1px solid #514F50; }
 
 /*# sourceMappingURL=main.css.map */
