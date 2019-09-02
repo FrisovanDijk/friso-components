@@ -1,5 +1,5 @@
 const apiUrl = "https://www.frisovandijk.com/components/";
-const baseUrl = window.window.location.origin + "/docs/";
+const baseUrl = window.location.origin + "/docs/";
 
 // Makes the server API call
 function getComponent(name, vars) {
