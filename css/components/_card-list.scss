@@ -1,0 +1,40 @@
+// list variables
+$list-striped-color: color(secondary, faded);
+$list-item-padding: 8px 14px;
+$border-color: color(primary, lighten);
+
+.f-card__list {
+  height: auto;
+}
+
+.f-card__list__title {
+  @extend .f-card__title;
+  padding: $list-item-padding;
+  padding-bottom: 0;
+}
+
+.f-card__list p {
+  padding: $list-item-padding;
+  padding-top: 0;
+}
+
+.f-card__list__ul li {
+  padding: $list-item-padding;
+  transition: 0.15s ease-out;
+}
+
+.f-card__list--striped li:nth-child(odd) {
+  background-color: $list-striped-color;
+}
+
+.f-card__list--striped a:nth-child(even) li {
+  background-color: $element-foreground;
+}
+
+.f-card__list__ul a li:hover {
+  background-color: darken($list-striped-color, 30%);;
+}
+
+.f-card__list--bordered li {
+  border-top: 1px solid $border-color;
+}

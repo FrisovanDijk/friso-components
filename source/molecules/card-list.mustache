@@ -1,0 +1,24 @@
+{{!
+    title                   (recommended)
+    description             (optional)
+    items       [{ name     (recommended)
+                 , url      (optional)
+                 , img_url  (optional)
+                 , img_alt  (optional)
+                 }]
+    striped?                (optional) default false
+    border?                 (optional) default false
+}}
+<div class="f-card f-card__list f--clear">
+    {{#title}}<h1 class="f-card__list__title">{{title}}</h1>{{/title}}
+    {{#description}}<p>{{description}}</p>{{/description}}
+    <ul class="f-card__list__ul
+               {{#striped?}}f-card__list--striped {{/striped?}}
+               {{#border?}}f-card__list--bordered{{/border?}}">
+    {{#items}}
+        {{#url}}<a href="{{url}}">{{/url}}
+        <li {{#url}}class="f-card__item--hover"{{/url}}>{{name}}</li>
+        {{#url}}</a>{{/url}}
+    {{/items}}
+    </ul>
+</div>

@@ -1,0 +1,65 @@
+<!doctype html>
+<head>
+    <title>Z-index</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Z-index</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Base
+    z = z-index
+
+Modifiers
+    -0 = literal value 0
+    -1 = literal value 1
+    -2 = literal value 2
+    -3 = literal value 3
+    -4 = literal value 4
+    -5 = literal value 5
+    -999 = literal value 999
+    -9999 = literal value 9999
+    -max = largest accepted z-index value as integer
+    -inherit = string value inherit
+    -initial = string value initial
+    -unset = string value unset
+
+.z-0 { z-index: 0; }
+.z-1 { z-index: 1; }
+.z-2 { z-index: 2; }
+.z-3 { z-index: 3; }
+.z-4 { z-index: 4; }
+.z-5 { z-index: 5; }
+
+.z-999 { z-index: 999; }
+.z-9999 { z-index: 9999; }
+
+.z-max {
+z-index: 2147483647;
+}
+
+.z-inherit { z-index: inherit; }
+.z-initial { z-index: initial; }
+.z-unset { z-index: unset; }
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

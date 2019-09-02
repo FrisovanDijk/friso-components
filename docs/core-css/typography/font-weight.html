@@ -1,0 +1,53 @@
+<!doctype html>
+<head>
+    <title>Font weight</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Font weight</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Base
+    fw = font-weight
+
+Modifiers:
+    1 = literal value 100
+    2 = literal value 200
+    3 = literal value 300
+    4 = literal value 400
+    5 = literal value 500
+    6 = literal value 600
+    7 = literal value 700
+    8 = literal value 800
+    9 = literal value 900
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.normal { font-weight: normal; }
+.b      { font-weight: bold; }
+.fw1    { font-weight: 100; }
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

@@ -1,0 +1,187 @@
+<!doctype html>
+<head>
+    <title>Colors</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+<div class="container">
+    <h1>Colors</h1>
+
+    <div class="w-100">
+        <div class="w-100 w-50-m w-25-l fl" id="card_intro"></div>
+        <div class="w-100 w-50-m w-75-l fl">
+            <div class="f-card f-card--rich">
+                <h2>About these colors</h2>
+                <p>Many web applications use standard patterns for color palettes. They have a primary and
+                secondary brand color. This template has space for multiple accent colors.</p>
+                <p>All these styles are computed in <code class="hgl-secondary">_colors.scss</code>. You can find the input values in
+                    <code class="hgl-secondary">_variables.scss</code>. This page gives an overview of the possibilities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="f-card">
+    <div class="flex flex-wrap items-start bg-white pa2">
+        <h2 class="w-100">Brand colors</h2>
+        <div class="cf w-100 flex flex-wrap">
+            <div class="bg-wcag-primary   ma2 pa2 tc w4 fl">Primary<p>#262324</p></div>
+            <div class="bg-wcag-secondary ma2 pa2 tc w4 fl">Secondary<p>#bed000</p></div>
+            <div class="bg-wcag-accent1   ma2 pa2 tc w4 fl">Accent 1<p>#00bed0</p></div>
+            <div class="bg-wcag-accent2   ma2 pa2 tc w4 fl">Accent 2<p>#bf13bc</p></div>
+            <div class="bg-wcag-accent3   ma2 pa2 tc w4 fl">Accent 3<p>#5f5aa2</p></div>
+        </div>
+
+
+            <h2 class="w-100 mt1" >Using colors</h2>
+            <p class="w-100">All background colors displayed here are part of a single map.</p>
+<pre><code>Color palette:
+    map-get(map-get($colors, $color), $tone)        // Get a color
+    color($color[, $tone = base])                   // Shorthand function
+    color(secondary, darken)                        // #c8d168
+
+Text color:
+    map-get($text-colors, $tone)                    // Get a text color
+    text-color($tone: 'copy')                       // Shorthand function
+    text-color(faded)                               // #dbe6ec
+
+Accessible contrast text/background:
+    adaptive-text-color($background)                // WCAG compliant text contrast function
+    adaptive-text-color(color(secondary, darken))   // #fffffe
+</code></pre>
+            <h2 class="w-100 mt1">Default classes</h2>
+<pre><code>Base colors don't require a [tone] modifier.
+    bg-gray-base becomes bg-gray
+
+background color:       bg-[color]-[tone]
+text-color:             c-[color]-[tone]
+wcag text & background: bg-wcag-[color]-[tone]
+hover bg:               hover-bg-[color]-[tone]
+hover text:             hover-[color]-[tone]
+highlight bg:           hgl-[color]             only base colors
+</code></pre>
+<p class="w-100">All available colors are listed below with high contrast text.</p>
+
+        <h2 class="w-100 mt1">Brand colors with accents</h2>
+        <div class="flex flex-column ma1">
+            <div class="pa2 tc w4 bg-wcag-primary-lighten"> .bg-primary-lighten  :#747373</div>
+            <div class="pa2 tc w4 bg-wcag-primary">         .bg-primary          :#262324</div>
+            <div class="pa2 tc w4 bg-wcag-primary-darken">  .bg-primary-darken   :#1c1a1b</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <div class="pa2 tc w4 bg-wcag-secondary-lighten">  .bg-secondary-lighten        :#d5ec15</div>
+            <div class="pa2 tc w4 bg-wcag-secondary">          .bg-secondary        :#bed000</div>
+            <div class="pa2 tc w4 bg-wcag-secondary-dark-med"> .bg-secondary-dark-med        :#c8d168</div>
+            <div class="pa2 tc w4 bg-wcag-secondary-darken">   .bg-secondary-darken        :#c8d168</div>
+            <div class="pa2 tc w4 bg-wcag-secondary-faded">    .bg-secondary-faded        :#e4ebd7</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <div class="pa2 tc w4 bg-wcag-accent1-lighten">         .bg-accent1-lighten  :#5cd5e1</div>
+            <div class="pa2 tc w4 bg-wcag-accent1">                 .bg-accent1          :#00bed0 </div>
+            <div class="pa2 tc w4 bg-wcag-accent1-darken">  .bg-accent1-darken   :#007985</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <div class="pa2 tc w4 bg-wcag-accent2-lighten"> .bg-accent2-lighten  :#d668d4</div>
+            <div class="pa2 tc w4 bg-wcag-accent2">         .bg-accent2          :#bf13bc</div>
+            <div class="pa2 tc w4 bg-wcag-accent2-darken">  .bg-accent2-darken   :#8b0e89</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <div class="pa2 tc w4 tr bg-wcag-accent3-lighten"> .bg-accent3-lighten  :#8a87bb</div>
+            <div class="pa2 tc w4 tr bg-wcag-accent3">         .bg-accent3          :#5f5aa2</div>
+            <div class="pa2 tc w4 tr bg-wcag-accent3-darken">  .bg-accent3-darken   :#4e4a85</div>
+        </div>
+
+        <h2 class="w-100 mt1">UI colors</h2>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Info</strong>
+            <div class="pa2 tc w4 bg-wcag-info-lighten">    .bg-info-lighten     :#71acd9</div>
+            <div class="pa2 tc w4 bg-wcag-info">            .bg-info             :#3d8ecc</div>
+            <div class="pa2 tc w4 bg-wcag-info-darken">     .bg-info-darken      :#3275a7</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Success</strong>
+            <div class="pa2 tc w4 bg-wcag-success-lighten">         .bg-success-lighten  :#28cc95</div>
+            <div class="pa2 tc w4 bg-wcag-success">                 .bg-success          :#3cc093</div>
+            <div class="pa2 tc w4 bg-wcag-success-darken">          .bg-success-darken   :#0e9266</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Warning</strong>
+            <div class="pa2 tc w4 bg-wcag-warning-lighten">         .bg-warning-lighten  :#fef394</div>
+            <div class="pa2 tc w4 bg-wcag-warning">                 .bg-warning          :#feef6d</div>
+            <div class="pa2 tc w4 bg-wcag-warning-darken">          .bg-warning-darken   :#d0c45a</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Error</strong>
+            <div class="pa2 tc w4 bg-wcag-error-lighten">   .bg-error-lighten    :#fb8987</div>
+            <div class="pa2 tc w4 bg-wcag-error">           .bg-error            :#e55552</div>
+            <div class="pa2 tc w4 bg-wcag-error-darken">    .bg-error-darken     :#b64543</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Gray</strong>
+            <div class="pa2 tc w4 bg-wcag-gray-lighten">            .bg-gray-lighten     :#FAFAFA</div>
+            <div class="pa2 tc w4 bg-wcag-gray-light-med">          .bg-gray-lightmed    :#f5f5f5</div>
+            <div class="pa2 tc w4 bg-wcag-gray">                    .bg-gray             :#CCCCCC</div>
+            <div class="pa2 tc w4 bg-wcag-gray-darken">             .bg-gray-darken      :#AAAAAA</div>
+        </div>
+
+        <h2 class="w-100 mt1">Further colors</h2>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Base colors</strong>
+            <div class="pa2 tc w4 bg-wcag-black">           .bg-black</div>
+            <div class="pa2 tc w4 bg-wcag-white b-primary ba">           .bg-white</div>
+            <div class="pa2 tc w4 bg-transparent b-primary ba">           .bg-transparent</div>
+            <div class="pa2 tc w4 bg-inherit b-primary ba">           .bg-inherit</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Hovers</strong>
+            <div class="pa2 tc w4 hover-bg-secondary">         hover-bg-[color]</div>
+            <div class="pa2 tc w4 hover-accent2">                 hover-[color]</div>
+        </div>
+        <div class="flex flex-column ma1">
+            <strong class="m-bs">Text</strong>
+            <div class="pa2 tc w4 tr c-body">         t-body </div>
+            <div class="pa2 tc w4 tr c-faded">              t-faded</div>
+            <div class="pa2 tc w4 tr bg-primary-lighten c-light">              t-light</div>
+            <div class="pa2 tc w4 tr bg-primary-lighten c-secondary">              t-[color]</div>
+        </div>
+    </div>
+    </div>
+
+    <div id="docs"></div>
+
+</div>
+
+<template id="docs-row">
+    <div class="row">
+        <div class="col-3 docs-row--1"></div>
+        <div class="col-9 docs-row--2">
+            <div class="f-card f-card--rich">
+                <h2></h2>
+                <pre><code></code></pre>
+            </div>
+        </div>
+    </div>
+</template>
+
+<div id="footer"></div>
+
+</body>
+
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "Brand colors",
+            "description": "You can easily substitute these colors for your own in the stylesheet.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+
+</script>

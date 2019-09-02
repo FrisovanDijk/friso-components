@@ -1,0 +1,131 @@
+<!doctype html>
+<head>
+    <title>Borders</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+<div class="container">
+    <h1>Borders</h1>
+
+    <div class="row">
+        <div class="col-3" id="card_intro"></div>
+        <div class="col-9 flex flex-column">
+            <div class="f-card f-card--rich">
+<pre class=""><code>Base:
+    b = border
+
+Modifiers:
+    a = all
+    t = top
+    r = right
+    b = bottom
+    l = left
+    n = none
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.ba { border-style: solid; border-width: 1px; }
+.bt { border-top-style: solid; border-top-width: 1px; }
+.br { border-right-style: solid; border-right-width: 1px; }
+.bb { border-bottom-style: solid; border-bottom-width: 1px; }
+.bl { border-left-style: solid; border-left-width: 1px; }
+.bn { border-style: none; border-width: 0; }
+</code></pre>
+                </div>
+
+            <div class="f-card f-card--rich">
+                <p>Border size:</p>
+<pre class="bw2"><code>Base:
+    bw = border-width
+
+Modifiers:
+    0 = 0 width border
+    1 = 1st step in border-width scale
+    2 = 2nd step in border-width scale
+    3 = 3rd step in border-width scale
+    4 = 4th step in border-width scale
+    5 = 5th step in border-width scale
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.bw0 { border-width: 0; }
+.bw1 { border-width: .125rem; }
+.bw2 { border-width: .25rem; }
+.bw3 { border-width: .5rem; }
+.bw4 { border-width: 1rem; }
+.bw5 { border-width: 2rem; }
+
+/* Resets */
+.bt-0 { border-top-width: 0; }
+.br-0 { border-right-width: 0; }
+.bb-0 { border-bottom-width: 0; }
+.bl-0 { border-left-width: 0; }
+</code></pre>
+            </div>
+
+            <div class="f-card f-card--rich">
+                <p>Border styles:</p>
+<pre class="b--dotted bw2"><code>Base:
+    b = border-style
+
+Modifiers:
+    --none   = none
+    --dotted = dotted
+    --dashed = dashed
+    --solid  = solid
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.b--dotted { border-style: dotted; }
+.b--dashed { border-style: dashed; }
+.b--solid {  border-style: solid; }
+.b--none {   border-style: none; }
+}</code></pre>
+            </div>
+            <div class="f-card f-card--rich">
+                <p>Border color:</p>
+<pre class="b-accent1"><code>Base:
+    b = border
+    hover-b = border hover
+
+Modifiers:
+    -[color]-[tone] = each color variable
+    name-tone pair is also a border color name
+
+.b-accent1-darken
+</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "Fancy borders",
+            "description": "Make borders in any color with a variety of sizes and styles.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+</script>
+</body>

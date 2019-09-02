@@ -1,0 +1,184 @@
+$spacing: (
+        0: 0,
+        1: 0.25rem,
+        2: 0.5rem,
+        3: 1rem,
+        4: 2rem,
+        5: 4rem,
+        6: 8rem,
+        7: 16rem
+);
+
+/*
+   TACHYONS SPACING
+   Docs: http://tachyons.io/docs/layout/spacing/
+
+   An eight step powers of two scale ranging from 0 to 16rem.
+
+   Base:
+     p = padding
+     m = margin
+
+   Modifiers:
+     a = all
+     h = horizontal
+     v = vertical
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     0 = none
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+   TACHYONS - NEGATIVE MARGINS
+
+   Base:
+     n = negative
+
+   Modifiers:
+     a = all
+     t = top
+     r = right
+     b = bottom
+     l = left
+
+     1 = 1st step in spacing scale
+     2 = 2nd step in spacing scale
+     3 = 3rd step in spacing scale
+     4 = 4th step in spacing scale
+     5 = 5th step in spacing scale
+     6 = 6th step in spacing scale
+     7 = 7th step in spacing scale
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+*/
+
+@each $key, $value in $spacing {
+  // Padding
+  .pa#{$key} { padding: $value; }
+  .pl#{$key} { padding-left: $value; }
+  .pr#{$key} { padding-right: $value; }
+  .pb#{$key} { padding-bottom: $value; }
+  .pt#{$key} { padding-top: $value; }
+  .pv#{$key} { padding-top: $value; padding-bottom: $value; }
+  .ph#{$key} { padding-left: $value; padding-right: $value; }
+
+  // Margin
+  .ma#{$key} { margin: $value; }
+  .ml#{$key} { margin-left: $value; }
+  .mr#{$key} { margin-right: $value; }
+  .mb#{$key} { margin-bottom: $value; }
+  .mt#{$key} { margin-top: $value; }
+  .mv#{$key} { margin-top: $value; padding-bottom: $value; }
+  .mh#{$key} { margin-left: $value; padding-right: $value; }
+
+  // Negative margin
+  .na#{key}  { margin: $value; }
+  .nl#{key}  { margin-left: $value; }
+  .nr#{key}  { margin-right: $value; }
+  .nb#{key}  { margin-bottom: $value; }
+  .nt#{key}  { margin-top: $value; }
+}
+
+@media ($breakpoint-not-small) {
+  @each $key, $value in $spacing {
+    // Padding
+    .pa#{$key}-ns { padding: $value; }
+    .pl#{$key}-ns { padding-left: $value; }
+    .pr#{$key}-ns { padding-right: $value; }
+    .pb#{$key}-ns { padding-bottom: $value; }
+    .pt#{$key}-ns { padding-top: $value; }
+    .pv#{$key}-ns { padding-top: $value; padding-bottom: $value; }
+    .ph#{$key}-ns { padding-left: $value; padding-right: $value; }
+
+    // Margin
+    .ma#{$key}-ns { margin: $value; }
+    .ml#{$key}-ns { margin-left: $value; }
+    .mr#{$key}-ns { margin-right: $value; }
+    .mb#{$key}-ns { margin-bottom: $value; }
+    .mt#{$key}-ns { margin-top: $value; }
+    .mv#{$key}-ns { margin-top: $value; padding-bottom: $value; }
+    .mh#{$key}-ns { margin-left: $value; padding-right: $value; }
+
+    // Negative margin
+    .na#{key}-ns  { margin: $value; }
+    .nl#{key}-ns  { margin-left: $value; }
+    .nr#{key}-ns  { margin-right: $value; }
+    .nb#{key}-ns  { margin-bottom: $value; }
+    .nt#{key}-ns  { margin-top: $value; }
+  }
+}
+
+@media ($breakpoint-medium) {
+  @each $key, $value in $spacing {
+    // Padding
+    .pa#{$key}-m { padding: $value; }
+    .pl#{$key}-m { padding-left: $value; }
+    .pr#{$key}-m { padding-right: $value; }
+    .pb#{$key}-m { padding-bottom: $value; }
+    .pt#{$key}-m { padding-top: $value; }
+    .pv#{$key}-m { padding-top: $value; padding-bottom: $value; }
+    .ph#{$key}-m { padding-left: $value; padding-right: $value; }
+
+    // Margin
+    .ma#{$key}-m { margin: $value; }
+    .ml#{$key}-m { margin-left: $value; }
+    .mr#{$key}-m { margin-right: $value; }
+    .mb#{$key}-m { margin-bottom: $value; }
+    .mt#{$key}-m { margin-top: $value; }
+    .mv#{$key}-m { margin-top: $value; padding-bottom: $value; }
+    .mh#{$key}-m { margin-left: $value; padding-right: $value; }
+
+    // Negative margin
+    .na#{key}-m  { margin: $value; }
+    .nl#{key}-m  { margin-left: $value; }
+    .nr#{key}-m  { margin-right: $value; }
+    .nb#{key}-m  { margin-bottom: $value; }
+    .nt#{key}-m  { margin-top: $value; }
+  }
+}
+
+@media ($breakpoint-large) {
+  @each $key, $value in $spacing {
+    // Padding
+    .pa#{$key}-l { padding: $value; }
+    .pl#{$key}-l { padding-left: $value; }
+    .pr#{$key}-l { padding-right: $value; }
+    .pb#{$key}-l { padding-bottom: $value; }
+    .pt#{$key}-l { padding-top: $value; }
+    .pv#{$key}-l { padding-top: $value; padding-bottom: $value; }
+    .ph#{$key}-l { padding-left: $value; padding-right: $value; }
+
+    // Margin
+    .ma#{$key}-l { margin: $value; }
+    .ml#{$key}-l { margin-left: $value; }
+    .mr#{$key}-l { margin-right: $value; }
+    .mb#{$key}-l { margin-bottom: $value; }
+    .mt#{$key}-l { margin-top: $value; }
+    .mv#{$key}-l { margin-top: $value; padding-bottom: $value; }
+    .mh#{$key}-l { margin-left: $value; padding-right: $value; }
+
+    // Negative margin
+    .na#{key}-l  { margin: $value; }
+    .nl#{key}-l  { margin-left: $value; }
+    .nr#{key}-l  { margin-right: $value; }
+    .nb#{key}-l  { margin-bottom: $value; }
+    .nt#{key}-l  { margin-top: $value; }
+  }
+}
+

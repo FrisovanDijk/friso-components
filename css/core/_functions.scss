@@ -1,0 +1,48 @@
+// Color function
+@function color($color, $tone: 'base') {
+  @return map-get(map-get($colors, $color), $tone);
+}
+
+// Text color function
+@function text-color($tone: 'copy') {
+  @return map-get($text-colors, $tone);
+}
+
+// Square root function SASS style
+@function sqrt($r) {
+  $x0: 1;
+  $x1: $x0;
+  @for $i from 1 through 10 {
+    $x1: $x0 - ($x0 * $x0 - abs($r)) / (2 * $x0);
+    $x0: $x1;
+  }
+  @return $x1;
+}
+
+// Calculates the brightness of a color
+@function color-brightness($color) {
+  // Extract color molecules
+  $red-component: red($color);
+  $green-component: green($color);
+  $blue-component: blue($color);
+
+  $red-magic-number: 241;
+  $green-magic-number: 691;
+  $blue-magic-number: 68;
+  $brightness-divisor: $red-magic-number + $green-magic-number + $blue-magic-number;
+
+  // Calculate a brightness value in 3d color space between 0 and 255
+  $number: sqrt((($red-component * $red-component * $red-magic-number) + ($green-component * $green-component * $green-magic-number) + ($blue-component * $blue-component * $blue-magic-number)) / $brightness-divisor);
+
+  // Convert to percentage and return
+  @return 100% * $number / 255;
+}
+
+// Apply the correct WCAG 2.1 text color with enough contrast to the background
+@function adaptive-text-color($background) {
+  @if color-brightness($background) < 65% {
+    @return text-color(light);
+  } @else {
+    @return text-color(body);
+  }
+}

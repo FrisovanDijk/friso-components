@@ -1,0 +1,49 @@
+<!doctype html>
+<head>
+    <title>Text align</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Text align</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Base
+    t = text-align
+
+Modifiers
+    l = left
+    r = right
+    c = center
+    j = justify
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.tl  { text-align: left; }
+.tr  { text-align: right; }
+.tc  { text-align: center; }
+.tj  { text-align: justify; }
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

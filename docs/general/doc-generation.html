@@ -1,0 +1,86 @@
+<!doctype html>
+<head>
+    <title>Docs generation</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Docs generation</h1>
+
+    <div class="row">
+        <div class="col-3" id="card_intro"></div>
+        <div class="col-9">
+            <div class="f-card f-card--rich">
+                <p>Generates component docs by appending a child to a container element. The child contains a grid row with two columns:
+                    one with a given width and one with the remaining column space. The component JSON is parsed in the code element.</p>
+                <p><code class="hgl-secondary">buildDocRowHTML</code> creates a row and performs the relevant API call.</p>
+                <p><code class="hgl-secondary">generateDocRow</code> creates a row.</p>
+                <p><code class="hgl-secondary">getDocRowAPI</code> parses a component.</p>
+                <p>It's written to support <code class="hgl-secondary">buildDocRowHTML</code> mostly, so call these functions in the
+                    given order and sequentially per row.</p>
+                <p>docbuild.js</p>
+<pre><code>var counter = 0;
+
+function buildDocRowHTML(parent_id, data, title = "", opts) {
+    generateDocRow(parent_id, title, opts);
+    getDocRowAPI(data);
+}
+
+function generateDocRow(parent_id, title = "", opts) {
+    var template = document.querySelector('#docs-row');
+    var row = document.querySelector(parent_id);
+    var clone = document.importNode(template.content, true);
+
+    if(opts) {
+        if(opts.text) {
+            var p = document.createElement("p");
+            p.textContent = opts.text;
+            clone.querySelector(".f-card--rich").appendChild(p);
+        }
+
+        if(opts.width) {
+            var width2 = 12 - opts.width;
+            clone.querySelector(".docs-row--1").classList.replace("col-3", `col-${opts.width}`);
+            clone.querySelector(".docs-row--2").classList.replace("col-9", `col-${width2}`);
+        }
+    }
+
+    clone.querySelector(".docs-row--1").setAttribute("id", `demo${counter}`);
+    clone.querySelector("code").setAttribute("id", `code${counter}`);
+    clone.querySelector("h2").textContent = title;
+    row.appendChild(clone);
+}
+
+function getDocRowAPI(data) {
+    parseComponentHTML(`#demo${counter}`, data);
+    document.querySelector(`#code${counter}`).innerHTML = JSON.stringify(data, null, " ");
+    counter++;
+}
+</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "Front end JS",
+            "description": "A lightweight implementation using the fetch API to asynchronously load components.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+</script>

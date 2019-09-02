@@ -1,0 +1,74 @@
+body {
+  font-family: Calibri, sans-serif;
+  background-color: color(grey, light-med);
+}
+
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+h1, h2, h3, h4, h5 {
+  @extend .bb, .b-secondary-dark-med, .pb1, .mb2;
+}
+
+.container {
+  width: 100%;
+  max-width: 780px;
+  min-height: calc(100vh - 92px);
+
+  margin: 0 auto 10px;
+  padding: 10px;
+  box-sizing: border-box;
+
+  &>h1 {
+    border-bottom: 2px solid color(secondary, dark-med);
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+  }
+}
+
+pre {
+  @extend .bg-gray-light-med;
+  border: 1px solid color(primary, lighten);
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+code {
+  overflow-x: auto;
+}
+
+.row {
+  margin-bottom: 10px;
+}
+
+.f--clear {
+
+}
+
+.f-card--rich {
+  ul, ol {
+    padding-left: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  li {
+    padding: 0.2rem 0.25rem;
+  }
+}
+
+a {
+  color: color(primary);
+}
+
+a:hover, a:visited {
+  color: inherit;
+}
+
+// Rich content inside card, for use in other styles
+.f-card--rich {
+  padding: 14px;
+}

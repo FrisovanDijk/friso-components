@@ -1,0 +1,9 @@
+@each $color-key, $color-value in $colors {
+  @each $tone-key, $tone-value in $color-value {
+    @if $tone-key == base {
+      .hover-b-#{$color-key}:hover { border-color: $tone-value; }
+    } @else {
+      .hover-b-#{$color-key}-#{$tone-key}:hover { border-color: $tone-value; }
+    }
+  }
+}

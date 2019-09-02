@@ -1,0 +1,45 @@
+<!doctype html>
+<head>
+    <title>Functions</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Functions</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>SASS:</p>
+<pre><code>// Color function
+@function color($color, $tone: 'base')
+
+// Text color function
+@function text-color($tone: 'copy')
+
+// Square root function SASS style
+@function sqrt($r)
+
+// Calculates the brightness of a color
+@function color-brightness($color
+
+// Apply the correct WCAG 2.1 text color with enough contrast to the background
+@function adaptive-text-color($background)
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

@@ -1,0 +1,82 @@
+<!doctype html>
+<head>
+    <title>Text modifiers</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<header class="bg-wcag-primary h-2 fl">
+    <div class="f3 m-ls hidden-sm">Friso's Component API</div>
+    <nav class="h-100 m-lm">
+        <ul class="fl h-100 list-reset fl-content-center">
+            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="../index.html">     <li>Home</li>   </a>
+            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="../contents.html">  <li>Docs</li>   </a>
+            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="#">              <li>Github</li> </a>
+        </ul>
+    </nav>
+</header>
+<div class="container">
+    <h1>Text modifiers</h1>
+
+    <div class="row">
+        <div class="col-3" id="card_intro"></div>
+        <div class="col-9">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>// Transform
+ttc { text-transform: capitalize; }
+ttl { text-transform: lowercase; }
+ttu { text-transform: uppercase; }
+ttn { text-transform: none; }
+
+// Decoration
+strike       { text-decoration: line-through; }
+underline    { text-decoration: underline; }
+no-underline { text-decoration: none; }
+
+// Font weight
+normal { font-weight: normal; }
+b      { font-weight: bold; }
+fw1      { font-weight: 100; }
+fw2      { font-weight: 200; }
+fw3      { font-weight: 300; }
+fw4      { font-weight: 400; }
+fw5      { font-weight: 500; }
+fw6      { font-weight: 600; }
+fw7      { font-weight: 700; }
+fw8      { font-weight: 800; }
+fw9      { font-weight: 900; }
+
+// Font style
+i         { font-style: italic; }
+fs-normal { font-style: normal; }
+
+// Spacing
+tracked       { letter-spacing:  .1em; }
+tracked-tight { letter-spacing: -.05em; }
+tracked-mega  { letter-spacing:  .25em; }
+
+// Line height
+lh-solid { line-height: 1; }
+lh-title { line-height: 1.25; }
+lh-copy  { line-height: 1.5; }
+</code></pre>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "All your text modifiers",
+            "description": "Modify text with these selectors.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+</script>

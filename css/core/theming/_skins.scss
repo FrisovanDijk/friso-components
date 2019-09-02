@@ -1,0 +1,102 @@
+/*
+
+  SKINS
+
+  Classes for setting foreground and background colors on elements.
+
+     bg         = background color
+      -[color]
+      -[color]-[tone]
+      -wcag-[color]-[tone]
+
+     c          = color
+      -[color]
+      -[color]-[tone]
+
+     hgl        = Highlight (40% opacity of base)
+      -[color]
+
+     hover-bg   = Hover background color
+      -[color]
+      -[color]-[tone]
+
+     hover      = Hover text color
+      -[color]
+      -[color]-[tone]
+
+     c-inherit  = inherit text color from parent
+*/
+
+// Background color from color palette
+@each $color-key, $color-value in $colors {
+  @each $tone-key, $tone-value in $color-value {
+    @if $tone-key == base {
+      .bg-#{$color-key} {
+        background-color: $tone-value;
+      }
+
+      // Add hover colors
+      .hover-bg-#{$color-key}:hover {
+        background-color: $tone-value;
+      }
+
+      .bg-wcag-#{$color-key} {
+        background-color: $tone-value;
+        color: adaptive-text-color($tone-value);
+      }
+    } @else {
+      .bg-#{$color-key}-#{$tone-key} {
+        background-color: $tone-value;
+      }
+
+      .bg-wcag-#{$color-key}-#{$tone-key} {
+        background-color: $tone-value;
+        color: adaptive-text-color($tone-value);
+      }
+
+      .hover-bg-#{$color-key}-#{$tone-key}:hover {
+        background-color: $tone-value;
+      }
+    }
+  }
+}
+
+// Text colors from copy
+@each $color-key, $color-value in $text-colors {
+  .c-#{$color-key} { color: $color-value; }
+}
+
+// Text colors from color palette
+@each $color-key, $color-value in $colors {
+  @each $tone-key, $tone-value in $color-value {
+    @if $tone-key == base {
+      .c-#{$color-key} {
+        color: $tone-value;
+      }
+
+      // Hover colors
+      .hover-#{$color-key}:hover {
+        color: color($color-key, base);
+      }
+    } @else {
+      .c-#{$color-key}-#{$tone-key} {
+        color: $tone-value;
+      }
+
+      // Hover colors
+      .hover-#{$color-key}-#{$tone-key}:hover {
+        color: color($color-key, base);
+      }
+    }
+  }
+
+  // Highlight colors
+  .hgl-#{$color-key} {
+    background-color: rgba(color($color-key, base), 0.4);
+  }
+}
+
+.c-inherit { color: inherit }
+.c-transparent { color: transparent; }
+.bg-inherit { background-color: inherit; }
+.bg-transparent { background-color: transparent; }

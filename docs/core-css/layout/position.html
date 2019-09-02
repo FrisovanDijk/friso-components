@@ -1,0 +1,75 @@
+<!doctype html>
+<head>
+    <title>Position</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Position</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.static { position: static; }
+.relative  { position: relative; }
+.absolute  { position: absolute; }
+.fixed  { position: fixed; }
+
+COORDINATES
+
+.top-0    { top:    0; }
+.right-0  { right:  0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left:   0; }
+
+.top-1    { top:    1rem; }
+.right-1  { right:  1rem; }
+.bottom-1 { bottom: 1rem; }
+.left-1   { left:   1rem; }
+
+.top-2    { top:    2rem; }
+.right-2  { right:  2rem; }
+.bottom-2 { bottom: 2rem; }
+.left-2   { left:   2rem; }
+
+.top--1    { top:    -1rem; }
+.right--1  { right:  -1rem; }
+.bottom--1 { bottom: -1rem; }
+.left--1   { left:   -1rem; }
+
+.top--2    { top:    -2rem; }
+.right--2  { right:  -2rem; }
+.bottom--2 { bottom: -2rem; }
+.left--2   { left:   -2rem; }
+
+
+.absolute--fill {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

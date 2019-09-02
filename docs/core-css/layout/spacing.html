@@ -1,0 +1,103 @@
+<!doctype html>
+<head>
+    <title>Spacing</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Spacing</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Base:
+    p = padding
+    m = margin
+
+Modifiers:
+    a = all
+    h = horizontal
+    v = vertical
+    t = top
+    r = right
+    b = bottom
+    l = left
+
+    0 = none
+    1 = 1st step in spacing scale
+    2 = 2nd step in spacing scale
+    3 = 3rd step in spacing scale
+    4 = 4th step in spacing scale
+    5 = 5th step in spacing scale
+    6 = 6th step in spacing scale
+    7 = 7th step in spacing scale
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.pa#{$key} { padding: $value; }
+.pl#{$key} { padding-left: $value; }
+.pr#{$key} { padding-right: $value; }
+.pb#{$key} { padding-bottom: $value; }
+.pt#{$key} { padding-top: $value; }
+.pv#{$key} { padding-top: $value; padding-bottom: $value; }
+.ph#{$key} { padding-left: $value; padding-right: $value; }
+
+.ma#{$key} { margin: $value; }
+.ml#{$key} { margin-left: $value; }
+.mr#{$key} { margin-right: $value; }
+.mb#{$key} { margin-bottom: $value; }
+.mt#{$key} { margin-top: $value; }
+.mv#{$key} { margin-top: $value; padding-bottom: $value; }
+.mh#{$key} { margin-left: $value; padding-right: $value; }
+
+NEGATIVE MARGINS
+Base:
+    n = negative
+
+Modifiers:
+    a = all
+    t = top
+    r = right
+    b = bottom
+    l = left
+
+    1 = 1st step in spacing scale
+    2 = 2nd step in spacing scale
+    3 = 3rd step in spacing scale
+    4 = 4th step in spacing scale
+    5 = 5th step in spacing scale
+    6 = 6th step in spacing scale
+    7 = 7th step in spacing scale
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+.na#{key}  { margin: $value; }
+.nl#{key}  { margin-left: $value; }
+.nr#{key}  { margin-right: $value; }
+.nb#{key}  { margin-bottom: $value; }
+.nt#{key}  { margin-top: $value; }
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

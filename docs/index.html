@@ -1,0 +1,165 @@
+<!doctype html>
+<head>
+    <title>Friso's Component API</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="res/components.js"></script>
+    <script src="res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+<div class="container">
+    <h1>Friso's Component API Docs</h1>
+
+    <div class="row">
+        <div class="col-3 flex flex-column">
+            <div id="card_intro"></div>
+            <div id="card_intro2"></div>
+        </div>
+        <article class="col-9">
+            <section class="f-card f-card--rich">
+            <h2>Why a component API?</h2>
+            <p>I enjoy using new technologies with every project, but that renders a lot of front-end work useless because it's heavily embedded
+                in different templating languages and CMSes. You end up refactoring and rewriting.</p>
+            <p>A Component API decouples small, reusable components from their projects. Small, standardised components that are the building
+                blocks of something bigger.</p>
+            <p>The idea is very simple: you make a request with the component name and JSON, you will receive its semantic component.
+                Here are my reasons for building this API:</p>
+            <ol>
+                <li><strong>Agnostic.</strong> The implementation before you is lightweight and doesn't require a JS framework, but nothing stops you from using one.</li>
+                <li><strong>Reduced complexity.</strong> Managing a single API makes changes to components easy.</li>
+                <li><strong>Reuse.</strong> All components come from a single source. It's easy to grab your best semantic, accessible HTML. Class names are
+                    the same across projects.</li>
+                <li><strong>Discoverable.</strong> Browse the docs with examples of components to see what would work for you.</li>
+                <li><strong>Readable.</strong> Your project code become extremely readable by replacing more complex HTML with clear JSON.</li>
+                <li><strong>Simple.</strong> It takes 5 minutes to set up and improves readability.</li>
+                <li><strong>Portable.</strong> The API uses <a href="https://mustache.github.io/" target="_blank">Mustache</a> as its sole dependency,
+                    which has an implementation in most popular programming languages. This and its small implementation size (1 file)
+                    make it extremely portable between languages if so desired.</li>
+            </ol>
+            <p>Take a look around. The project is open source and available on Github, or get inspired and make your own.</p>
+        </section>
+        <section class="flex justify-around">
+            <div id="explore_docs"></div>
+            <div id="explore_docs2"></div>
+        </section>
+        <section class="f-card f-card--rich">
+            <h2>Installing Friso's Component API</h2>
+            <p>Get it from Github and run <code class="hgl-secondary">composer install</code>. You will see 5 items:</p>
+            <ul>
+                <li>css: holds the default templates. Host them with the API to get consistent styling across all your apps.</li>
+                <li>dev: the documentation you're reading right now.</li>
+                <li>templates: the mustache templates used on the server</li>
+                <li>vendor: required packages.</li>
+                <li>index.php: this is the API handler.</li>
+            </ul>
+            <h3>Configuration</h3>
+            <p>If you want to use the Javascript implementation used here, then you need to grab <code class="hgl-secondary">components.js</code> from
+                <code class="hgl-secondary">dev</code>.</p>
+            <p>When you create a new template, upload it to the templates folder or create a new listener. Register your template by adding it to
+                <code class="hgl-secondary">static $components</code> at the top of <code class="hgl-secondary">index.php</code></p>
+            <p></p>
+        </section>
+        <section class="f-card f-card--rich">
+            <h2>Using the Component API</h2>
+            <p>Using it in a project is extremely simple. This documentation site uses a very light
+                <a href="res/components.js" target="_blank">Javascript implementation</a> (although it doesn't support IE).</p>
+            <p>If you use it, make sure you configure <span class="hgl-secondary">const url</span> for your own configuration.</p>
+            <p>To render a component with it, simply use the Javascript code below:</p>
+<pre><code><code>parse_componentHTML(identifier, {
+"name": component name,
+"vars": {
+    component variables
+}
+});
+</code></code></pre>
+            <p>Ok, so what can I input? The <span class="hgl-secondary">identifier</span> is your in-document identifier and
+                uses <span class="hgl-secondary">document.querySelector()</span>. The second argument is the JSON to generate the component.
+                The <span class="hgl-secondary">name</span> is the type of component you generate, and <span class="hgl-secondary">vars</span>
+                is the food for your component.</p>
+        </section>
+
+            <section class="f-card f-card--rich">
+                <h2>About these docs</h2>
+                <p>The docs are my personal templates with my branding applied. They specify my template variables and show the json behind the components on the page.</p>
+                <p>Feel free to reuse or change everything as preferred. </p>
+                <p>Switching the branding on the default template is easy to do. Open <span class="hgl-secondary">_variables.scss</span> and change the relevant colours. Compile
+                    the stylesheet and you're good to go (or check out <a href="http://koala-app.com/" target="_blank">Koala</a> if you don't know how)</p>
+            </section>
+        </article>
+    </div>
+
+    <div id="docs"></div>
+
+</div>
+
+<template id="docs-row">
+    <div class="row">
+        <div class="col-3 docs-row--1"></div>
+        <div class="col-9 docs-row--2">
+            <div class="f-card f-card--rich">
+                <h2></h2>
+                <pre><code></code></pre>
+            </div>
+        </div>
+    </div>
+</template>
+</body>
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "Component API",
+            "description": "Generate standardised web components in multiple projects from a single API.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "https://www.frisovandijk.com",
+            "target": "_blank",
+            "title": "About the creator",
+            "description": "Hi, I'm Friso van Dijk. I've been enjoying web development since age 13. I'm currently employed as privacy researcher and IT consultant.",
+            "img_url": "https://www.frisovandijk.com/media/portrait_friso.png",
+            "class": "f-card--primary f-card__title--secondary"
+        }
+    };
+    parseComponentHTML("#card_intro2", data);
+
+    // Card links
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "contents.html",
+            "title": "Explore the docs",
+            "class": "f-card--primary",
+            "short?": true,
+            "img_url": "res/card-image.png",
+            "cover?": true
+        }
+    };
+    parseComponentHTML("#explore_docs", data);
+
+    // Card links2
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "general/architecture.html",
+            "title": "About the architecture",
+            "class": "f-card--primary",
+            "short?": true,
+            "img_url": "general/architecture.jpg",
+            "cover?": true
+        }
+    };
+    parseComponentHTML("#explore_docs2", data);
+</script>

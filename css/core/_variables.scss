@@ -1,0 +1,75 @@
+// Media queries
+$breakpoint-not-small: "min-width: 30em";
+$breakpoint-medium: "min-width: 30em) and (max-width: 60em";
+$breakpoint-large: "min-width: 60em";
+
+// All branding-related colors
+$colors: (
+        primary: (
+                lighten:   #747373,
+                base:      #262324,
+                darken:    #1c1a1b
+        ),
+        secondary: (
+                lighten:   #d5ec15,
+                base:      #bed000,
+                dark-med:  #c8d168,
+                darken:    #8b9800,
+                faded:     #e4ebd7
+        ),
+        accent1: (
+                lighten:   #5cd5e1,
+                base:      #00bed0,
+                darken:    #007985
+        ),
+        accent2: (
+                lighten:   #d668d4,
+                base:      #bf13bc,
+                darken:    #8b0e89
+        ),
+        accent3: (
+                lighten:   #8a87bb,
+                base:      #5f5aa2,
+                darken:    #4e4a85
+        ),
+        error: (
+                lighten:   #fb8987,
+                base:      #e55552,
+                darken:    #b64543
+        ),
+        success: (
+                lighten:   #3cc093,
+                base:      #28cc95,
+                darken:    #0e9266
+        ),
+        warning: (
+                lighten:   #fef394,
+                base:      #feef6d,
+                darken:    #d0c45a
+        ),
+        info: (
+                lighten:   #71acd9,
+                base:      #3d8ecc,
+                darken:    #3275a7
+        ),
+        gray: (
+                white:     #FFFFFF,
+                lighten:   #FAFAFA,
+                light-med: #f5f5f5,
+                base:      #CCCCCC,
+                darken:    #AAAAAA
+        ),
+        black: (
+                base:      #000000
+        ),
+        white: (
+                base:      #ffffff
+        )
+);
+
+// Colors for body copy
+$text-colors: (
+        copy: #000011,
+        faded: #dbe6ec,
+        light: #fffffe,
+);

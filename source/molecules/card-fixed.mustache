@@ -1,0 +1,29 @@
+{{!
+    url         (optional)
+    target      (optional) url target attribute
+    title
+    description (optional)
+    img_url     (optional)
+    img_alt     (optional)
+    cover?      (optional) default false
+    flex?       (optional) default true
+    wide?       (optional) default false
+    short?      (optional) default false
+    class       (optional)
+}}
+<article class="f-card f-card--clear {{^flex?}}f-card--fixed {{/flex?}}
+                     {{#url}}f-card--link {{/url}}
+                     {{#cover?}}f-card--cover {{/cover?}}
+                     {{#wide?}}f-card--wide {{/wide?}}
+                     {{#short?}}f-card--short {{/short?}}
+                     {{class}}">
+    <div class="f-card__mask">
+        {{#url}}<a href="{{url}}" target="{{target}}">{{/url}}
+        {{#img_url}}<figure class="f-card__figure"><img src="{{img_url}}" alt="{{img_alt}}"></figure>{{/img_url}}
+        <div class="f-card__content {{#img_url}}f-card__content--figure{{/img_url}}">
+            <h1 class="f-card__title">{{title}}</h1>
+            <div class="f-card__description">{{description}}</div>
+        </div>
+        {{#url}}</a>{{/url}}
+    </div>
+</article>

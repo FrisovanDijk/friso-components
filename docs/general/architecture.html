@@ -1,0 +1,104 @@
+<!doctype html>
+<head>
+    <title>Architecture</title>
+    <link rel="stylesheet" href="../../css/main.css">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+<div class="container">
+    <h1>Architecture</h1>
+
+    <div class="row">
+        <div class="col-3" id="card_intro"></div>
+        <div class="col-9 flex flex-column">
+            <div class="f-card f-card--rich">
+                <h2>Reusable design</h2>
+                <p>Whether you use a Javascript framework or not, reusing components can be a complex task. Managing a repository,
+                keeping things up-to-date, not breaking backwards compatibility. A component API with living documentation
+                makes it easier to manage.</p>
+                <p>Since it's a front-end API, the documentation should generate all types of possible components. This servers as
+                your tests, as they update on each page refresh. If you modify a component, you can open its documentation and
+                immediately see if you broke something.</p>
+            </div>
+            <div class="f-card f-card--rich">
+                <h2>Inspiration</h2>
+                <p>Credit where it's due: The Lonely Planet's <a href="https://rizzo.lonelyplanet.com/styleguide/"target="_blank">Rizzo</a>.
+                    Their implementation of a maintainable style guide resonated with me and it couples well with the principles of
+                <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a>. UI components are the building blocks
+                    for the larger components of templates. With good baseline CSS, like <a href="http://tachyons.io/" target="_blank">Tachyons</a>,
+                    you get a maintainable and componentised style guide.</p>
+                <p>My own implementation uses Mustache as a templating engine, because it's infinitely portable. Since the API itself
+                is just a set of logic-lesss <a href="https://mustache.github.io/" target="_blank">Mustache</a> templates and a single file, it has
+                    little complexity of itself. Add to that static docs that grabs uncached components and you're good to go. Developing
+                    in the docs itself is easy and is your documentation to boot.</p>
+            </div>
+            <div class="f-card f-card--rich">
+                <h2>Atomic design</h2>
+                <p>These systems all tie together with the principles of atomic design.</p>
+                <p class="tc"><img src="atomic-design.jpg" alt="architecture image" class="w-100"></p>
+                <p><strong>Atoms.</strong> Atoms are the smallest building blocks. They are the HTML tags with its styling, the image, the button.
+                    Atoms can also be abstract small components like a color palette or an animation. They are small in size and purpose.</p>
+                <p><strong>Molecules.</strong> Putting together several atoms gives you a more complex structure. They are small collections of atoms
+                that can be reused and serve a single purpose.</p>
+                <p><strong>Organisms.</strong> Molecules and atoms come together in more complex forms like organisms. It's a distinct section of a
+                final interface.</p>
+                <p><strong>Templates.</strong> Combining smaller components into a concrete template gives your the entire layout.</p>
+                <p><strong>Pages.</strong> A page is a specific instance of a template.</p>
+                <p>Atoms, molecules all originate from the component API. Organisms generally live in the project itself, as they are bespoke
+                implementations with these core components.</p>
+                <p>My component API is a personal implementation of this design pattern with a different flavour from atomic design creator's
+                <a href="https://patternlab.io/" target="_blank">Patternlab</a>, but you should definately check that out too.</p>
+            </div>
+            <div class="f-card f-card--rich">
+                <h2>Reduced complexity</h2>
+                <p>So how does a component API reduce complexity? It's yet another system to manage, but one that fits into todays
+                API-driven development. You get your data from an API, be it a headless CMS or a database wrapper or whatever you use.
+                Why not take the same approach with your components?</p>
+                <p>Grab data from an API, apply your business logic and put that data in a component API call. The idea is really simple.
+                The reduced complexity in the projects you work on make them easier to handle, and good documentation is easy to do.</p>
+                <p class="tc"><img src="architecture.jpg" alt="architecture image"></p>
+                <p>The architecture image above shows a simple app that consumes the Component API. The documentation is a living document
+                to reference and keep up-to-date. As for one example, I design components there and then add them to my app by consuming the API.</p>
+            </div>
+            <div class="f-card f-card--rich">
+                <h2>What's with all the CSS?</h2>
+                <p>The components work by themselves, but it's their styling that gives them their appeal. By offering CSS
+                from the same component API you can easily implement it in different projects. A visitor on multiple of your
+                sites can rely on its cached version.</p>
+                <p>But CSS standardisation goes further. I've modified <a href="http://tachyons.io" target="_blank">Tachyons</a>,
+                which has taken the idea of verbose CSS to another level. Building pre-defined rich components from Tachyons has
+                the added benefit of using a well-tested system as backbone for global CSS.</p>
+                <p>Writing verbose css makes implementation of basic sites easier, while rich components move more complex elements
+                to the API. That leaves you with application data and behaviour to manage.</p>
+            </div>
+            <div class="f-card f-card--rich">
+                <h2>The DRY front-end</h2>
+                <p>Writing a lot of code over an over is never fun. With a Component API, you can realise reusability in a straight-
+                forward manner. No more copying, refactoring and breaking things. Always have your most up-to-date front-end code
+                readily available.</p>
+                <p>My experience has been positive so far, and I'm having fun building and extending the system. </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "API architecture",
+            "description": "Design considerations and technical make-up.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+</script>

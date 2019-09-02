@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+    <title>Type scale</title>
+    <link rel="stylesheet" href="../../../css/main.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Type scale</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>CSS classes:</p>
+<pre><code>Base:
+    f = font-size
+
+Modifiers
+    1 = 1st step in size scale
+    2 = 2nd step in size scale
+    3 = 3rd step in size scale
+    4 = 4th step in size scale
+    5 = 5th step in size scale
+    6 = 6th step in size scale
+    7 = 7th step in size scale
+
+Media Query Extensions:
+    -ns = not-small
+    -m  = medium
+    -l  = large
+
+
+/* Hero/Marketing Titles (too large for mobile) */
+.f-6, .f-headline { font-size: 6rem; }
+.f-5, .f-subheadline { font-size: 5rem; }
+
+/* Type Scale */
+.f1 { font-size: 3rem; }
+.f2 { font-size: 2.25rem; }
+.f3 { font-size: 1.5rem; }
+.f4 { font-size: 1.25rem; }
+.f5 { font-size: 1rem; }
+.f6 { font-size: .875rem; }
+.f7 { font-size: .75rem; } /* Small and hard to read for many people so use with extreme caution */
+</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>
