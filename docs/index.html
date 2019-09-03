@@ -56,6 +56,18 @@
             <td id="organisms"></td>
         </tr>
     </table>
+
+    <h2 class="pt3">Project organisms</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">Docs</td>
+            <td id="docs"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">frisovandijk</td>
+            <td id="frisovandijk"></td>
+        </tr>
+    </table>
 </div>
 
 <div id="footer"></div>
@@ -238,5 +250,34 @@
         }
     };
     parseComponentHTML("#organisms", data);
+
+    // PROJECT COMPONENTS
+    // Docs
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "secondary",
+            "tags": [
+                {"name": "footer", "url": "organisms/docs/docs-footer.html"},
+                {"name": "header", "url": "organisms/docs/docs-header.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#docs", data);
+
+    // Docs
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent1",
+            "tags": [
+                {"name": "footer", "url": "#"},
+                {"name": "header", "url": "#"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#frisovandijk", data);
 </script>
 </body>

@@ -50,7 +50,7 @@ $mustache = new Mustache_Engine(array(
         'atoms' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/atoms'),
         'molecules' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/molecules'),
         'organisms' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/organisms'),
-        'docs' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/templates/docs')
+        'docs-orgs' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/organisms/docs')
     ))
 ));;
 
