@@ -8,8 +8,12 @@ p {
   margin-bottom: 0.5rem;
 }
 
+h1, h2 {
+  @extend .bb, .b-secondary-dark1, .pv1;
+}
+
 h1, h2, h3, h4, h5 {
-  @extend .bb, .b-secondary-dark1,.mb3, .ph1, .pl2;
+  @extend .mb3, .ph1;
 }
 
 #header {

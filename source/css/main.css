@@ -2382,7 +2382,7 @@ input[type="url"],
 .pt1 {
   padding-top: 0.25rem; }
 
-.pv1 {
+.pv1, h1, h2 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; }
 
@@ -2431,7 +2431,7 @@ input[type="url"],
 .pa2 {
   padding: 0.5rem; }
 
-.pl2, h1, h2, h3, h4, h5 {
+.pl2 {
   padding-left: 0.5rem; }
 
 .pr2 {
@@ -5742,7 +5742,7 @@ code, .code {
   border-right-style: solid;
   border-right-width: 1px; }
 
-.bb, h1, h2, h3, h4, h5 {
+.bb, h1, h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px; }
 
@@ -5945,7 +5945,7 @@ code, .code {
 .b-secondary {
   border-color: #bed000; }
 
-.b-secondary-dark1, h1, h2, h3, h4, h5 {
+.b-secondary-dark1, h1, h2 {
   border-color: #ABBB00; }
 
 .b-secondary-dark2 {

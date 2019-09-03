@@ -7,6 +7,7 @@ static $components = [
     ],
     [ // MOLECULES
         "alert",
+        "breadcrumbs",
         "card-fixed",
         "card-list",
         "tag-list"

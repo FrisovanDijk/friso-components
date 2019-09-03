@@ -1,0 +1,15 @@
+{{!
+name     breadcrumbs
+vars
+    items [
+        name     (recommended) Name of breadcrumb.
+        url      (recommended) URL for name
+        current? (optional)    Current position in breadcrumb trail
+    ]
+}}
+<div class="w-100 ma1 pv1 pl1 br1">
+    {{#items}}
+        / {{#url}}<a class="no-underline hover-underline" href="{{url}}">{{/url}}
+        <span class="f6 c-copy {{#current?}}b{{/current?}}">{{name}}</span>{{#url}}</a>{{/url}}
+    {{/items}}
+</div>

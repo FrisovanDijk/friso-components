@@ -2382,7 +2382,7 @@ input[type="url"],
 .pt1 {
   padding-top: 0.25rem; }
 
-.pv1, .btn {
+.pv1, h1, h2, .btn {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem; }
 
@@ -2431,7 +2431,7 @@ input[type="url"],
 .pa2 {
   padding: 0.5rem; }
 
-.pl2, h1, h2, h3, h4, h5 {
+.pl2 {
   padding-left: 0.5rem; }
 
 .pr2 {
@@ -5730,7 +5730,7 @@ code, .code {
      -l  = large
 
 */
-.ba, .btn-ghost, .btn-ghost:hover {
+.ba, .btn-ghost {
   border-style: solid;
   border-width: 1px; }
 
@@ -5742,7 +5742,7 @@ code, .code {
   border-right-style: solid;
   border-right-width: 1px; }
 
-.bb, h1, h2, h3, h4, h5 {
+.bb, h1, h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px; }
 
@@ -5945,7 +5945,7 @@ code, .code {
 .b-secondary, .btn-secondary.btn-ghost {
   border-color: #bed000; }
 
-.b-secondary-dark1, h1, h2, h3, h4, h5 {
+.b-secondary-dark1, h1, h2 {
   border-color: #ABBB00; }
 
 .b-secondary-dark2 {
@@ -6127,7 +6127,7 @@ code, .code {
 .bw0, .btn {
   border-width: 0; }
 
-.bw1, .btn-ghost, .btn-ghost:hover {
+.bw1, .btn-ghost {
   border-width: .125rem; }
 
 .bw2 {
@@ -7927,7 +7927,7 @@ code, .code {
 .bg-inherit {
   background-color: inherit; }
 
-.bg-transparent, .btn-ghost, .btn-ghost:hover {
+.bg-transparent, .btn-ghost {
   background-color: transparent; }
 
 /*
