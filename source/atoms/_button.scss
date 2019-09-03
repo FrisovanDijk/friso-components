@@ -11,7 +11,7 @@
 */
 
 .btn {
-  @extend .w3, .h2, .bw0, .br2, .pointer;
+  @extend .w3, .ma1, .pa1, .bw0, .br2, .pointer;
 }
 
 @each $key, $value in $colors {

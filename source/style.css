@@ -1316,7 +1316,7 @@ input[type="url"],
 .h1 {
   height: 1rem; }
 
-.h2, .btn {
+.h2 {
   height: 2rem; }
 
 .h3 {
@@ -2367,7 +2367,7 @@ input[type="url"],
 .ntkey {
   margin-top: 0; }
 
-.pa1 {
+.pa1, .btn {
   padding: 0.25rem; }
 
 .pl1 {
@@ -2390,7 +2390,7 @@ input[type="url"],
   padding-left: 0.25rem;
   padding-right: 0.25rem; }
 
-.ma1 {
+.ma1, .btn {
   margin: 0.25rem; }
 
 .ml1 {
