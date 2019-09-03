@@ -2,7 +2,7 @@
 <head>
     <title>Architecture</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
-    <link rel="stylesheet" href="../../source/style.css ">
+    <link rel="stylesheet" href="../../source/organisms/docs/docs.css ">
     <script src="../res/components.js"></script>
     <script src="../res/docbuild.js"></script>
 </head>
@@ -14,7 +14,7 @@
     <div class="row">
         <div class="col-3" id="card_intro"></div>
         <div class="col-9 flex flex-column">
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>Reusable design</h2>
                 <p>Whether you use a Javascript framework or not, reusing components can be a complex task. Managing a repository,
                 keeping things up-to-date, not breaking backwards compatibility. A component API with living documentation
@@ -23,7 +23,7 @@
                 your tests, as they update on each page refresh. If you modify a component, you can open its documentation and
                 immediately see if you broke something.</p>
             </div>
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>Inspiration</h2>
                 <p>Credit where it's due: The Lonely Planet's <a href="https://rizzo.lonelyplanet.com/styleguide/"target="_blank">Rizzo</a>.
                     Their implementation of a maintainable style guide resonated with me and it couples well with the principles of
@@ -35,7 +35,7 @@
                     little complexity of itself. Add to that static docs that grabs uncached components and you're good to go. Developing
                     in the docs itself is easy and is your documentation to boot.</p>
             </div>
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>Atomic design</h2>
                 <p>These systems all tie together with the principles of atomic design.</p>
                 <p class="tc"><img src="atomic-design.jpg" alt="architecture image" class="w-100"></p>
@@ -52,7 +52,7 @@
                 <p>My component API is a personal implementation of this design pattern with a different flavour from atomic design creator's
                 <a href="https://patternlab.io/" target="_blank">Patternlab</a>, but you should definately check that out too.</p>
             </div>
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>Reduced complexity</h2>
                 <p>So how does a component API reduce complexity? It's yet another system to manage, but one that fits into todays
                 API-driven development. You get your data from an API, be it a headless CMS or a database wrapper or whatever you use.
@@ -63,7 +63,7 @@
                 <p>The architecture image above shows a simple app that consumes the Component API. The documentation is a living document
                 to reference and keep up-to-date. As for one example, I design components there and then add them to my app by consuming the API.</p>
             </div>
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>What's with all the CSS?</h2>
                 <p>The components work by themselves, but it's their styling that gives them their appeal. By offering CSS
                 from the same component API you can easily implement it in different projects. A visitor on multiple of your
@@ -74,7 +74,7 @@
                 <p>Writing verbose css makes implementation of basic sites easier, while rich components move more complex elements
                 to the API. That leaves you with application data and behaviour to manage.</p>
             </div>
-            <div class="f-card f-card--rich">
+            <div class="bg-grays-white pa2">
                 <h2>The DRY front-end</h2>
                 <p>Writing a lot of code over an over is never fun. With a Component API, you can realise reusability in a straight-
                 forward manner. No more copying, refactoring and breaking things. Always have your most up-to-date front-end code

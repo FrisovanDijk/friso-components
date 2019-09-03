@@ -1,4 +1,4 @@
-$card-bg: $element-foreground;  // Default card background color
+$card-bg: $element-bg;  // Default card background color
 
 // Basic card class
 .f-card {
@@ -8,7 +8,7 @@ $card-bg: $element-foreground;  // Default card background color
   height: 100%;
   margin-bottom: 10px;
 
-  background-color: $element-foreground;   // Standard card background
+  background-color: $element-bg;   // Standard card background
   border-radius: 4px;
   overflow: hidden;
 }

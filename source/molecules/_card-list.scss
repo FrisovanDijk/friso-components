@@ -28,11 +28,11 @@ $border-color: color(primary, light1);
 }
 
 .f-card__list--striped a:nth-child(even) li {
-  background-color: $element-foreground;
+  background-color: $element-bg;
 }
 
 .f-card__list__ul a li:hover {
-  background-color: darken($list-striped-color, 30%);;
+  @extend .dim;
 }
 
 .f-card__list--bordered li {
