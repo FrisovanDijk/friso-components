@@ -3079,7 +3079,7 @@ code, .code { font-family: Consolas, monaco, monospace; }
 
 .hover-bg-grays-light4:hover { background-color: #F5F5F5; }
 
-.bg-grays-light3, pre { background-color: #EBEBEB; }
+.bg-grays-light3, pre, code { background-color: #EBEBEB; }
 
 .bg-wcag-grays-light3 { background-color: #EBEBEB; }
 
