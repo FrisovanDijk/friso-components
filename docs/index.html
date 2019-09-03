@@ -1,154 +1,243 @@
 <!doctype html>
 <head>
-    <title>Friso's Component API</title>
-    <link rel="stylesheet" href="../css/main.css">
+    <title>Docs Contents</title>
+    <link rel="stylesheet" href="../source/css/main.css">
     <script src="res/components.js"></script>
     <script src="res/docbuild.js"></script>
 </head>
 <body>
 <div id="header" class="w-100 h2"></div>
-<div class="container flex flex-wrap">
-    <h1 class="w-100">Friso's Component API Docs</h1>
+<div class="container">
+    <h1>Contents</h1>
 
-    <div class="w-100 w-40-m w-25-l flex flex-column items-center items-end-ns pr3-ns">
-        <div id="card_intro"></div>
-        <div id="card_intro2"></div>
-    </div>
-    <article class="w-100 w-60-m w-75-l flex flex-column pa3 bg-grays-white br2">
-        <section>
-            <h2>Why a component API?</h2>
-            <p>I enjoy using new technologies with every project, but that renders a lot of front-end work useless because it's heavily embedded
-                in different templating languages and CMSes. The rest takes time and effort to reuse, because it needs to be refactored. The workflow
-                works bad coding practices in hand.</p>
-            <p>My answer to this problem consists of 3 parts:</p>
-            <ol>
-                <li>Use <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a> as a philosophy for reusable components.</li>
-                <li>Extend Atomic Design with <a href="http://tachyons.io/" target="_blank">Tachyons</a> as particles.</li>
-                <li>Serve the style guide through an API.</li>
-            </ol>
-            <p>Don't worry if you don't know some of these terms. You can read more about this architecture <a href="general/architecture.html">here</a>.</p>
-            <p>The workflow of this API is very simple: you make a request with the component name and JSON to receive a semantic component.
-            So why do I think this design philosophy is a good idea?</p>
-            <ol>
-                <li><strong>Agnostic.</strong> Use any framework or language you want. This API implementation uses SASS and
-                    <a href="https://mustache.github.io/" target="_blank">Mustache</a> as PHP templating library, but those are
-                    arbitrary dependencies. You can use whatever you want in your projects.</li>
-                <li><strong>Reusable.</strong> All components come from a single source. It's easy to grab your best semantic, accessible HTML. Class names are
-                    the same across projects.</li>
-                <li><strong>Documentable.</strong> Document new components with a single Javascript function call.</li>
-                <li><strong>Discoverable.</strong> Browse the documentation with examples of components to see what would work for you.</li>
-                <li><strong>Usable.</strong> A CSS call and an API wrapper is all you need to get started. The Jacascript wrapper for the documentation
-                    is a whopping 36 lines.</li>
-                <li><strong>Stateless.</strong> Separate concerns by using data to generate components. No mixing of HTML and data involved.</li>
-            </ol>
-            <p>Take a look around. The project is open source and available on Github, or get inspired and implement your own.</p>
-        </section>
-        <section class="flex justify-around pv3">
-            <div id="explore_docs"></div>
-            <div id="explore_docs2"></div>
-        </section>
-        <section>
-            <h2>Installing Friso's Component API</h2>
-            <p>Get it from Github and run <code class="hgl-secondary">composer install</code>. You will see 5 items:</p>
-            <ul>
-                <li>css: holds the default templates. Host them with the API to get consistent styling across all your apps.</li>
-                <li>dev: the documentation you're reading right now.</li>
-                <li>templates: the mustache templates used on the server</li>
-                <li>vendor: required packages.</li>
-                <li>index.php: this is the API handler.</li>
-            </ul>
-            <h3>Configuration</h3>
-            <p>If you want to use the Javascript implementation used here, then you need to grab <code class="hgl-secondary">components.js</code> from
-                <code class="hgl-secondary">dev</code>.</p>
-            <p>When you create a new template, upload it to the templates folder or create a new listener. Register your template by adding it to
-                <code class="hgl-secondary">static $components</code> at the top of <code class="hgl-secondary">index.php</code></p>
-            <p></p>
-        </section>
-        <section>
-            <h2>Using the Component API</h2>
-            <p>Using it in a project is extremely simple. This documentation site uses a very light
-                <a href="res/components.js" target="_blank">Javascript implementation</a> (although it doesn't support IE).</p>
-            <p>If you use it, make sure you configure <span class="hgl-secondary">const url</span> for your own configuration.</p>
-            <p>To render a component with it, simply use the Javascript code below:</p>
-<pre><code><code>parse_componentHTML(identifier, {
-"name": component name,
-"vars": {
-    component variables
-}
-});
-</code></code></pre>
-            <p>Ok, so what can I input? The <span class="hgl-secondary">identifier</span> is your in-document identifier and
-                uses <span class="hgl-secondary">document.querySelector()</span>. The second argument is the JSON to generate the component.
-                The <span class="hgl-secondary">name</span> is the type of component you generate, and <span class="hgl-secondary">vars</span>
-                is the food for your component.</p>
-        </section>
+    <h2 class="pt3">About the Component API</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">General</td>
+            <td id="general"></td>
+        </tr>
+    </table>
 
-        <section>
-            <h2>About these docs</h2>
-            <p>The docs are my personal templates with my branding applied. They specify my template variables and show the json behind the components on the page.</p>
-            <p>Feel free to reuse or change everything as preferred. </p>
-            <p>Switching the branding on the default template is easy to do. Open <span class="hgl-secondary">_variables.scss</span> and change the relevant colours. Compile
-                the stylesheet and you're good to go (or check out <a href="http://koala-app.com/" target="_blank">Koala</a> if you don't know how)</p>
-        </section>
-    </article>
+    <h2 class="pt3">Core particles (core CSS)</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">Typography</td>
+            <td id="typography"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Layout</td>
+            <td id="layout"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Theming</td>
+            <td id="theming"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Utilities</td>
+            <td id="utilities"></td>
+        </tr>
+    </table>
+
+    <h2 class="pt3">Atomic components</h2>
+    <table class="w-100 pa2 bg-grays-white br2">
+        <tr class="pv2">
+            <td class="b pr3">Particles</td>
+            <td id="particles"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Atoms</td>
+            <td id="atoms"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Molecules</td>
+            <td id="molecules"></td>
+        </tr>
+        <tr class="pv2">
+            <td class="b pr3">Organisms</td>
+            <td id="organisms"></td>
+        </tr>
+    </table>
 </div>
-</body>
+
 <div id="footer"></div>
+
 <script>
     // Header & Footer
     parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
     parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
-    // Card intro
-    data = {
-        "name": "card-fixed",
-        "vars": {
-            "title": "Component API",
-            "description": "Generate standardised web components in multiple projects from a single API.",
-            "class": "f-card--primary f-card__title--secondary",
-            "short?": true
-        }
-    };
-    parseComponentHTML("#card_intro", data);
 
-    // Card intro
-    data = {
-        "name": "card-fixed",
-        "vars": {
-            "url": "https://www.frisovandijk.com",
-            "target": "_blank",
-            "title": "About the creator",
-            "description": "Hi, I'm Friso van Dijk. I've been enjoying web development since age 13. I'm currently employed as privacy researcher and IT consultant.",
-            "img_url": "https://www.frisovandijk.com/media/portrait_friso.png",
-            "class": "f-card--primary f-card__title--secondary"
-        }
-    };
-    parseComponentHTML("#card_intro2", data);
+    /**
+     * CONTENTS MOLECULES
+     */
 
-    // Card links
+    // General
     data = {
-        "name": "card-fixed",
+        "name": "tag-list",
         "vars": {
-            "url": "contents.html",
-            "title": "Explore the docs",
-            "class": "f-card--primary",
-            "short?": true,
-            "img_url": "res/card-image.png",
-            "cover?": true
+            "color": "secondary",
+            "tags": [
+                {"name": "Intro", "url": "general/intro.html"},
+                {"name": "Architecture", "url": "general/architecture.html"},
+                {"name": "JS implementation", "url": "general/js.html"},
+                {"name": "Docs generation", "url": "general/doc-generation.html"}
+            ],
+            "striped?": true
         }
     };
-    parseComponentHTML("#explore_docs", data);
+    parseComponentHTML("#general", data);
 
-    // Card links2
+    /**
+     * PARTICLES (CORE CSS)
+     */
+    // Typography
     data = {
-        "name": "card-fixed",
+        "name": "tag-list",
         "vars": {
-            "url": "general/architecture.html",
-            "title": "Architecture",
-            "class": "f-card--primary",
-            "short?": true,
-            "img_url": "general/architecture.jpg",
-            "cover?": true
+            "color": "secondary",
+            "tags": [
+                {"name": "Font families", "url": "core-css/typography/font-families.html"},
+                {"name": "Font style", "url": "core-css/typography/font-style.html"},
+                {"name": "Font weight", "url": "core-css/typography/font-weight.html"},
+                {"name": "Letter spacing", "url": "core-css/typography/letter-spacing.html"},
+                {"name": "Line height", "url": "core-css/typography/line-height-leading.html"},
+                {"name": "Measure", "url": "core-css/typography/measure.html"},
+                {"name": "Text align", "url": "core-css/typography/text-align.html"},
+                {"name": "Text decoration", "url": "core-css/typography/text-decoration.html"},
+                {"name": "Text modifiers", "url": "core-css/typography/text-modifiers.html"},
+                {"name": "Text transform", "url": "core-css/typography/text-transform.html"},
+                {"name": "Type scale", "url": "core-css/typography/type-scale.html"},
+                {"name": "Typography", "url": "core-css/typography/typography.html"},
+                {"name": "Vertical align", "url": "core-css/typography/vertical-align.html"},
+                {"name": "Whitespace", "url": "core-css/typography/whitespace.html"}
+            ],
+            "striped?": true
         }
     };
-    parseComponentHTML("#explore_docs2", data);
+    parseComponentHTML("#typography", data);
+
+    // Layout
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent1",
+            "tags": [
+                {"name": "Box-sizing", "url": "core-css/layout/box-sizing.html"},
+                {"name": "Clearfix", "url": "core-css/layout/clearfix.html"},
+                {"name": "Debug", "url": "core-css/layout/debug.html"},
+                {"name": "Debug children", "url": "core-css/layout/debug-children.html"},
+                {"name": "Debug grid", "url": "core-css/layout/debug-grid.html"},
+                {"name": "Display", "url": "core-css/layout/display.html"},
+                {"name": "Flexbox", "url": "core-css/layout/flexbox.html"},
+                {"name": "Floats", "url": "core-css/layout/floats.html"},
+                {"name": "Heights", "url": "core-css/layout/heights.html"},
+                {"name": "Overflow", "url": "core-css/layout/overflow.html"},
+                {"name": "Position", "url": "core-css/layout/position.html"},
+                {"name": "Rotations", "url": "core-css/layout/rotations.html"},
+                {"name": "Spacing", "url": "core-css/layout/spacing.html"},
+                {"name": "Widths", "url": "core-css/layout/widths.html"},
+                {"name": "Max-widths", "url": "core-css/layout/max-widths.html"},
+                {"name": "Z-index", "url": "core-css/layout/z-index.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#layout", data);
+
+    // Theming
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent2",
+            "tags": [
+                {"name": "Colors and branding", "url": "core-css/theming/colors.html"},
+                {"name": "Borders", "url": "core-css/theming/borders.html"},
+                {"name": "Border radius", "url": "core-css/theming/border-radius.html"},
+                {"name": "Background size", "url": "core-css/theming/background-size.html"},
+                {"name": "Box shadow", "url": "core-css/theming/box-shadow.html"},
+                {"name": "Opacity", "url": "core-css/theming/opacity.html"},
+                {"name": "Hovers", "url": "core-css/theming/hovers.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#theming", data);
+
+    // Utilities
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent3",
+            "tags": [
+                {"name": "Variables", "url": "core-css/variables.html"},
+                {"name": "CSS helpers", "url": "core-css/css-helpers.html"},
+                {"name": "HTML Elements", "url": "core-css/elements.html"},
+                {"name": "Normalize (Github)", "url": "https://github.com/necolas/normalize.css"},
+                {"name": "SASS functions", "url": "core-css/functions.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#utilities", data);
+
+    /**
+     * ATOMIC COMPONENTS
+     */
+    // Particles
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "secondary",
+            "tags": [
+                {"name": "JS Modal", "url": "particles/modal.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#particles", data);
+
+    // Atoms
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent1",
+            "tags": [
+                {"name": "todo Button", "url": "atoms/button.html"},
+                {"name": "todo Tag", "url": "atoms/tag.html"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#atoms", data);
+
+    // Molecules
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent2",
+            "tags": [
+                {"name": "Fixed cards", "url": "molecules/card-fixed.html"},
+                {"name": "List cards", "url": "molecules/card-list.html"},
+                {"name": "Tag list", "url": "molecules/tag-list.html"},
+                {"name": "Alert", "url": "molecules/alert.html"},
+                {"name": "todo Breadcrumbs", "url": "#"},
+                {"name": "todo Wave", "url": "https://codepen.io/csspoints/pen/WNeOEqd"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#molecules", data);
+
+    // Organisms
+    data = {
+        "name": "tag-list",
+        "vars": {
+            "color": "accent3",
+            "tags": [
+                {"name": "Dummy", "url": "#"}
+            ],
+            "striped?": true
+        }
+    };
+    parseComponentHTML("#organisms", data);
 </script>
+</body>

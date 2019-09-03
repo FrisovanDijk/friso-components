@@ -1,0 +1,112 @@
+<!doctype html>
+<head>
+    <title>Alert</title>
+    <link rel="stylesheet" href="../../source/css/main.css">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Alert</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="f-card f-card--rich">
+                <p>An alert message container</p>
+                <p><button class="btn" onclick='show_modal("#alert-container", {
+                "name": "alert",
+                "vars": {
+                    "type": "success",
+                    "message": "You have opened an alert!"
+                }
+            })'>Open alert</button></p>
+                <p>Full options and html:</p>
+<pre><code>name     alert
+vars
+    type        (recommended) default info
+    message     (recommended)
+    icon        (optional) TODO
+
+&lt;div class="w-100 pa1 pl3 br1 z-999
+    bg-wcag-{{type}}">
+    {{#icon}}&lt;div class="icon dib {{icon}}">aaa&lt;/div>{{/icon}}
+    {{message}}
+&lt;/div></code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+
+    <template id="docs-row">
+        <div class="w-100 flex flex-wrap">
+            <div class="w-100 pa2 docs-row--1"></div>
+            <div class="w-100 pa2 docs-row--2">
+                <div class="f-card f-card--rich">
+                    <h2></h2>
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+<div id="footer"></div>
+<div id="alert-container" class="fixed top-0 w-100 w-50-ns mt3 center-fixed"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+
+    // Alerts
+    data = {
+        "name": "alert",
+        "vars": {
+            "type": "success",
+            "message": "Lorem ipsum"
+        }
+    };
+    buildDocRowHTML("#docs", data, "Success");
+
+    // Alerts
+    data = {
+        "name": "alert",
+        "vars": {
+            "type": "warning",
+            "message": "Lorem ipsum"
+        }
+    };
+    buildDocRowHTML("#docs", data, "Warning");
+
+    // Alerts
+    data = {
+        "name": "alert",
+        "vars": {
+            "type": "error",
+            "message": "Lorem ipsum"
+        }
+    };
+    buildDocRowHTML("#docs", data, "Error");
+
+    // Alerts
+    data = {
+        "name": "alert",
+        "vars": {
+            "type": "info",
+            "message": "Lorem ipsum"
+        }
+    };
+    buildDocRowHTML("#docs", data, "Info");
+
+    // Alerts
+    data = {
+        "name": "alert",
+        "vars": {
+            "type": "secondary-light2",
+            "message": "Lorem ipsum"
+        }
+    };
+    buildDocRowHTML("#docs", data, "Secondary-light2");
+</script>
+</body>

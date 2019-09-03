@@ -1,7 +1,7 @@
 <!doctype html>
 <head>
     <title>Tag list</title>
-    <link rel="stylesheet" href="../../css/main.css">
+    <link rel="stylesheet" href="../../source/css/main.css">
     <script src="../res/components.js"></script>
     <script src="../res/docbuild.js"></script>
 </head>
@@ -15,7 +15,7 @@
         <div class="w-100 pa2">
             <div class="f-card f-card--rich">
                 <p>A list of tags with light background color and optional links. Only works with brand colors.</p>
-                <p>Full options:</p>
+                <p>Full options and html:</p>
 <pre><code>name     tag-list
 vars
     title       (optional)
@@ -29,10 +29,12 @@ vars
 &lt;div class="flex items-center">
     &lt;div class="ma1 pv1 ph2">{{title}}&lt;/div>
     &lt;div class="flex flex-wrap">
-        &lt;div class="ma1 pv1 ph2 br2
-        bg-wcag-{{color}}-light4">
-        {{name}}
-    &lt;/div>
+        &lt; class="link" href="{{url}}">
+            &lt;div class="ma1 pv1 ph2 br2
+            bg-wcag-{{color}}-light4">
+                {{name}}
+            &lt;/div>
+        &lt;/a>
     &lt;/div>
 &lt;/div></code></pre>
             </div>

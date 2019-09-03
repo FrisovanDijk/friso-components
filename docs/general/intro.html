@@ -1,0 +1,145 @@
+<!doctype html>
+<head>
+    <title>Friso's Component API</title>
+    <link rel="stylesheet" href="../../source/css/main.css">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+<div class="container flex flex-wrap">
+    <h1 class="w-100">Friso's Component API Docs</h1>
+
+    <div class="w-100 w-40-m w-25-l flex flex-column items-center items-end-ns pr3-ns">
+        <div id="card_intro"></div>
+        <div id="card_intro2"></div>
+    </div>
+    <article class="w-100 w-60-m w-75-l flex flex-column pa3 bg-grays-white br2">
+        <section>
+            <h2>Why a component API?</h2>
+            <p>I enjoy using new technologies with every project, but that renders a lot of front-end work useless because it's heavily embedded
+                in different templating languages and CMSes. The rest takes time and effort to reuse, because it needs to be refactored. The workflow
+                works bad coding practices in hand.</p>
+            <p>My answer to this problem consists of 3 parts:</p>
+            <ol>
+                <li>Use <a href="http://bradfrost.com/blog/post/atomic-web-design/" target="_blank">Atomic Design</a> as a philosophy for reusable components.</li>
+                <li>Extend Atomic Design with <a href="http://tachyons.io/" target="_blank">Tachyons</a> as particles.</li>
+                <li>Serve the style guide through an API.</li>
+            </ol>
+            <p>Don't worry if you don't know some of these terms. You can read more about this architecture <a href="architecture.html">here</a>.</p>
+            <p>The workflow of this API is very simple: you make a request with the component name and JSON to receive a semantic component.
+            So why do I think this design philosophy is a good idea?</p>
+            <ol>
+                <li><strong>Agnostic.</strong> Use any framework or language you want. This API implementation uses SASS and
+                    <a href="https://mustache.github.io/" target="_blank">Mustache</a> as PHP templating library, but those are
+                    arbitrary dependencies. You can use whatever you want in your projects.</li>
+                <li><strong>Reusable.</strong> All components come from a single source. It's easy to grab your best semantic, accessible HTML. Class names are
+                    the same across projects.</li>
+                <li><strong>Documentable.</strong> Document new components with a single Javascript function call.</li>
+                <li><strong>Discoverable.</strong> Browse the documentation with examples of components to see what would work for you.</li>
+                <li><strong>Usable.</strong> A CSS call and an API wrapper is all you need to get started. The Jacascript wrapper for the documentation
+                    is a whopping 36 lines.</li>
+                <li><strong>Stateless.</strong> Separate concerns by using data to generate components. No mixing of HTML and data involved.</li>
+            </ol>
+            <p>Take a look around. The project is open source and available on Github, or get inspired and implement your own.</p>
+        </section>
+        <section class="flex justify-around pv3">
+            <div id="explore_docs"></div>
+            <div id="explore_docs2"></div>
+        </section>
+        <section>
+            <h2>Installing Friso's Component API</h2>
+            <p>TODO</p>
+            <h3>Configuration</h3>
+            <p>TODO</p>
+        </section>
+        <section>
+            <h2>Using the Component API</h2>
+            <p>Using it in a project is extremely simple. This documentation site uses a very light
+                <a href="../res/components.js" target="_blank">Javascript implementation</a> (although it doesn't support IE).</p>
+            <p>If you use it, make sure to set <span class="hgl-secondary">var apiUrl</span> on line 4 to your API Url.</p>
+            <p>To render a component with it, simply use the Javascript code below:</p>
+<pre><code><code>parse_componentHTML(identifier, {
+"name": component name,
+"vars": {
+    component variables
+}
+});
+</code></code></pre>
+            <p>Ok, so what can I input? The <span class="hgl-secondary">identifier</span> is your in-document identifier and
+                uses <span class="hgl-secondary">document.querySelector()</span>. The second argument is the JSON to generate the component.
+                The <span class="hgl-secondary">name</span> is the type of component you generate, and <span class="hgl-secondary">vars</span>
+                is the data for your component.</p>
+            <p>Switching the branding colors is easy to do. Open <span class="hgl-secondary">source/css/core-css/_variables.scss</span> and
+                change the big map of colors. Compile the stylesheet and you're good to go (or check out
+                <a href="http://koala-app.com/" target="_blank">Koala</a> if you don't know how)</p>
+        </section>
+
+        <section>
+            <h2>About these docs</h2>
+            <p>The docs are my living style guide. Expect that some things may not be immediately clear since it's written for my personal purpose.</p>
+            <p>If you have any questions or remarks, feel free to contact me through my website. I'd also love to hear it if you get inspired by it.</p>
+            <p>Everything is under a MIT License, so do with it as you please.</p>
+        </section>
+    </article>
+</div>
+</body>
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "title": "Component API",
+            "description": "Generate standardised web components in multiple projects from a single API.",
+            "class": "f-card--primary f-card__title--secondary",
+            "short?": true
+        }
+    };
+    parseComponentHTML("#card_intro", data);
+
+    // Card intro
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "https://www.frisovandijk.com",
+            "target": "_blank",
+            "title": "About the creator",
+            "description": "Hi, I'm Friso van Dijk. I've been enjoying web development since age 13. I'm currently employed as privacy researcher and IT consultant.",
+            "img_url": "https://www.frisovandijk.com/media/portrait_friso.png",
+            "class": "f-card--primary f-card__title--secondary"
+        }
+    };
+    parseComponentHTML("#card_intro2", data);
+
+    // Card links
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "../",
+            "title": "Explore the docs",
+            "class": "f-card--primary",
+            "short?": true,
+            "img_url": "../res/card-image.png",
+            "cover?": true
+        }
+    };
+    parseComponentHTML("#explore_docs", data);
+
+    // Card links2
+    data = {
+        "name": "card-fixed",
+        "vars": {
+            "url": "architecture.html",
+            "title": "Architecture",
+            "class": "f-card--primary",
+            "short?": true,
+            "img_url": "architecture.jpg",
+            "cover?": true
+        }
+    };
+    parseComponentHTML("#explore_docs2", data);
+</script>

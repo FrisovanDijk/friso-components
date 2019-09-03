@@ -1,0 +1,13 @@
+/*
+   UTILITIES
+*/
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+// Center a fixed element
+.center-fixed {
+  left: 50%;
+  transform: translate(-50%, 0);
+}

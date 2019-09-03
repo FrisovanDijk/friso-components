@@ -1,0 +1,137 @@
+<!doctype html>
+<head>
+    <title>Modal</title>
+    <link rel="stylesheet" href="../../source/css/main.css">
+    <script src="../res/components.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>JS Modal</h1>
+
+    <div class="w-100 pa2 bg-grays-white">
+        <p>A modal message container. The container decides the positioning of the modals.</p>
+        <p>This is a fixed container:</p>
+        <p><button class="btn" onclick='show_modal("#alert-container", {
+                "name": "alert",
+                "vars": {
+                    "type": "success",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open success</button>
+            <button class="btn" onclick='show_modal("#alert-container", {
+                "name": "alert",
+                "vars": {
+                    "type": "warning",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open warning</button>
+            <button class="btn" onclick='show_modal("#alert-container", {
+                "name": "alert",
+                "vars": {
+                    "type": "error",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open error</button>
+            <button class="btn" onclick='show_modal("#alert-container", {
+                "name": "alert",
+                "vars": {
+                    "type": "info",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open info</button></p>
+
+        <p>And this one is in-line:</p>
+        <p><button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "alert",
+                "vars": {
+                    "type": "success",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open success</button>
+            <button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "alert",
+                "vars": {
+                    "type": "warning",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open warning</button>
+            <button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "alert",
+                "vars": {
+                    "type": "error",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open error</button>
+            <button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "alert",
+                "vars": {
+                    "type": "info",
+                    "message": "Lorem ipsum"
+                }
+            })'>Open info</button></p>
+        <div id="alert-container2" class=""></div>
+
+        <p>You don't have to show alerts in modals, they are just for illustration purposes. Let's sprinkle
+            some in the container above.</p>
+        <p><button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "tag-list",
+                    "vars": {
+                        "color": "secondary",
+                        "tags": [
+                            {"name": "A tag"},
+                            {"name": "This too"}
+                        ]
+                    }
+            })'>Open tag</button>
+            <button class="btn" onclick='show_modal("#alert-container2", {
+                "name": "card-fixed",
+                "vars": {
+                    "title": "Lorem ipsum",
+                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate blandit porta. Sed at consectetur ipsum, sed eleifend ligula.",
+                    "img_url": "../res/card-image.png",
+                    "class": "f-card--primary f-card__title--secondary"
+                }
+            })'>Open fixed card</button></p>
+
+        <p>Button calling the modal particle</p>
+<pre><code>&lt;button class="btn" onclick='show_modal("#alert-container", {
+    "name": "alert",
+    "vars": {
+        "type": "info",
+        "message": "Lorem ipsum"
+    }
+})'>Open alert&lt;/button></code>
+</pre>
+<p>Fixed and inline containers in this demo</p>
+<pre><code>&lt;div id="alert-container" class="fixed top-0 w-100 w-50-ns mt3 center-fixed">&lt;/div>
+&lt;div id="alert-container2" class="">&lt;/div>
+</code></pre>
+<p>Javascript included in <code>components.js</code></p>
+<pre><code>function show_modal(container_id, data) {
+    var child_id = Date.now();
+    parseComponentHTMLChild(container_id, child_id, data);
+
+    var modal = document.getElementById(child_id);
+
+    modal.style.display = "block";
+    modal.addEventListener("click", function(){
+        modal.style.display = "none"
+    });
+}
+</code></pre>
+    </div>
+
+    <div id="docs"></div>
+</div>
+
+<div id="alert-container" class="fixed top-0 w-100 w-50-ns mt3 center-fixed"></div>
+
+<div id="footer"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+</script>
+</body>

@@ -34,3 +34,31 @@ function parseComponentHTML(id, data) {
         document.querySelector(id).innerHTML = html;
     })
 }
+
+// Parse component as HTML child with provided child_id
+function parseComponentHTMLChild(container_id, child_id, data) {
+    var child = document.createElement("div");
+    child.setAttribute("id", child_id);
+    document.querySelector(container_id).appendChild(child);
+
+    // Grab the component
+    getComponent(data['name'], data['vars']).then(function(html) {
+        // When the Promise is fulfilled inject the HTML in the DOM
+        document.getElementById(child_id).innerHTML = html;
+    })
+}
+
+// PARTICLES
+
+// MODAL
+function show_modal(container_id, data) {
+    var child_id = Date.now();
+    parseComponentHTMLChild(container_id, child_id, data);
+
+    var modal = document.getElementById(child_id);
+
+    modal.style.display = "block";
+    modal.addEventListener("click", function(){
+        modal.style.display = "none"
+    });
+}

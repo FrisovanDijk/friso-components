@@ -1,0 +1,12 @@
+{{!
+name     alert
+vars
+    type        (recommended) default info
+    message     (recommended)
+    icon        (optional) TODO
+}}
+<div class="w-100 ma1 pv3 pl3 br1 z-999
+    bg-wcag-{{#type}}{{type}}{{/type}}{{^type}}info{{/type}}">
+    {{#icon}}<div class="icon dib {{icon}}">aaa</div>{{/icon}}
+    {{message}}
+</div>

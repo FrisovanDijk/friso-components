@@ -2,9 +2,40 @@
 header("Access-Control-Allow-Origin: *");
 
 static $components = [
+    [ // ATOMS
+
+    ],
+    [ // MOLECULES
+        "alert",
+        "card-fixed",
+        "card-list",
+        "tag-list"
+    ],
+    [ // ORGANISMS
+
+    ],
+    [ // TEMPLATES Docs
+        "docs-header",
+        "docs-footer"
+    ]
+];
+
+static $atoms = [
+
+];
+
+static $molecules = [
+    "alert",
     "card-fixed",
     "card-list",
-    "tag-list",
+    "tag-list"
+];
+
+static $organisms = [
+
+];
+
+static $templates_docs = [
     "docs-header",
     "docs-footer"
 ];
@@ -52,5 +83,24 @@ function isJson($string) {
 
 function isValidComponent($component_name) {
     global $components;
-    return in_array($component_name, $components);
+
+    return in_multiarray($component_name, $components);
+}
+
+function in_multiarray($elem, $array)
+{
+    $top = sizeof($array) - 1;
+    $bottom = 0;
+    while($bottom <= $top)
+    {
+        if($array[$bottom] == $elem)
+            return true;
+        else
+            if(is_array($array[$bottom]))
+                if(in_multiarray($elem, ($array[$bottom])))
+                    return true;
+
+        $bottom++;
+    }
+    return false;
 }

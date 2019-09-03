@@ -9,7 +9,7 @@ p {
 }
 
 h1, h2, h3, h4, h5 {
-  @extend .bb, .b-secondary-dark1, .pb1, .mv2;
+  @extend .bb, .b-secondary-dark1,.mb3, .ph1, .pl2;
 }
 
 #header {
@@ -27,8 +27,6 @@ h1, h2, h3, h4, h5 {
 
   &>h1 {
     border-bottom: 2px solid color(secondary, dark1);
-    padding-left: 10px;
-    padding-right: 10px;
   }
 }
 
