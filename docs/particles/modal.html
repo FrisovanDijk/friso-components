@@ -11,7 +11,7 @@
     <h1>JS Modal</h1>
 
     <div class="w-100 pa2 bg-grays-white">
-        <p>A modal message container. The container decides the positioning of the modals.</p>
+        <p>A model containing an API element. Closes on click. Appends itself at the bottom of a given container element.</p>
         <p>This is a fixed container:</p>
         <p><button class="btn" onclick='show_modal("#alert-container", {
                 "name": "alert",
@@ -73,8 +73,7 @@
             })'>Open info</button></p>
         <div id="alert-container2" class=""></div>
 
-        <p>You don't have to show alerts in modals, they are just for illustration purposes. Let's sprinkle
-            some in the container above.</p>
+        <p>You don't have to show alerts in modals, they are just for illustration purposes. More examples:</p>
         <p><button class="btn" onclick='show_modal("#alert-container2", {
                 "name": "tag-list",
                     "vars": {
@@ -86,14 +85,16 @@
                     }
             })'>Open tag</button>
             <button class="btn" onclick='show_modal("#alert-container2", {
-                "name": "card-fixed",
+                "name": "card-list",
                 "vars": {
-                    "title": "Lorem ipsum",
-                    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vulputate blandit porta. Sed at consectetur ipsum, sed eleifend ligula.",
-                    "img_url": "../res/card-image.png",
-                    "class": "f-card--primary f-card__title--secondary"
+                    "title": "My list",
+                    "items": [
+                        {"name": "Item 1"},
+                        {"name": "Item 2"}
+                    ],
+                    "striped?": true
                 }
-            })'>Open fixed card</button></p>
+            })'>Open list card</button></p>
 
         <p>Button calling the modal particle</p>
 <pre><code>&lt;button class="btn" onclick='show_modal("#alert-container", {
@@ -105,7 +106,7 @@
 })'>Open alert&lt;/button></code>
 </pre>
 <p>Fixed and inline containers in this demo</p>
-<pre><code>&lt;div id="alert-container" class="fixed top-0 w-100 w-50-ns mt3 center-fixed">&lt;/div>
+<pre><code>&lt;div id="alert-container" class="fixed top-0 w-90 w-50-ns mt3 center-fixed">&lt;/div>
 &lt;div id="alert-container2" class="">&lt;/div>
 </code></pre>
 <p>Javascript included in <code>components.js</code></p>
@@ -126,7 +127,7 @@
     <div id="docs"></div>
 </div>
 
-<div id="alert-container" class="fixed top-0 w-100 w-50-ns mt3 center-fixed"></div>
+<div id="alert-container" class="fixed top-0 w-90 w-50-ns mt3 center-fixed"></div>
 
 <div id="footer"></div>
 <script>

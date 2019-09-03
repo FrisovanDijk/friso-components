@@ -1,21 +1,11 @@
 <!doctype html>
 <head>
-    <title>Text modifiers</title>
-    <link rel="stylesheet" href="../../css/main.css">
-    <script src="../res/components.js"></script>
-    <script src="../res/docbuild.js"></script>
+    <title>Letter spacing</title>
+    <link rel="stylesheet" href="../../../source/css/main.css">
+    <script src="../../res/components.js"></script>
 </head>
 <body>
-<header class="bg-wcag-primary h-2 fl">
-    <div class="f3 m-ls hidden-sm">Friso's Component API</div>
-    <nav class="h-100 m-lm">
-        <ul class="fl h-100 list-reset fl-content-center">
-            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="../index.html">     <li>Home</li>   </a>
-            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="../contents.html">  <li>Docs</li>   </a>
-            <a class="c-light p-hs p-txs no-underline hover-bg-secondary hover-primary" href="#">              <li>Github</li> </a>
-        </ul>
-    </nav>
-</header>
+<div id="header" class="w-100 h2"></div>
 <div class="container">
     <h1>Text modifiers</h1>
 
@@ -66,8 +56,11 @@ lh-copy  { line-height: 1.5; }
         </div>
     </div>
 </div>
-</body>
+<div id="footer"></div>
 <script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
     // Card intro
     data = {
         "name": "card-fixed",
@@ -80,3 +73,4 @@ lh-copy  { line-height: 1.5; }
     };
     parseComponentHTML("#card_intro", data);
 </script>
+</body>
