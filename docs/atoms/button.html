@@ -2,7 +2,7 @@
 <head>
     <title>Button</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
-    <link rel="stylesheet" href="../../source/css/main.css">
+    <link rel="stylesheet" href="../../source/style.css">
     <script src="../res/components.js"></script>
 </head>
 <body>
@@ -11,11 +11,62 @@
 <div class="container">
     <h1>Button</h1>
 
-    <div class="w-100 flex flex-wrap">
-        <div class="w-100 pa2 bg-grays-white">
-            <h2>Standard buttons</h2>
-            <button class="w4 h2 bg-wcag-primary bw0 br2 hover-bg-primary-light2">Solid</button>
-            <button class="w4 h2 bg-transparent c-primary ba br2 b-primary hover-b-grays hover-grays">Ghost</button>
+    <div class="w-100 flex flex-wrap bg-grays-white pa2">
+        <h2 class="w-100">Basic buttons</h2>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Standard button</h3>
+                <button class="btn btn-primary">Default</button>
+                <pre class="mt2"><code>&lt;button class="btn btn-primary">Default&lt;/button></code></pre>
+            </div>
+        </div>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Secondary button</h3>
+                <button class="btn btn-secondary">Default</button>
+                <pre class="mt2"><code>&lt;button class="btn btn-secondary">Default&lt;/button></code></pre>
+            </div>
+        </div>
+        <div class="w-100">
+            <div class="ma2 pa2">
+                <h3>More buttons</h3>
+                <p>All base colors are available.</p>
+                <button class="btn btn-accent1">Default</button>
+                <button class="btn btn-success">Default</button>
+                <pre class="mt2"><code>&lt;button class="btn btn-accent1">Default&lt;/button></code></pre>
+                <pre class="mt2"><code>&lt;button class="btn btn-success">Default&lt;/button></code></pre>
+            </div>
+        </div>
+        <h2 class="w-100">Modifying</h2>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Ghost button</h3>
+                <button class="btn btn-primary btn-ghost">Ghost</button>
+                <button class="btn btn-accent3 btn-ghost">Ghost</button>
+                <pre class="mt2"><code>&lt;button class="btn btn-primary btn-ghost">Ghost&lt;/button></code></pre>
+                <pre class="mt2"><code>&lt;button class="btn btn-accent3 btn-ghost">Ghost&lt;/button></code></pre>
+            </div>
+        </div>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Wide button</h3>
+                <button class="btn btn-primary w4">Wide</button>
+                <pre class="mt2"><code>&lt;button class=""btn btn-primary w4">Wide&lt;/button></code></pre>
+            </div>
+        </div>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Tall button</h3>
+                <button class="btn btn-primary h3">Tall</button>
+                <pre class="mt2"><code>&lt;button class=""btn btn-primary h3">Tall&lt;/button></code></pre>
+            </div>
+        </div>
+        <div class="w-100 w-50-ns">
+            <div class="ma2 pa2">
+                <h3>Full width</h3>
+                <button class="btn btn-primary w-100">Full width</button>
+                <pre class="mt2"><code>&lt;button class=""btn btn-primary w-100">Full width&lt;/button></code></pre>
+            </div>
         </div>
     </div>
 

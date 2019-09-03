@@ -1,0 +1,44 @@
+/*
+  BUTTON
+
+  base
+    btn
+
+  modifiers
+    -[color]
+    -[width]
+    -ghost
+*/
+
+.btn {
+  @extend .w3, .h2, .bw0, .br2, .pointer;
+}
+
+@each $key, $value in $colors {
+  .btn-#{$key} {
+    @extend .bg-wcag-#{$key};
+
+    &.btn-ghost {
+      @extend .b-#{$key}, .c-#{$key};
+    }
+  }
+
+  .btn-#{$key}:hover {
+    @extend .bg-wcag-#{$key}-light2 !optional;
+    @extend .bg-wcag-#{$key}-light !optional;
+    &.btn-ghost {
+      @extend .hover-b-#{$key}-light2 !optional;
+      @extend .hover-b-#{$key}-light !optional;
+      @extend .c-#{$key}-light2 !optional;
+      @extend .c-#{$key}-light !optional;
+    }
+  }
+}
+
+.btn-ghost {
+  @extend .bg-transparent, .ba, .bw1;
+}
+
+.btn-ghost:hover {
+  @extend .bg-transparent, .ba, .bw1;
+}
