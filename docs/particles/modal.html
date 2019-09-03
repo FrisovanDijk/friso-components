@@ -2,7 +2,7 @@
 <head>
     <title>Modal</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
-    <link rel="stylesheet" href="../../source/css/main.css">
+    <link rel="stylesheet" href="../../source/style.css">
     <script src="../res/components.js"></script>
 </head>
 <body>
@@ -14,28 +14,28 @@
     <div class="w-100 pa2 bg-grays-white">
         <p>A model containing an API element. Closes on click. Appends itself at the bottom of a given container element.</p>
         <p>This is a fixed container:</p>
-        <p><button class="btn" onclick='show_modal("#alert-container", {
+        <p><button class="btn btn-primary w4" onclick='show_modal("#alert-container", {
                 "name": "alert",
                 "vars": {
                     "type": "success",
                     "message": "Lorem ipsum"
                 }
             })'>Open success</button>
-            <button class="btn" onclick='show_modal("#alert-container", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container", {
                 "name": "alert",
                 "vars": {
                     "type": "warning",
                     "message": "Lorem ipsum"
                 }
             })'>Open warning</button>
-            <button class="btn" onclick='show_modal("#alert-container", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container", {
                 "name": "alert",
                 "vars": {
                     "type": "error",
                     "message": "Lorem ipsum"
                 }
             })'>Open error</button>
-            <button class="btn" onclick='show_modal("#alert-container", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container", {
                 "name": "alert",
                 "vars": {
                     "type": "info",
@@ -44,28 +44,28 @@
             })'>Open info</button></p>
 
         <p>And this one is in-line:</p>
-        <p><button class="btn" onclick='show_modal("#alert-container2", {
+        <p><button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "alert",
                 "vars": {
                     "type": "success",
                     "message": "Lorem ipsum"
                 }
             })'>Open success</button>
-            <button class="btn" onclick='show_modal("#alert-container2", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "alert",
                 "vars": {
                     "type": "warning",
                     "message": "Lorem ipsum"
                 }
             })'>Open warning</button>
-            <button class="btn" onclick='show_modal("#alert-container2", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "alert",
                 "vars": {
                     "type": "error",
                     "message": "Lorem ipsum"
                 }
             })'>Open error</button>
-            <button class="btn" onclick='show_modal("#alert-container2", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "alert",
                 "vars": {
                     "type": "info",
@@ -75,7 +75,7 @@
         <div id="alert-container2" class=""></div>
 
         <p>You don't have to show alerts in modals, they are just for illustration purposes. More examples:</p>
-        <p><button class="btn" onclick='show_modal("#alert-container2", {
+        <p><button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "tag-list",
                     "vars": {
                         "color": "secondary",
@@ -85,7 +85,7 @@
                         ]
                     }
             })'>Open tag</button>
-            <button class="btn" onclick='show_modal("#alert-container2", {
+            <button class="btn btn-primary w4" onclick='show_modal("#alert-container2", {
                 "name": "card-list",
                 "vars": {
                     "title": "My list",
@@ -98,7 +98,7 @@
             })'>Open list card</button></p>
 
         <p>Button calling the modal particle</p>
-<pre><code>&lt;button class="btn" onclick='show_modal("#alert-container", {
+<pre><code>&lt;button class="btn btn-primary w4" onclick='show_modal("#alert-container", {
     "name": "alert",
     "vars": {
         "type": "info",
