@@ -1,0 +1,98 @@
+<!doctype html>
+<head>
+    <title>Ghost menu</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="../../source/organisms/docs/docs.css ">
+    <script src="../res/components.js"></script>
+    <script src="../res/docbuild.js"></script>
+</head>
+<body>
+<div id="header" class="w-100 h2"></div>
+
+<div class="container">
+    <h1>Ghost menu</h1>
+
+    <div class="w-100 flex flex-wrap">
+        <div class="w-100 pa2">
+            <div class="bg-grays-white pa2">
+                <p>A lightweight ghost menu</p>
+                <p><strong>IMPORTANT</strong> Place in a flexbox to have it automatically size and center, otherwise it will fill container width.</p>
+                <p>Full options and html:</p>
+<pre><code>name     ghost-menu
+vars
+    color       (optional) default primary
+    items [
+        name    (recommended)
+        url     (optional)
+    ]
+    border?     (optional) default false
+
+&lt;nav class=&quot;w-80 flex center pt3 f6 ttu&quot;&gt;
+    &lt;ul class=&quot;list flex flex-wrap justify-center items-center center ph2 pv1
+    {{#border?}}
+        br1 b-{{color}} ba
+    {{/border?}}&quot;&gt;
+    {{#items}}
+    &lt;li&gt;&lt;a class=&quot;db link c-{{color}}
+    pa2 no-underline dim&quot; href=&quot;{{url}}&quot; target=&quot;{{target}}&quot;&gt;{{name}}&lt;/a&gt;&lt;/li&gt;
+        {{/items}}
+    &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+            </div>
+        </div>
+    </div>
+
+    <div id="docs"></div>
+
+    <template id="docs-row">
+        <div class="w-100 flex flex-wrap">
+            <div class="w-100 pa2 docs-row--1 flex"></div>
+            <div class="w-100 pa2 docs-row--2">
+                <div class="bg-grays-white pa2">
+                    <h2></h2>
+                    <pre><code></code></pre>
+                </div>
+            </div>
+        </div>
+    </template>
+</div>
+<div id="footer"></div>
+<div id="alert-container" class="fixed top-0 w-90 w-50-ns mt3 center-fixed"></div>
+<script>
+    // Header & Footer
+    parseComponentHTML("#header", {"name":"docs-header", "vars": { "baseUrl": baseUrl}});
+    parseComponentHTML("#footer", {"name":"docs-footer", "vars": {}});
+
+    // Alerts
+    data = {
+        "name": "ghost-menu",
+        "vars": {
+            "items": [
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"}
+            ]
+        }
+    };
+    buildDocRowHTML("#docs", data, "Basic");
+
+    // Alerts
+    data = {
+        "name": "ghost-menu",
+        "vars": {
+            "color": "accent1",
+            "items": [
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"},
+                {"name": "item", "url": "#"}
+            ],
+            "border?": true
+        }
+    };
+    buildDocRowHTML("#docs", data, "Accent1 with border");
+</script>
+</body>

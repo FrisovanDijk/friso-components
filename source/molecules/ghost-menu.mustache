@@ -1,0 +1,18 @@
+{{!
+name     ghost-menu
+vars
+    color       (optional) default primary
+    items [
+        name    (recommended)
+        url     (recommended)
+        target  (optional) default standard browser behaviour
+    ]
+    border?     (optional) default false
+}}
+<ul class="list flex flex-wrap justify-center items-center center ph2 pv1 f6 ttu
+    {{#border?}}br1 b-{{#color}}{{color}}{{/color}}{{^color}}primary{{/color}} ba{{/border?}}">
+    {{#items}}
+        <li><a class="db link c-{{#color}}{{color}}{{/color}}{{^color}}primary{{/color}}
+        pa2 no-underline dim" href="{{url}}" target="{{target}}">{{name}}</a></li>
+    {{/items}}
+</ul>

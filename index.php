@@ -10,6 +10,7 @@ static $components = [
         "breadcrumbs",
         "card-fixed",
         "card-list",
+        "ghost-menu",
         "tag-list"
     ],
     [ // ORGANISMS
@@ -19,26 +20,6 @@ static $components = [
         "docs-header",
         "docs-footer"
     ]
-];
-
-static $atoms = [
-
-];
-
-static $molecules = [
-    "alert",
-    "card-fixed",
-    "card-list",
-    "tag-list"
-];
-
-static $organisms = [
-
-];
-
-static $templates_docs = [
-    "docs-header",
-    "docs-footer"
 ];
 
 require __DIR__ . '/vendor/autoload.php';
