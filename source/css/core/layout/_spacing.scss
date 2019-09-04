@@ -88,11 +88,11 @@ $spacing: (
   .mh#{$key} { margin-left: $value; margin-right: $value; }
 
   // Negative margin
-  .na#{key}  { margin: $value; }
-  .nl#{key}  { margin-left: $value; }
-  .nr#{key}  { margin-right: $value; }
-  .nb#{key}  { margin-bottom: $value; }
-  .nt#{key}  { margin-top: $value; }
+  .na#{$key}  { margin: -$value; }
+  .nl#{$key}  { margin-left: -$value; }
+  .nr#{$key}  { margin-right: -$value; }
+  .nb#{$key}  { margin-bottom: -$value; }
+  .nt#{$key}  { margin-top: -$value; }
 }
 
 @media ($breakpoint-not-small) {
@@ -116,11 +116,11 @@ $spacing: (
     .mh#{$key}-ns { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{key}-ns  { margin: $value; }
-    .nl#{key}-ns  { margin-left: $value; }
-    .nr#{key}-ns  { margin-right: $value; }
-    .nb#{key}-ns  { margin-bottom: $value; }
-    .nt#{key}-ns  { margin-top: $value; }
+    .na#{$key}-ns  { margin: -$value; }
+    .nl#{$key}-ns  { margin-left: -$value; }
+    .nr#{$key}-ns  { margin-right: -$value; }
+    .nb#{$key}-ns  { margin-bottom: -$value; }
+    .nt#{$key}-ns  { margin-top: -$value; }
   }
 }
 
@@ -145,11 +145,11 @@ $spacing: (
     .mh#{$key}-m { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{key}-m  { margin: $value; }
-    .nl#{key}-m  { margin-left: $value; }
-    .nr#{key}-m  { margin-right: $value; }
-    .nb#{key}-m  { margin-bottom: $value; }
-    .nt#{key}-m  { margin-top: $value; }
+    .na#{$key}-m  { margin: -$value; }
+    .nl#{$key}-m  { margin-left: -$value; }
+    .nr#{$key}-m  { margin-right: -$value; }
+    .nb#{$key}-m  { margin-bottom: -$value; }
+    .nt#{$key}-m  { margin-top: -$value; }
   }
 }
 
@@ -174,11 +174,11 @@ $spacing: (
     .mh#{$key}-l { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{key}-l  { margin: $value; }
-    .nl#{key}-l  { margin-left: $value; }
-    .nr#{key}-l  { margin-right: $value; }
-    .nb#{key}-l  { margin-bottom: $value; }
-    .nt#{key}-l  { margin-top: $value; }
+    .na#{$key}-l  { margin: -$value; }
+    .nl#{$key}-l  { margin-left: -$value; }
+    .nr#{$key}-l  { margin-right: -$value; }
+    .nb#{$key}-l  { margin-bottom: -$value; }
+    .nt#{$key}-l  { margin-top: -$value; }
   }
 }
 

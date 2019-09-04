@@ -1,8 +1,9 @@
 // Component variables
 $element-bg: color(grays, white);  // Card background
 
-@import "../../css/no-spacing";
 @import "../../css/core/variables";
+
+@import "../../css/no-spacing";
 @import "../../css/core/core";
 @import "../../css/grid";
 @import "../../components";
