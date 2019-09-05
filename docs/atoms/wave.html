@@ -32,19 +32,19 @@
             <p>Creates a responsive, pure CSS wave parrallax animation from 4 layered SVGs.</p>
             <p>Best used on full screen width.</p>
             <p>Example colors are set for a dark background flowing into white.</p>
-            <p>Classes and selectors added:</p>
+            <p>Selectors added:</p>
             <pre class=""><code>.waves, .wave__parallax, #waves--gentle</code></pre>
             <p>Credit: <a href="https://codepen.io/csspoints/pen/WNeOEqd">CSS Points wave</a></p>
         </div>
 <pre><code>&lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
     &lt;defs&gt;
-        &lt;path id=&quot;gentle-wave&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot; /&gt;
+        &lt;path id=&quot;waves--gentle&quot; d=&quot;M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z&quot; /&gt;
     &lt;/defs&gt;
-    &lt;g class=&quot;wave__parallax&quot;&gt;
-        &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;0&quot; fill=&quot;rgba(190,208,0,0.7&quot; /&gt;
-        &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;3&quot; fill=&quot;rgba(255,255,255,0.5)&quot; /&gt;
-        &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;5&quot; fill=&quot;rgba(255,255,255,0.3)&quot; /&gt;
-        &lt;use xlink:href=&quot;#gentle-wave&quot; x=&quot;48&quot; y=&quot;7&quot; fill=&quot;#fff&quot; /&gt;
+    &lt;g class=&quot;waves__parallax&quot;&gt;
+        &lt;use xlink:href=&quot;#waves--gentle&quot; x=&quot;48&quot; y=&quot;0&quot; fill=&quot;rgba(190,208,0,0.7)&quot; /&gt;
+        &lt;use xlink:href=&quot;#waves--gentle&quot; x=&quot;48&quot; y=&quot;3&quot; fill=&quot;rgba(255,255,255,0.5)&quot; /&gt;
+        &lt;use xlink:href=&quot;#waves--gentle&quot; x=&quot;48&quot; y=&quot;5&quot; fill=&quot;rgba(255,255,255,0.3)&quot; /&gt;
+        &lt;use xlink:href=&quot;#waves--gentle&quot; x=&quot;48&quot; y=&quot;7&quot; fill=&quot;#fff&quot; /&gt;
     &lt;/g&gt;
 &lt;/svg&gt;
 </code></pre>

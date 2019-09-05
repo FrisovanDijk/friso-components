@@ -8022,15 +8022,15 @@ code, .code {
 
 .waves__parallax > use:nth-child(1) {
   animation-delay: -6s;
-  animation-duration: 9s; }
+  animation-duration: 13s; }
 
 .waves__parallax > use:nth-child(2) {
   animation-delay: -4s;
-  animation-duration: 12s; }
+  animation-duration: 15s; }
 
 .waves__parallax > use:nth-child(3) {
   animation-delay: -8s;
-  animation-duration: 16s; }
+  animation-duration: 17s; }
 
 .waves__parallax > use:nth-child(4) {
   animation-delay: -2s;

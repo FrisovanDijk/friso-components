@@ -1,0 +1,61 @@
+<!doctype html>
+<head>
+    <title>Front page hero</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
+    <link rel="stylesheet" href="../../../source/organisms/frisovandijk/frisovandijk.css">
+    <script src="../../res/components.js"></script>
+</head>
+<body class="sans-serif bg-grays-white">
+<header class="bg-primary">
+    <nav class="w-80 flex center pt3 c-secondary"  id="menu">
+        <ul class="list flex flex-wrap justify-center items-center
+                    center ph2 pv1 br1 b-secondary ba f6 ttu">
+            <li class="pa2">Menu could not be loaded</li>
+        </ul>
+    </nav>
+
+    <div class="w-100 w-two-thirds-ns center mv5">
+        <div class="w-100 w-two-thirds-l center flex flex-column">
+            <div class="ml2 pl2 ml4-m ml2-l">
+                <h1 class="f-5 nl1 mv0 c-secondary f-6-l nl2-l">friso</h1>
+                <h2 class="f1 ml5 nt4 mb0 c-light f-5-l ml4-l pt3-l nt5-l">van Dijk</h2>
+            </div>
+            <p class="c-secondary b f4 ttu self-end mr3 tr">Privacy researcher
+                <br/><span class="c-light">& consultant</span>
+            </p>
+        </div>
+    </div>
+
+    <!--Waves Container-->
+    <div class="w-100">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="waves--gentle" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="waves__parallax">
+                <use xlink:href="#waves--gentle" x="48" y="0" fill="rgba(190,208,0,0.7)" />
+                <use xlink:href="#waves--gentle" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#waves--gentle" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#waves--gentle" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+</header>
+<script>
+    // Create ghost menu
+    data = {
+        "name": "ghost-menu",
+        "vars": {
+            "color": "secondary",
+            "items": [
+                {"name": "Home", "url": "#"},
+                {"name": "Work", "url": "#"},
+                {"name": "Blog", "url": "https://www.twentyoftime.com", "target": "_blank"},
+                {"name": "Contact", "url": "#"}
+            ],
+            "border?": true
+        }
+    };
+    parseComponentHTML("#menu", data);
+</script>
+</body>
