@@ -34,13 +34,18 @@ h1, h2, h3, h4, h5 {
   height: 60px;
 }
 
-.container {
-  width: 100%;
+.container-width {
+  @extend .w-100;
   max-width: 780px;
-  min-height: calc(100vh - 120px);
+}
 
-  margin: 0 auto 10px;
-  padding: 10px;
+.container-height {
+  min-height: calc(100vh - 110px);
+}
+
+.container {
+  @extend .container-width, .container-height;
+  @extend .center, .pa2;
 
   &>h1 {
     border-bottom: 2px solid color(secondary, dark1);

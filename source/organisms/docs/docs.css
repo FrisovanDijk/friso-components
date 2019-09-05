@@ -2428,7 +2428,7 @@ input[type="url"],
 .nt1 {
   margin-top: -0.25rem; }
 
-.pa2 {
+.pa2, .container {
   padding: 0.5rem; }
 
 .pl2 {
@@ -4354,7 +4354,7 @@ input[type="url"],
 .w-90 {
   width: 90%; }
 
-.w-100 {
+.w-100, .container-width, .container {
   width: 100%; }
 
 .w-third {
@@ -7931,7 +7931,7 @@ code, .code {
 /*
    UTILITIES
 */
-.center {
+.center, .container {
   margin-right: auto;
   margin-left: auto; }
 
@@ -8003,6 +8003,49 @@ code, .code {
     -[width]
     -ghost
 */
+/*
+  Wave
+
+  Creates a pure CSS wave parrallax animation from 4 layered SVGs
+*/
+.waves {
+  position: relative;
+  width: 100%;
+  height: 15vh;
+  margin-bottom: -7px;
+  /*Fix for safari gap*/
+  min-height: 100px;
+  max-height: 150px; }
+
+.waves__parallax > use {
+  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite; }
+
+.waves__parallax > use:nth-child(1) {
+  animation-delay: -6s;
+  animation-duration: 9s; }
+
+.waves__parallax > use:nth-child(2) {
+  animation-delay: -4s;
+  animation-duration: 12s; }
+
+.waves__parallax > use:nth-child(3) {
+  animation-delay: -8s;
+  animation-duration: 16s; }
+
+.waves__parallax > use:nth-child(4) {
+  animation-delay: -2s;
+  animation-duration: 20s; }
+
+@keyframes move-forever {
+  0% {
+    transform: translate3d(-90px, 0, 0); }
+  100% {
+    transform: translate3d(85px, 0, 0); } }
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height: 50px;
+    min-height: 50px; } }
 .f-card {
   display: inline-block;
   box-sizing: border-box;
@@ -8212,14 +8255,14 @@ p {
 #header {
   height: 60px; }
 
-.container {
-  width: 100%;
-  max-width: 780px;
-  min-height: calc(100vh - 120px);
-  margin: 0 auto 10px;
-  padding: 10px; }
-  .container > h1 {
-    border-bottom: 2px solid #ABBB00; }
+.container-width, .container {
+  max-width: 780px; }
+
+.container-height, .container {
+  min-height: calc(100vh - 110px); }
+
+.container > h1 {
+  border-bottom: 2px solid #ABBB00; }
 
 a {
   color: #000011; }
