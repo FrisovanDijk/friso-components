@@ -1,29 +1,27 @@
 <!doctype html>
 <head>
-    <title>Wave</title>
+    <title>Branded box shadow</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,shrink-to-fit=no">
     <link rel="stylesheet" href="../../source/organisms/docs/docs.css">
     <script src="../res/components.js"></script>
 </head>
+<style>
+    .shadow-branded {
+        box-shadow: 0 10px 0 -5px #bed000;
+    }
+</style>
 <body>
 <div id="header" class="w-100 h2"></div>
 
 <div class="container">
-    <h1>Wave</h1>
+    <h1>Branded border box</h1>
 
-    <div class="w-100 mv4 pb5 bg-grays-white">
-        <div class="w-100 bg-primary pt4">
-            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-                <defs>
-                    <path id="waves--gentle" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-                </defs>
-                <g class="waves__parallax">
-                    <use xlink:href="#waves--gentle" x="48" y="0" fill="rgba(190,208,0,0.7)" />
-                    <use xlink:href="#waves--gentle" x="48" y="3" fill="rgba(255,255,255,0.5)" />
-                    <use xlink:href="#waves--gentle" x="48" y="5" fill="rgba(255,255,255,0.3)" />
-                    <use xlink:href="#waves--gentle" x="48" y="7" fill="#fff" />
-                </g>
-            </svg>
+    <div class="w-100 mv4 pb5">
+        <div class="w-90 w-80-ns center">
+            <div class="ba b-primary bw1 shadow-branded pa2 bg-grays-white">
+                <h2>Title</h2>
+                <p>Content</p>
+            </div>
         </div>
     </div>
 
@@ -33,7 +31,7 @@
             <p>Best used on full screen width.</p>
             <p>Example colors are set for a dark background flowing into white.</p>
             <p>Selectors added:</p>
-            <pre class=""><code>.waves, .waves__parallax, #waves--gentle</code></pre>
+            <pre class=""><code>.waves, .wave__parallax, #waves--gentle</code></pre>
             <p>Credit: <a href="https://codepen.io/csspoints/pen/WNeOEqd">CSS Points wave</a></p>
         </div>
 <pre><code>&lt;svg class=&quot;waves&quot; xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:xlink=&quot;http://www.w3.org/1999/xlink&quot; viewBox=&quot;0 24 150 28&quot; preserveAspectRatio=&quot;none&quot; shape-rendering=&quot;auto&quot;&gt;
