@@ -1,0 +1,27 @@
+/*
+  BUTTON
+
+  base
+    btn
+
+  modifiers
+    -[color]
+    -[width]
+    -ghost
+*/
+
+.tag {
+  @extend .ma1, .pv1, .ph2, .br2;
+}
+
+@each $key, $value in $colors {
+  .tag-#{$key} {
+    @extend .bg-wcag-#{$key}-light4 !optional;
+    @extend .bg-wcag-#{$key}-light !optional;
+  }
+
+  a>.tag:hover {
+    @extend .hover-bg-#{$key}-light2 !optional;
+    @extend .hover-bg-wcag-#{$key} !optional;
+  }
+}

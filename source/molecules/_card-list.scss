@@ -28,7 +28,7 @@ $border-color: color(primary, light1);
 }
 
 .f-card__list--striped a:nth-child(even) li {
-  background-color: $element-bg;
+  @extend .bg-grays-white;
 }
 
 .f-card__list__ul a li:hover {

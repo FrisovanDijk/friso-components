@@ -17,8 +17,6 @@ static $components = [
 
     ],
     [ // TEMPLATES Docs
-        "docs-header",
-        "docs-footer"
     ]
 ];
 

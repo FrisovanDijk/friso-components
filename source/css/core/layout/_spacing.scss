@@ -2,11 +2,21 @@ $spacing: (
         0: 0,
         1: 0.25rem,
         2: 0.5rem,
-        3: 1rem,
-        4: 2rem,
-        5: 4rem,
-        6: 8rem,
-        7: 16rem
+        3: 0.75rem,
+        4: 1rem,
+        5: 1.25rem,
+        6: 1.5rem,
+        8: 2rem,
+        10: 2.5rem,
+        12: 3rem,
+        16: 4rem,
+        20: 5rem,
+        24: 6rem,
+        32: 8rem,
+        40: 10rem,
+        48: 12rem,
+        56: 14rem,
+        64: 16rem
 );
 
 /*
@@ -88,11 +98,11 @@ $spacing: (
   .mh#{$key} { margin-left: $value; margin-right: $value; }
 
   // Negative margin
-  .na#{$key}  { margin: -$value; }
-  .nl#{$key}  { margin-left: -$value; }
-  .nr#{$key}  { margin-right: -$value; }
-  .nb#{$key}  { margin-bottom: -$value; }
-  .nt#{$key}  { margin-top: -$value; }
+  .-ma#{$key}  { margin: -$value; }
+  .-ml#{$key}  { margin-left: -$value; }
+  .-mr#{$key}  { margin-right: -$value; }
+  .-mb#{$key}  { margin-bottom: -$value; }
+  .-mt#{$key}  { margin-top: -$value; }
 }
 
 @media ($breakpoint-not-small) {
@@ -116,11 +126,11 @@ $spacing: (
     .mh#{$key}-ns { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{$key}-ns  { margin: -$value; }
-    .nl#{$key}-ns  { margin-left: -$value; }
-    .nr#{$key}-ns  { margin-right: -$value; }
-    .nb#{$key}-ns  { margin-bottom: -$value; }
-    .nt#{$key}-ns  { margin-top: -$value; }
+    .-ma#{$key}-ns  { margin: -$value; }
+    .-ml#{$key}-ns  { margin-left: -$value; }
+    .-mr#{$key}-ns  { margin-right: -$value; }
+    .-mb#{$key}-ns  { margin-bottom: -$value; }
+    .-mt#{$key}-ns  { margin-top: -$value; }
   }
 }
 
@@ -145,11 +155,11 @@ $spacing: (
     .mh#{$key}-m { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{$key}-m  { margin: -$value; }
-    .nl#{$key}-m  { margin-left: -$value; }
-    .nr#{$key}-m  { margin-right: -$value; }
-    .nb#{$key}-m  { margin-bottom: -$value; }
-    .nt#{$key}-m  { margin-top: -$value; }
+    .-ma#{$key}-m  { margin: -$value; }
+    .-ml#{$key}-m  { margin-left: -$value; }
+    .-mr#{$key}-m  { margin-right: -$value; }
+    .-mb#{$key}-m  { margin-bottom: -$value; }
+    .-mt#{$key}-m  { margin-top: -$value; }
   }
 }
 
@@ -174,11 +184,11 @@ $spacing: (
     .mh#{$key}-l { margin-left: $value; margin-right: $value; }
 
     // Negative margin
-    .na#{$key}-l  { margin: -$value; }
-    .nl#{$key}-l  { margin-left: -$value; }
-    .nr#{$key}-l  { margin-right: -$value; }
-    .nb#{$key}-l  { margin-bottom: -$value; }
-    .nt#{$key}-l  { margin-top: -$value; }
+    .-ma#{$key}-l  { margin: -$value; }
+    .-ml#{$key}-l  { margin-left: -$value; }
+    .-mr#{$key}-l  { margin-right: -$value; }
+    .-mb#{$key}-l  { margin-bottom: -$value; }
+    .-mt#{$key}-l  { margin-top: -$value; }
   }
 }
 

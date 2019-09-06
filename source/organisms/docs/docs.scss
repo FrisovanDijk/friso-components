@@ -1,10 +1,9 @@
 // Component variables
-$element-bg: color(grays, white);  // Card background
 
 @import "../../css/core/variables";
 
 @import "../../css/no-spacing";
-@import "../../css/core/core";
+@import "../../css/_core";
 @import "../../css/grid";
 @import "../../components";
 
@@ -30,26 +29,8 @@ h1, h2, h3, h4, h5 {
   @extend .mb3, .ph1;
 }
 
-#header {
-  height: 60px;
-}
-
-.container-width {
-  @extend .w-100;
-  max-width: 780px;
-}
-
-.container-height {
-  min-height: calc(100vh - 110px);
-}
-
-.container {
-  @extend .container-width, .container-height;
-  @extend .center, .pa2;
-
-  &>h1 {
-    border-bottom: 2px solid color(secondary, dark1);
-  }
+h1 {
+  border-bottom: 2px solid color(secondary, dark1);
 }
 
 pre {
