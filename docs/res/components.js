@@ -1,8 +1,6 @@
-var apiUrl = "https://www.frisovandijk.com/components/";
+var apiUrl = "https://component.frisovandijk.com/";
 
-if(window.location.origin.includes("localhost")) {
-    apiUrl = window.location.origin + "/";
-}
+
 const baseUrl = apiUrl + "docs/";
 
 // Makes the server API call
