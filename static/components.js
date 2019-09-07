@@ -1,4 +1,4 @@
-var apiUrl = "https://component.frisovandijk.com/";
+var apiUrl = "https://component.frisovandijk.com/api/";
 
 const baseUrl = apiUrl + "docs/";
 
