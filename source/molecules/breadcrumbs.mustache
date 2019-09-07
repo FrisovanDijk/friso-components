@@ -7,7 +7,7 @@ vars
         current? (optional)    Current position in breadcrumb trail
     ]
 }}
-<div class="w-100 ma1 pv1 pl1 br1">
+<div class="ma1 pa1">
     {{#items}}
         / {{#url}}<a class="no-underline hover-underline" href="{{url}}">{{/url}}
         <span class="f6 c-copy {{#current?}}b{{/current?}}">{{name}}</span>{{#url}}</a>{{/url}}
