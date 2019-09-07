@@ -11,7 +11,9 @@
 */
 
 .btn {
-  @extend .ma1, .ph3, .pv1, .bw0, .br2, .pointer, .dim;
+  @extend .ma1, .ph4, .lh-copy, .bw0, .br2, .pointer, .dim;
+  min-height: 32px;
+  min-width: 80px;
 }
 
 .btn-ghost {

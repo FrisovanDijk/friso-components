@@ -1,6 +1,6 @@
 // normalize.css
 @import "core/_normalize";
-@import "_no-spacing";
+@import "core/_no-spacing";
 
 // These first so it doesn't break
 @import "core/_functions";
@@ -23,11 +23,6 @@
 @import "core/layout/_widths";
 @import "core/layout/_z-index";
 
-@import "core/elements/_forms";
-@import "core/elements/_images";
-@import "core/elements/_links";
-@import "core/elements/_tables";
-
 @import "core/typography/_font-families";
 @import "core/typography/_font-style";
 @import "core/typography/_font-weights";
@@ -44,6 +39,9 @@
 
 @import "core/theming/_background-size";
 @import "core/theming/_borders";
+@import "core/theming/_border-color";
+@import "core/theming/_border-style";
+@import "core/theming/_border-width";
 @import "core/theming/_border-hover";
 @import "core/theming/_border-radius";
 @import "core/theming/_box-shadow";
@@ -52,6 +50,7 @@
 @import "core/theming/_skins";
 
 @import "core/_css-helpers";
+@import "core/_elements";
 
 // Debug
 // @import "layout/debug";

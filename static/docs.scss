@@ -1,0 +1,52 @@
+// Component variables
+
+@import "../source/css/core/_variables";
+
+@import "../source/css/_core";
+@import "../source/_components";
+
+body {
+  font-family: Calibri, sans-serif;
+}
+
+ul, li {
+  @extend .list-inside, .ml3;
+}
+
+p, li {
+  @extend .lh-copy;
+}
+
+p {
+  @extend .mv2;
+}
+
+h1, h2 {
+  @extend .bb, .b-secondary, .pv1;
+}
+
+h1, h2, h3, h4, h5 {
+  @extend .mv3, .ph1;
+}
+
+h1 { @extend .f2; }
+h2 { @extend .f3; }
+h3 { @extend .f4; }
+h4 { @extend .f5; }
+h5 { @extend .f6; }
+
+pre {
+  @extend .bg-grays-light3, .bg-grays-light3, .pv2, .ph3, .br2, .overflow-x-auto;
+}
+
+code {
+  @extend .bg-grays-light3, .overflow-x-auto;
+}
+a {
+  color: text-color(copy);
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}

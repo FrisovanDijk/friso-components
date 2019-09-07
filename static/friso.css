@@ -364,7 +364,6 @@ h6 {
 
 ol,
 ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
@@ -3076,7 +3075,7 @@ input[type=url],
   padding-top: 0.25rem;
 }
 
-.pv1, .tag, .btn {
+.pv1, .tag {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
@@ -3241,7 +3240,7 @@ input[type=url],
   padding-bottom: 0.75rem;
 }
 
-.ph3, .btn {
+.ph3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
@@ -3321,7 +3320,7 @@ input[type=url],
   padding-bottom: 1rem;
 }
 
-.ph4 {
+.ph4, .btn {
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -9212,67 +9211,6 @@ input[type=url],
 
 /*
 
-   FORMS
-
-*/
-.input-reset {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-}
-
-.button-reset::-moz-focus-inner,
-.input-reset::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-/*
-   IMAGES
-   Docs: http://tachyons.io/docs/elements/images/
-*/
-/* Responsive images! */
-img {
-  max-width: 100%;
-}
-
-/*
-   LINKS
-*/
-.link {
-  text-decoration: none;
-  transition: color 0.15s ease-in;
-}
-
-.link:link,
-.link:visited {
-  transition: color 0.15s ease-in;
-}
-
-.link:hover {
-  transition: color 0.15s ease-in;
-}
-
-.link:active {
-  transition: color 0.15s ease-in;
-}
-
-.link:focus {
-  transition: color 0.15s ease-in;
-}
-
-/*
-
-  TABLES
-  Docs: http://tachyons.io/docs/elements/tables/
-
-*/
-.collapse {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*
-
    FONT FAMILY GROUPS
    Docs: http://tachyons.io/docs/typography/font-family/
 
@@ -9669,7 +9607,7 @@ code, .code {
   line-height: 1.25;
 }
 
-.lh-copy {
+.lh-copy, .btn {
   line-height: 1.5;
 }
 
@@ -10777,95 +10715,6 @@ code, .code {
 }
 /*
 
-   BORDER STYLES
-   Docs: http://tachyons.io/docs/themes/borders/
-
-   Depends on base border module in _borders.css
-
-   Base:
-     b = border-style
-
-   Modifiers:
-     --none   = none
-     --dotted = dotted
-     --dashed = dashed
-     --solid  = solid
-
-   Media Query Extensions:
-     -ns = not-small
-     -m  = medium
-     -l  = large
-
- */
-.b--dotted {
-  border-style: dotted;
-}
-
-.b--dashed {
-  border-style: dashed;
-}
-
-.b--solid {
-  border-style: solid;
-}
-
-.b--none {
-  border-style: none;
-}
-
-@media (min-width: 30em) {
-  .b--dotted-ns {
-    border-style: dotted;
-  }
-
-  .b--dashed-ns {
-    border-style: dashed;
-  }
-
-  .b--solid-ns {
-    border-style: solid;
-  }
-
-  .b--none-ns {
-    border-style: none;
-  }
-}
-@media (min-width: 30em) and (max-width: 60em) {
-  .b--dotted-m {
-    border-style: dotted;
-  }
-
-  .b--dashed-m {
-    border-style: dashed;
-  }
-
-  .b--solid-m {
-    border-style: solid;
-  }
-
-  .b--none-m {
-    border-style: none;
-  }
-}
-@media (min-width: 60em) {
-  .b--dotted-l {
-    border-style: dotted;
-  }
-
-  .b--dashed-l {
-    border-style: dashed;
-  }
-
-  .b--solid-l {
-    border-style: solid;
-  }
-
-  .b--none-l {
-    border-style: none;
-  }
-}
-/*
-
    BORDER COLORS
    Docs: http://tachyons.io/docs/themes/borders/
 
@@ -11139,6 +10988,95 @@ code, .code {
   border-color: #3275a7;
 }
 
+/*
+
+   BORDER STYLES
+   Docs: http://tachyons.io/docs/themes/borders/
+
+   Depends on base border module in _borders.css
+
+   Base:
+     b = border-style
+
+   Modifiers:
+     --none   = none
+     --dotted = dotted
+     --dashed = dashed
+     --solid  = solid
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+ */
+.b--dotted {
+  border-style: dotted;
+}
+
+.b--dashed {
+  border-style: dashed;
+}
+
+.b--solid {
+  border-style: solid;
+}
+
+.b--none {
+  border-style: none;
+}
+
+@media (min-width: 30em) {
+  .b--dotted-ns {
+    border-style: dotted;
+  }
+
+  .b--dashed-ns {
+    border-style: dashed;
+  }
+
+  .b--solid-ns {
+    border-style: solid;
+  }
+
+  .b--none-ns {
+    border-style: none;
+  }
+}
+@media (min-width: 30em) and (max-width: 60em) {
+  .b--dotted-m {
+    border-style: dotted;
+  }
+
+  .b--dashed-m {
+    border-style: dashed;
+  }
+
+  .b--solid-m {
+    border-style: solid;
+  }
+
+  .b--none-m {
+    border-style: none;
+  }
+}
+@media (min-width: 60em) {
+  .b--dotted-l {
+    border-style: dotted;
+  }
+
+  .b--dashed-l {
+    border-style: dashed;
+  }
+
+  .b--solid-l {
+    border-style: solid;
+  }
+
+  .b--none-l {
+    border-style: none;
+  }
+}
 /*
    BORDER WIDTHS
    Docs: http://tachyons.io/docs/themes/borders/
@@ -11904,19 +11842,19 @@ code, .code {
 /*
   Dim element on hover by adding the dim class.
 */
-.dim, .f-card__list__ul a li:hover, .btn {
+.dim, .btn {
   opacity: 1;
   transition: opacity 0.15s ease-in;
 }
 
-.dim:hover, .f-card__list__ul a li:hover, .btn:hover,
+.dim:hover, .btn:hover,
 .dim:focus,
 .btn:focus {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
 }
 
-.dim:active, .f-card__list__ul a li:active:hover, .btn:active {
+.dim:active, .btn:active {
   opacity: 0.8;
   transition: opacity 0.15s ease-out;
 }
@@ -12112,6 +12050,10 @@ code, .code {
       -[color]
       -[color]-[tone]
 
+     bg-wcag    = WCAG compliant contrast background and defined light and copy text colors.
+     -[color]
+     -[color]-[tone]
+
      hgl        = Highlight (40% opacity of base)
       -[color]
 
@@ -12146,7 +12088,7 @@ code, .code {
   color: #fffffe;
 }
 
-.hover-bg-primary-light2:hover, a > .tag:hover {
+.hover-bg-primary-light2:hover {
   background-color: #939192;
 }
 
@@ -12171,7 +12113,7 @@ code, .code {
   background-color: #262324;
 }
 
-.bg-wcag-primary, .btn-primary {
+.bg-wcag-primary, a > .tag-primary:hover, a.tag-primary:hover, .btn-primary {
   background-color: #262324;
   color: #fffffe;
 }
@@ -12221,7 +12163,7 @@ code, .code {
   background-color: #D8E366;
 }
 
-.hover-bg-secondary-light2:hover, a > .tag:hover {
+.hover-bg-secondary-light2:hover {
   background-color: #D8E366;
 }
 
@@ -12245,7 +12187,7 @@ code, .code {
   background-color: #bed000;
 }
 
-.bg-wcag-secondary, .btn-secondary {
+.bg-wcag-secondary, a > .tag-secondary:hover, a.tag-secondary:hover, .btn-secondary {
   background-color: #bed000;
 }
 
@@ -12332,7 +12274,7 @@ code, .code {
   background-color: #80DFE8;
 }
 
-.hover-bg-accent1-light2:hover, a > .tag:hover {
+.hover-bg-accent1-light2:hover {
   background-color: #80DFE8;
 }
 
@@ -12356,7 +12298,7 @@ code, .code {
   background-color: #00bed0;
 }
 
-.bg-wcag-accent1, .btn-accent1 {
+.bg-wcag-accent1, a > .tag-accent1:hover, a.tag-accent1:hover, .btn-accent1 {
   background-color: #00bed0;
 }
 
@@ -12444,7 +12386,7 @@ code, .code {
   background-color: #DF89DE;
 }
 
-.hover-bg-accent2-light2:hover, a > .tag:hover {
+.hover-bg-accent2-light2:hover {
   background-color: #DF89DE;
 }
 
@@ -12469,7 +12411,7 @@ code, .code {
   background-color: #bf13bc;
 }
 
-.bg-wcag-accent2, .btn-accent2 {
+.bg-wcag-accent2, a > .tag-accent2:hover, a.tag-accent2:hover, .btn-accent2 {
   background-color: #bf13bc;
   color: #fffffe;
 }
@@ -12559,7 +12501,7 @@ code, .code {
   color: #fffffe;
 }
 
-.hover-bg-accent3-light2:hover, a > .tag:hover {
+.hover-bg-accent3-light2:hover {
   background-color: #9F9CC7;
 }
 
@@ -12584,7 +12526,7 @@ code, .code {
   background-color: #5f5aa2;
 }
 
-.bg-wcag-accent3, .btn-accent3 {
+.bg-wcag-accent3, a > .tag-accent3:hover, a.tag-accent3:hover, .btn-accent3 {
   background-color: #5f5aa2;
   color: #fffffe;
 }
@@ -12641,7 +12583,7 @@ code, .code {
   background-color: #090910;
 }
 
-.bg-grays-white, .f-card__list--striped a:nth-child(even) li, .f-card__content, .f-card {
+.bg-grays-white {
   background-color: #FFFFFF;
 }
 
@@ -12685,7 +12627,7 @@ code, .code {
   background-color: #E0E0E0;
 }
 
-.hover-bg-grays-light2:hover, a > .tag:hover {
+.hover-bg-grays-light2:hover {
   background-color: #E0E0E0;
 }
 
@@ -12709,7 +12651,7 @@ code, .code {
   background-color: #CCCCCC;
 }
 
-.bg-wcag-grays, .btn-grays {
+.bg-wcag-grays, a > .tag-grays:hover, a.tag-grays:hover, .btn-grays {
   background-color: #CCCCCC;
 }
 
@@ -12798,7 +12740,7 @@ code, .code {
   background-color: #e55552;
 }
 
-.bg-wcag-error, .btn-error {
+.bg-wcag-error, a > .tag-error:hover, a.tag-error:hover, .btn-error {
   background-color: #e55552;
   color: #fffffe;
 }
@@ -12836,7 +12778,7 @@ code, .code {
   background-color: #28cc95;
 }
 
-.bg-wcag-success, .btn-success {
+.bg-wcag-success, a > .tag-success:hover, a.tag-success:hover, .btn-success {
   background-color: #28cc95;
 }
 
@@ -12873,7 +12815,7 @@ code, .code {
   background-color: #feef6d;
 }
 
-.bg-wcag-warning, .btn-warning {
+.bg-wcag-warning, a > .tag-warning:hover, a.tag-warning:hover, .btn-warning {
   background-color: #feef6d;
 }
 
@@ -12910,7 +12852,7 @@ code, .code {
   background-color: #3d8ecc;
 }
 
-.bg-wcag-info, .btn-info {
+.bg-wcag-info, a > .tag-info:hover, a.tag-info:hover, .btn-info {
   background-color: #3d8ecc;
   color: #fffffe;
 }
@@ -12928,7 +12870,7 @@ code, .code {
   background-color: #3275a7;
 }
 
-.c-copy, .f-card__title, .f-card__list__title {
+.c-copy {
   color: #000011;
 }
 
@@ -12936,7 +12878,7 @@ code, .code {
   color: #dbe6ec;
 }
 
-.c-light, .f-card--cover .f-card__title, .f-card--cover .f-card__list__title {
+.c-light {
   color: #fffffe;
 }
 
@@ -13522,16 +13464,66 @@ code, .code {
 }
 
 /*
-  BUTTON
 
-  base
-    btn
+   FORMS
 
-  modifiers
-    -[color]
-    -[width]
-    -ghost
 */
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-reset::-moz-focus-inner,
+.input-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+   IMAGES
+   Docs: http://tachyons.io/docs/elements/images/
+*/
+/* Responsive images! */
+img {
+  max-width: 100%;
+}
+
+/*
+   LINKS
+*/
+.link {
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+.link:link,
+.link:visited {
+  transition: color 0.15s ease-in;
+}
+
+.link:hover {
+  transition: color 0.15s ease-in;
+}
+
+.link:active {
+  transition: color 0.15s ease-in;
+}
+
+.link:focus {
+  transition: color 0.15s ease-in;
+}
+
+/*
+
+  TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
+
+*/
+.collapse {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 /*
   BUTTON
 
@@ -13542,6 +13534,20 @@ code, .code {
     -[color]
     -[width]
     -ghost
+*/
+.btn {
+  min-height: 32px;
+  min-width: 80px;
+}
+
+/*
+  Tag
+
+  base
+    tag
+
+  modifiers
+    -[color]
 */
 /*
   Wave
@@ -13596,254 +13602,6 @@ code, .code {
     height: 50px;
     min-height: 50px;
   }
-}
-.f-card {
-  display: inline-block;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100%;
-  margin-bottom: 10px;
-  border-radius: 4px;
-  overflow: hidden;
-}
-
-.f-card__title, .f-card__list__title {
-  border: none;
-  font-size: 1.25rem;
-  font-weight: normal;
-  padding: 0;
-}
-
-.f-card--primary, .f-card--primary .f-card__content {
-  background-color: #262324;
-  color: #fffffe;
-}
-
-.f-card--primary .f-card__title, .f-card--primary .f-card__list__title {
-  color: #fffffe;
-}
-
-.f-card__title--primary .f-card__title, .f-card__title--primary .f-card__list__title {
-  color: #262324;
-}
-
-.f-card--secondary, .f-card--secondary .f-card__content {
-  background-color: #bed000;
-}
-
-.f-card__title--secondary .f-card__title, .f-card__title--secondary .f-card__list__title {
-  color: #bed000;
-}
-
-.f-card--accent1, .f-card--accent1 .f-card__content {
-  background-color: #00bed0;
-}
-
-.f-card__title--accent1 .f-card__title, .f-card__title--accent1 .f-card__list__title {
-  color: #00bed0;
-}
-
-.f-card--accent2, .f-card--accent2 .f-card__content {
-  background-color: #bf13bc;
-  color: #fffffe;
-}
-
-.f-card--accent2 .f-card__title, .f-card--accent2 .f-card__list__title {
-  color: #fffffe;
-}
-
-.f-card__title--accent2 .f-card__title, .f-card__title--accent2 .f-card__list__title {
-  color: #bf13bc;
-}
-
-.f-card--accent3, .f-card--accent3 .f-card__content {
-  background-color: #5f5aa2;
-  color: #fffffe;
-}
-
-.f-card--accent3 .f-card__title, .f-card--accent3 .f-card__list__title {
-  color: #fffffe;
-}
-
-.f-card__title--accent3 .f-card__title, .f-card__title--accent3 .f-card__list__title {
-  color: #5f5aa2;
-}
-
-.f-card--grays, .f-card--grays .f-card__content {
-  background-color: #CCCCCC;
-}
-
-.f-card__title--grays .f-card__title, .f-card__title--grays .f-card__list__title {
-  color: #CCCCCC;
-}
-
-.f-card--error, .f-card--error .f-card__content {
-  background-color: #e55552;
-  color: #fffffe;
-}
-
-.f-card--error .f-card__title, .f-card--error .f-card__list__title {
-  color: #fffffe;
-}
-
-.f-card__title--error .f-card__title, .f-card__title--error .f-card__list__title {
-  color: #e55552;
-}
-
-.f-card--success, .f-card--success .f-card__content {
-  background-color: #28cc95;
-}
-
-.f-card__title--success .f-card__title, .f-card__title--success .f-card__list__title {
-  color: #28cc95;
-}
-
-.f-card--warning, .f-card--warning .f-card__content {
-  background-color: #feef6d;
-}
-
-.f-card__title--warning .f-card__title, .f-card__title--warning .f-card__list__title {
-  color: #feef6d;
-}
-
-.f-card--info, .f-card--info .f-card__content {
-  background-color: #3d8ecc;
-  color: #fffffe;
-}
-
-.f-card--info .f-card__title, .f-card--info .f-card__list__title {
-  color: #fffffe;
-}
-
-.f-card__title--info .f-card__title, .f-card__title--info .f-card__list__title {
-  color: #3d8ecc;
-}
-
-.f-card__mask, .f-card__figure, .f-card__content {
-  position: relative;
-  overflow: hidden;
-  transition: 0.2s ease-out;
-}
-
-.f-card--clear a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.f-card__content {
-  padding: 0.8rem;
-}
-
-.f-card__title, .f-card__list__title {
-  margin-top: 0;
-}
-
-.f-card__figure {
-  width: auto;
-  max-width: 100%;
-}
-
-.f-card__figure img {
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-.f-card--cover .f-card__figure img {
-  height: 100%;
-  width: auto;
-  max-width: none;
-}
-
-.f-card--short .f-card__figure img {
-  height: 150px;
-  width: auto;
-}
-
-.f-card--link .f-card__mask:hover .f-card__content--figure {
-  margin-top: -30px;
-}
-.f-card--link .f-card__mask:hover .f-card__figure {
-  filter: brightness(70%);
-}
-
-.f-card--cover .f-card__mask:hover .f-card__content--figure {
-  margin-top: 0;
-}
-
-.f-card--fixed {
-  width: 180px;
-  height: 300px;
-  background-color: transparent;
-}
-@media (max-width: 180px) {
-  .f-card--fixed {
-    width: 100%;
-  }
-}
-
-.f-card--short {
-  height: 150px;
-}
-.f-card--short .f-card__content--figure {
-  margin-top: -75px;
-}
-.f-card--short .f-card__mask:hover .f-card__content--figure {
-  margin-top: -115px;
-}
-
-.f-card--wide {
-  width: 100%;
-  max-width: 360px;
-}
-@media (max-width: 360px) {
-  .f-card--wide {
-    width: 100%;
-  }
-}
-
-.f-card--cover .f-card__content {
-  background: linear-gradient(to bottom, rgba(155, 155, 155, 0) 0%, rgba(84, 84, 84, 0.65) 100%);
-  display: flex;
-  align-items: flex-end;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-.f-card--cover .f-card__description {
-  display: none;
-}
-.f-card--cover .f-card__title, .f-card--cover .f-card__list__title {
-  margin-bottom: 0;
-  font-size: 1.25rem;
-}
-
-.f-card__list {
-  height: auto;
-}
-
-.f-card__list__title {
-  padding: 8px 14px;
-  padding-bottom: 0;
-}
-
-.f-card__list p {
-  padding: 8px 14px;
-  padding-top: 0;
-}
-
-.f-card__list__ul li {
-  padding: 8px 14px;
-  transition: 0.15s ease-out;
-}
-
-.f-card__list--striped li:nth-child(odd) {
-  background-color: #BEBDBD;
-}
-
-.f-card__list--bordered li {
-  border-top: 1px solid #514F50;
 }
 
 /*# sourceMappingURL=friso.css.map */

@@ -3,10 +3,10 @@ var apiUrl = "https://component.frisovandijk.com/";
 const baseUrl = apiUrl + "docs/";
 
 // Makes the server API call
-function getComponent(name, vars) {
+function getComponent(name, data) {
     const host = apiUrl;
     const url = "index.php";
-    const url_vars = btoa(JSON.stringify(vars));
+    const url_vars = btoa(JSON.stringify(data));
     const request_url = `${host}${url}?name=${name}&vars=${url_vars}`;
 
     // Debug mode
@@ -48,14 +48,14 @@ function parseComponentHTMLChild(container_id, child_id, data) {
 // PARTICLES
 
 // MODAL
-function show_modal(container_id, data) {
+function simple_pop(container_id, data) {
     var child_id = Date.now();
     parseComponentHTMLChild(container_id, child_id, data);
 
-    var modal = document.getElementById(child_id);
+    var pop = document.getElementById(child_id);
 
-    modal.style.display = "block";
-    modal.addEventListener("click", function(){
-        modal.style.display = "none"
+    pop.style.display = "block";
+    pop.addEventListener("click", function(){
+        pop.style.display = "none"
     });
 }

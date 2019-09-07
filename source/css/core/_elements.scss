@@ -1,0 +1,60 @@
+/*
+
+   FORMS
+
+*/
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.button-reset::-moz-focus-inner,
+.input-reset::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+   IMAGES
+   Docs: http://tachyons.io/docs/elements/images/
+*/
+
+/* Responsive images! */
+
+img { max-width: 100%; }
+
+/*
+   LINKS
+*/
+
+.link {
+  text-decoration: none;
+  transition: color .15s ease-in;
+}
+
+.link:link,
+.link:visited {
+  transition: color .15s ease-in;
+}
+.link:hover   {
+  transition: color .15s ease-in;
+}
+.link:active  {
+  transition: color .15s ease-in;
+}
+.link:focus   {
+  transition: color .15s ease-in;
+}
+
+/*
+
+  TABLES
+  Docs: http://tachyons.io/docs/elements/tables/
+
+*/
+
+.collapse {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
