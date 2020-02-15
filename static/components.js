@@ -9,9 +9,6 @@ function getComponent(name, data) {
     const url_vars = btoa(JSON.stringify(data));
     const request_url = `${host}${url}?name=${name}&vars=${url_vars}`;
 
-    // Debug mode
-    console.log(request_url);
-
     return fetch(request_url)
     .then(function(response) {
         return response.text();

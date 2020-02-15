@@ -1,0 +1,15 @@
+{{!
+name     branded-box
+vars
+    title        (recommended)
+    content      (recommended)
+    color        (optional) default primary
+    button?      (optional) default false
+    buttonText   (optional) default 'more &#187;'
+    buttonLink   (optional)
+}}
+<div class="ba b-primary bw1 shadow-branded-{{#color}}{{color}}{{/color}}{{^color}}primary{{/color}} pv2 ph4 bg-grays-white">
+    <h2>{{title}}</h2>
+    <p>{{content}}</p>
+    {{#button?}}<div class="flex justify-end"><button onclick="location.href='{{buttonLink}}'" type="button" class="btn w4 btn-{{#color}}{{color}}{{/color}}{{^color}}primary{{/color}}">{{#buttonText}}{{buttonText}}{{/buttonText}}{{^buttonText}}more &#187;{{/buttonText}}</button></div>{{/button?}}
+</div>

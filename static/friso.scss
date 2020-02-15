@@ -1,3 +1,34 @@
-@import "../source/css/core/variables";
+@import "../source/css/core/_variables";
 @import "../source/css/core";
 @import "../source/components";
+
+body {
+  font-family: Calibri, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  @extend .mv3, .ph1;
+}
+
+h1 { @extend .f2; }
+h2 { @extend .f3; }
+h3 { @extend .f4; }
+h4 { @extend .f5; }
+h5 { @extend .f6; }
+
+a {
+  color: text-color(copy);
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+p {
+  @extend .mb2;
+}
+
+p, li {
+  @extend .lh-copy;
+}

@@ -8,10 +8,9 @@ static $components = [
     [ // MOLECULES
         "alert",
         "breadcrumbs",
-        "card-fixed",
-        "card-list",
         "ghost-menu",
-        "tag-list"
+        "tag-list",
+        "branded-box"
     ],
     [ // ORGANISMS
 
@@ -28,8 +27,7 @@ $mustache = new Mustache_Engine(array(
     'loader' => new Mustache_Loader_CascadingLoader(array(
         'atoms' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/atoms'),
         'molecules' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/molecules'),
-        'organisms' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/organisms'),
-        'docs-orgs' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/organisms/docs')
+        'organisms' => new Mustache_Loader_FilesystemLoader(dirname(__FILE__) . '/source/organisms')
     ))
 ));;
 

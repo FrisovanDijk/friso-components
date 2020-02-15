@@ -3075,12 +3075,12 @@ input[type=url],
   padding-top: 0.25rem;
 }
 
-.pv1, .tag {
+.pv1, .shadow-branded-accent3 h2, .shadow-branded-accent2 h2, .shadow-branded-accent1 h2, .shadow-branded-secondary h2, .shadow-branded-primary h2, .tag {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
 }
 
-.ph1 {
+.ph1, h1, h2, h3, h4, h5 {
   padding-left: 0.25rem;
   padding-right: 0.25rem;
 }
@@ -3177,7 +3177,7 @@ input[type=url],
   margin-right: 0.5rem;
 }
 
-.mb2 {
+.mb2, p {
   margin-bottom: 0.5rem;
 }
 
@@ -3265,7 +3265,7 @@ input[type=url],
   margin-top: 0.75rem;
 }
 
-.mv3 {
+.mv3, h1, h2, h3, h4, h5 {
   margin-top: 0.75rem;
   margin-bottom: 0.75rem;
 }
@@ -9607,7 +9607,7 @@ code, .code {
   line-height: 1.25;
 }
 
-.lh-copy, .btn {
+.lh-copy, p, li, .btn {
   line-height: 1.5;
 }
 
@@ -9989,23 +9989,23 @@ code, .code {
   font-size: 3rem;
 }
 
-.f2 {
+.f2, h1 {
   font-size: 2.25rem;
 }
 
-.f3 {
+.f3, h2 {
   font-size: 1.5rem;
 }
 
-.f4 {
+.f4, h3 {
   font-size: 1.25rem;
 }
 
-.f5 {
+.f5, h4 {
   font-size: 1rem;
 }
 
-.f6 {
+.f6, h5 {
   font-size: 0.875rem;
 }
 
@@ -10605,7 +10605,7 @@ code, .code {
   border-right-width: 1px;
 }
 
-.bb {
+.bb, .shadow-branded-accent3 h2, .shadow-branded-accent2 h2, .shadow-branded-accent1 h2, .shadow-branded-secondary h2, .shadow-branded-primary h2 {
   border-bottom-style: solid;
   border-bottom-width: 1px;
 }
@@ -10744,7 +10744,7 @@ code, .code {
   border-color: #514F50;
 }
 
-.b-primary, .btn-primary.btn-ghost {
+.b-primary, .shadow-branded-primary h2, .btn-primary.btn-ghost {
   border-color: #262324;
 }
 
@@ -10768,7 +10768,7 @@ code, .code {
   border-color: #CBD933;
 }
 
-.b-secondary, .btn-secondary.btn-ghost {
+.b-secondary, .shadow-branded-secondary h2, .btn-secondary.btn-ghost {
   border-color: #bed000;
 }
 
@@ -10804,7 +10804,7 @@ code, .code {
   border-color: #4DD2DE;
 }
 
-.b-accent1, .btn-accent1.btn-ghost {
+.b-accent1, .shadow-branded-accent1 h2, .btn-accent1.btn-ghost {
   border-color: #00bed0;
 }
 
@@ -10840,7 +10840,7 @@ code, .code {
   border-color: #D25AD0;
 }
 
-.b-accent2, .btn-accent2.btn-ghost {
+.b-accent2, .shadow-branded-accent2 h2, .btn-accent2.btn-ghost {
   border-color: #bf13bc;
 }
 
@@ -10876,7 +10876,7 @@ code, .code {
   border-color: #7F7BB5;
 }
 
-.b-accent3, .btn-accent3.btn-ghost {
+.b-accent3, .shadow-branded-accent3 h2, .btn-accent3.btn-ghost {
   border-color: #5f5aa2;
 }
 
@@ -11847,9 +11847,7 @@ code, .code {
   transition: opacity 0.15s ease-in;
 }
 
-.dim:hover, .btn:hover,
-.dim:focus,
-.btn:focus {
+.dim:hover, .btn:hover {
   opacity: 0.5;
   transition: opacity 0.15s ease-in;
 }
@@ -13535,9 +13533,19 @@ img {
     -[width]
     -ghost
 */
+a.btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
 .btn {
   min-height: 32px;
   min-width: 80px;
+}
+
+.btn-s {
+  min-width: unset;
 }
 
 /*
@@ -13602,6 +13610,33 @@ img {
     height: 50px;
     min-height: 50px;
   }
+}
+.shadow-branded-primary {
+  box-shadow: 0 10px 0 -5px #262324;
+}
+.shadow-branded-secondary {
+  box-shadow: 0 10px 0 -5px #bed000;
+}
+.shadow-branded-accent1 {
+  box-shadow: 0 10px 0 -5px #00bed0;
+}
+.shadow-branded-accent2 {
+  box-shadow: 0 10px 0 -5px #bf13bc;
+}
+.shadow-branded-accent3 {
+  box-shadow: 0 10px 0 -5px #5f5aa2;
+}
+body {
+  font-family: Calibri, sans-serif;
+}
+
+a {
+  color: #000011;
+  text-decoration: none;
+}
+
+p a {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=friso.css.map */

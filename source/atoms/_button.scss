@@ -10,10 +10,20 @@
     -ghost
 */
 
+a.btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+}
+
 .btn {
   @extend .ma1, .ph4, .lh-copy, .bw0, .br2, .pointer, .dim;
   min-height: 32px;
   min-width: 80px;
+}
+
+.btn-s {
+  min-width: unset;
 }
 
 .btn-ghost {

@@ -1,0 +1,39 @@
+.shadow-branded-primary {
+    box-shadow: 0 10px 0 -5px color(primary);
+
+    h2 {
+        @extend .bb, .b-primary, .pv1;
+    }
+}
+
+.shadow-branded-secondary {
+    box-shadow: 0 10px 0 -5px color(secondary);
+
+    h2 {
+        @extend .bb, .b-secondary, .pv1;
+    }
+}
+
+.shadow-branded-accent1 {
+    box-shadow: 0 10px 0 -5px color(accent1);
+
+    h2 {
+        @extend .bb, .b-accent1, .pv1;
+    }
+}
+
+.shadow-branded-accent2 {
+    box-shadow: 0 10px 0 -5px color(accent2);
+
+    h2 {
+        @extend .bb, .b-accent2, .pv1;
+    }
+}
+
+.shadow-branded-accent3 {
+    box-shadow: 0 10px 0 -5px color(accent3);
+
+    h2 {
+        @extend .bb, .b-accent3, .pv1;
+    }
+}
