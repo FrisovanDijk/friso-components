@@ -1,8 +1,10 @@
 # Friso's Component API
 
+**Archived because I switched from this hobby prototype to TailwindCSS and Vue**
+
 <section>
     <h2>Installing Friso's Component API</h2>
-    <p>Get it from <a href="https://github.com/FrisovanDijk/friso-components" target="_blank">Github</a> and run <code>composer install</code></p>
+    <p>Run <code>composer install</code></p>
     <p>Upload the code to a PHP server and that's it.</p>
     <h3>Configuration</h3>
     <p>On line 2 of index.php you can change the origin domains that can access the API. The default is any domain.</p>
@@ -27,16 +29,6 @@
     <h3>Front-end implementation</h3>
     <p>Load the compiled stylesheet and javascript of your choice from the static folder of your API.</p>
     <p>Create your first component:</p>
-    <div id="hello-world"></div>
-    <script>
-        parseComponentHTML("#hello-world", {
-            "name": "alert",
-            "vars": {
-                "type": "info",
-                "message": "Hello world!"
-            }
-        })
-    </script>
 <pre><code>&lt;div id=&quot;hello-world&quot;&gt;&lt;/div&gt;
 &lt;script&gt;
     parseComponentHTML(&quot;#hello-world&quot;, {
